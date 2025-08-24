@@ -67,6 +67,7 @@ header{padding:16px 16px 8px} h1{margin:0;font-size:22px}
   </div>
 </section>
 
+<script src="config.js"></script>
 <script src="app.js"></script>
 <script>
 if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').then(()=>setTimeout(updateCacheStatus,400)).catch(()=>{});}
