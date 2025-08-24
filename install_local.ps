@@ -1,0 +1,100 @@
+# install_local.ps1 – BWL-App lokal einrichten (Windows)
+# Ausführen: Rechtsklick > Mit PowerShell ausführen
+
+$ErrorActionPreference = "Stop"
+
+# Quell- und Zielpfade
+$SRC = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$APPNAME = "BWL-Lernapp"
+$TARGET = Join-Path $env:USERPROFILE "$APPNAME"
+$START_URL = "http://localhost:8000/BWL-App/"
+
+# 1) Winget prüfen (für Python-Installation)
+function Ensure-Winget {
+  try { winget --version | Out-Null } catch {
+    Write-Host "Winget nicht verfügbar. Installiere Python bitte manuell (https://www.python.org/)."
+    throw "Winget fehlt"
+  }
+}
+
+# 2) Python prüfen/ installieren
+function Ensure-Python {
+  try { python --version | Out-Null; return }
+  catch {
+    Ensure-Winget
+    Write-Host "Installiere Python 3.11 über Winget ..."
+    winget install -e --id Python.Python.3.11 --silent --accept-package-agreements --accept-source-agreements | Out-Null
+    # PATH wird u.U. erst in neuer Session gesetzt – direkter Pfad:
+    $py = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WindowsApps\python.exe" -ErrorAction SilentlyContinue)
+    if (-not $py) { Write-Host "Python-Installation abgeschlossen. Falls 'python' nicht gefunden wird, abmelden/anmelden." }
+  }
+}
+
+# 3) App-Dateien kopieren (gesamten Ordner 'lernapp\' nach %USERPROFILE%\BWL-Lernapp)
+function Copy-App {
+  Write-Host "Kopiere Dateien nach $TARGET ..."
+  if (Test-Path $TARGET) { Remove-Item $TARGET -Recurse -Force }
+  New-Item -ItemType Directory -Path $TARGET | Out-Null
+  robocopy $SRC $TARGET /MIR /NFL /NDL /NJH /NJS /NC /NS | Out-Null
+}
+
+# 4) Start-Skript erzeugen
+function Write-StartScripts {
+  $bat = @"
+@echo off
+cd /d "%USERPROFILE%\$APPNAME"
+echo Starte lokalen Server auf http://localhost:8000 ...
+start "" "$START_URL"
+python -m http.server 8000
+"@
+  Set-Content -Path (Join-Path $TARGET "start_server.bat") -Value $bat -Encoding ASCII
+
+  $ps1 = @"
+# Autostart-Server (PowerShell)
+Set-Location "$env:USERPROFILE\$APPNAME"
+Start-Process "$START_URL"
+python -m http.server 8000
+"@
+  Set-Content -Path (Join-Path $TARGET "start_server.ps1") -Value $ps1 -Encoding UTF8
+}
+
+# 5) Desktop-Verknüpfung
+function Create-DesktopShortcut {
+  $desktop = [Environment]::GetFolderPath('Desktop')
+  $lnk = Join-Path $desktop "$APPNAME.lnk"
+  $wsh = New-Object -ComObject WScript.Shell
+  $sc = $wsh.CreateShortcut($lnk)
+  $sc.TargetPath = (Join-Path $TARGET "start_server.bat")
+  $sc.WorkingDirectory = $TARGET
+  $sc.IconLocation = "shell32.dll,220"
+  $sc.Save()
+}
+
+# 6) Autostart bei Windows-Anmeldung (per Aufgabenplanung)
+function Enable-Autostart {
+  $taskName = "$APPNAME-Server"
+  try { Unregister-ScheduledTask -TaskName $taskName -Confirm:$false -ErrorAction SilentlyContinue } catch {}
+  $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-ExecutionPolicy Bypass -File `"$($TARGET)\start_server.ps1`""
+  $trigger = New-ScheduledTaskTrigger -AtLogOn
+  Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Description "Startet lokalen BWL-Server bei Anmeldung" | Out-Null
+}
+
+# 7) Firewall-Regel für Port 8000
+function Allow-Firewall {
+  try {
+    netsh advfirewall firewall add rule name="$APPNAME-8000" dir=in action=allow protocol=TCP localport=8000 | Out-Null
+  } catch { }
+}
+
+# Ausführung
+Ensure-Python
+Copy-App
+Write-StartScripts
+Create-DesktopShortcut
+Enable-Autostart
+Allow-Firewall
+
+# Erststart
+Start-Process (Join-Path $TARGET "start_server.bat")
+
+Write-Host "Fertig. Desktop-Verknüpfung '$APPNAME' erstellt. Autostart aktiv." -ForegroundColor Green
