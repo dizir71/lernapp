@@ -1,0 +1,10 @@
+{
+  "name": "BWL Lern- & Prüfungsapp",
+  "short_name": "BWL-App",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#7c3aed",
+  "icons": []
+}
+

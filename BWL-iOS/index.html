@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BWL Lern- & Prüfungsapp (iOS)</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563EB">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+:root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#2563EB;--pill:#E5E7EB}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--fg);font-size:16px}
+header{padding:16px 16px 8px} h1{margin:0;font-size:22px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{padding:4px 8px;border:1px solid var(--line);background:var(--pill);border-radius:999px;font-size:12px}
+.btn{padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:#E0E7FF;color:#111827}
+.btn.primary{background:var(--accent);color:#fff;border:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 16px}
+.opt{padding:10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;background:#F3F4F6}
+.opt.correct{border-color:#22C55E;background:#DCFCE7}
+.opt.wrong{border-color:#EF4444;background:#FEE2E2}
+#toolbar{padding:8px 16px 0} #list{list-style:none;padding:0;margin:8px 0 80px}
+#info{position:fixed;inset:0;background:rgba(249,250,251,.98);color:var(--fg);overflow:auto;display:none}
+#info .wrap{max-width:760px;margin:0 auto;padding:20px}
+#info h2{margin:0 0 8px}
+#status{font-size:12px;margin-left:auto;color:#374151}
+.badge{padding:4px 8px;border-radius:999px;font-size:12px;background:var(--accent);color:#fff}
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>BWL Lern- & Prüfungsapp (iOS)</h1>
+    <span class="pill" id="modePill">Modus: Lernen</span>
+    <span class="pill" id="standalonePill">Status: Browser</span>
+    <span id="status">Cache: unbekannt</span>
+  </div>
+</header>
+
+<div id="toolbar" class="row" style="padding:0 16px">
+  <button class="btn primary" id="btnLearn">Lernen</button>
+  <button class="btn" id="btnTest">Prüfen</button>
+  <label class="pill"><input type="checkbox" id="showExternal" checked> Externe Lehrerfragen</label>
+  <button class="btn" id="btnInfo">Infos & Installation</button>
+  <button class="btn" id="btnRefresh">Neu laden</button>
+</div>
+
+<ul id="list"></ul>
+
+<section id="info">
+  <div class="wrap">
+    <h2>Installation auf iPhone / iPad</h2>
+    <ol>
+      <li>Öffne diese Seite in <b>Safari</b> (HTTPS empfohlen, z. B. GitHub Pages).</li>
+      <li>Teilen-Menü → <b>Zum Home-Bildschirm</b> → <b>Hinzufügen</b>.</li>
+      <li>App vom Homescreen starten, warten bis <b>Cache: bereit</b> erscheint.</li>
+    </ol>
+    <h3>Datenablage</h3>
+    <ul>
+      <li>Beide JSONs im selben Ordner wie diese <code>index.html</code>:
+        <code>questions_all_completed_marked.json</code>,
+        <code>external_teacher_questions_marked.json</code>.
+      </li>
+    </ul>
+    <div class="row" style="margin-top:10px">
+      <button class="btn primary" id="btnCloseInfo">Fertig</button>
+    </div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+<script>
+if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').then(()=>setTimeout(updateCacheStatus,400)).catch(()=>{});}
+function updateCacheStatus(){if(!('caches'in window)){document.getElementById('status').textContent='Cache: nicht verfügbar';return;}
+caches.keys().then(k=>{document.getElementById('status').textContent=k.length?'Cache: bereit':'Cache: leer';});}
+</script>
+</body>
+</html>

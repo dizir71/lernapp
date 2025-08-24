@@ -1,0 +1,22 @@
+# Aus C:\bwl-app\ ausführen (Rechtsklick -> Mit PowerShell)
+$ErrorActionPreference="Stop"
+# Python installieren falls fehlt
+try { python --version | Out-Null } catch { winget install -e --id Python.Python.3.11 --silent }
+# Lokale IP ermitteln
+$ip=(Get-NetIPAddress -AddressFamily IPv4 | Where-Object {$_.IPAddress -notmatch '^127\.|^169\.254'} | Select-Object -First 1 -ExpandProperty IPAddress)
+if(-not $ip){ Write-Host "Keine IPv4 gefunden. Prüfe Netzwerk."; exit 1 }
+# QR-Code ausgeben (ASCII)
+$u="http://$ip:8000"
+try{
+  if(!(Get-Module -ListAvailable -Name QRCode)){ Install-Module QRCode -Force -Scope CurrentUser -AllowClobber }
+  Import-Module QRCode
+  New-QRCodeText -Content $u -OutVariable q | Out-Null
+  $q | ForEach-Object { $_ }
+} catch { Write-Host "QR-Modul optional. URL:" $u }
+# Firewall erlauben (temporär)
+try { netsh advfirewall firewall add rule name="bwl-app-8000" dir=in action=allow protocol=TCP localport=8000 | Out-Null } catch {}
+# Browser am PC öffnen
+Start-Process $u
+# Server starten
+python -m http.server 8000
+

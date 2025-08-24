@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BWL Lern- & Prüfungsapp (PC)</title>
+<link rel="manifest" href="manifest.json">
+<style>
+:root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#2563EB;--pill:#E5E7EB}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--fg);font-size:16px;padding:16px}
+header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.badge{padding:4px 8px;border-radius:999px;font-size:12px;background:var(--accent);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
+.opt{padding:10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer;background:#F3F4F6}
+.opt.correct{border-color:#22C55E;background:#DCFCE7}
+.opt.wrong{border-color:#EF4444;background:#FEE2E2}
+button{padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:#EEF2FF;color:#111827;cursor:pointer}
+button.primary{background:#2563EB;color:#fff;border:none}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center} .pill{padding:4px 8px;border:1px solid var(--line);background:var(--pill);border-radius:999px;font-size:12px}
+</style>
+</head>
+<body>
+<header class="row">
+  <h1 style="margin:0">BWL Lern- & Prüfungsapp</h1>
+  <span class="pill">Lokal</span>
+</header>
+
+<div class="row" style="margin-bottom:8px">
+  <label class="pill"><input id="showExternal" type="checkbox" checked> Externe Lehrerfragen</label>
+  <button id="btnLearn" class="primary">Lernen</button>
+  <button id="btnTest">Prüfen</button>
+  <button id="btnRefresh">Daten aktualisieren</button>
+  <button id="btnInstallLocal">Install local</button>
+</div>
+
+<ul id="list"></ul>
+
+<script src="app.js"></script>
+<script>if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
+</body>
+</html>

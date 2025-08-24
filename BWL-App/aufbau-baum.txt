@@ -1,0 +1,23 @@
+lernapp/                 ← Hauptordner
+ ├─ index.html           ← Startseite (mit Auswahl PC/iPhone)
+ ├─ app.js               ← Logik für die Hauptversion (Windows/Mac/Linux)
+ ├─ sw.js
+ ├─ manifest.json
+ ├─ questions_all_completed_marked.json
+ ├─ external_teacher_questions_marked.json
+ ├─ icons/
+ │   ├─ icon-192.png
+ │   └─ icon-512.png
+ ├─ BWL-App/             ← Desktop-/Laptop-Version
+ │   ├─ index.html
+ │   ├─ app.js
+ │   ├─ sw.js
+ │   ├─ manifest.json
+ │   └─ … (JSONs, Icons, Skripte)
+ └─ BWL-iOS/             ← iPhone/iPad-Version
+     ├─ index.html
+     ├─ app.js
+     ├─ sw.js
+     ├─ manifest.json
+     └─ … (JSONs, Icons)
+

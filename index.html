@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BWL Lernumgebung</title>
+<style>
+:root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#2563EB;--pill:#E5E7EB}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--fg);font-size:16px;padding:20px}
+h1{margin:0 0 8px} .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:16px 0}
+a.btn{display:inline-block;padding:12px 16px;margin-top:10px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff}
+.hidden{display:none} .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pill{padding:4px 8px;border:1px solid var(--line);background:var(--pill);border-radius:999px;font-size:12px}
+</style>
+</head>
+<body>
+  <div class="row">
+    <h1>BWL Lernumgebung</h1>
+    <label class="pill"><input id="toggleAdvanced" type="checkbox"> Mac/Linux-Links anzeigen</label>
+  </div>
+  <p>Wähle deine Plattform:</p>
+
+  <div class="card">
+    <h2>Für PC / Notebook (Windows)</h2>
+    <p>Lokale Installation mit Skript. Startet einen lokalen Server.</p>
+    <a class="btn" href="BWL-App/index.html">Zur PC-Version (Windows)</a>
+    <a id="linkMac" class="btn hidden" href="BWL-App/index.html">Zur Mac-Version</a>
+    <a id="linkLinux" class="btn hidden" href="BWL-App/index.html">Zur Linux-Version</a>
+  </div>
+
+  <div class="card">
+    <h2>Für iPhone / iPad</h2>
+    <p>PWA. Installation über Safari „Zum Home-Bildschirm“.</p>
+    <a class="btn" href="BWL-iOS/index.html">Zur iOS-Version</a>
+  </div>
+
+<script>
+const chk=document.getElementById('toggleAdvanced'), mac=document.getElementById('linkMac'), lin=document.getElementById('linkLinux');
+function apply(s){[mac,lin].forEach(el=>el.classList.toggle('hidden',!s));localStorage.setItem('showAdvanced',s?'1':'0');}
+chk.addEventListener('change',()=>apply(chk.checked)); const saved=localStorage.getItem('showAdvanced')==='1'; chk.checked=saved; apply(saved);
+</script>
+</body>
+</html>
+
