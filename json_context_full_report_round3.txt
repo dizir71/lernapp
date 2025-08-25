@@ -1,0 +1,266 @@
+JSON Context Full Report – 2025-08-25T07:46:45.494074
+INTERNAL: Änderungen=1
+--- INTERNAL ---
+[11] Kontextfüllung: topic=plz, aspect=phasen, answer=['Einführung', 'Wachstum', 'Reife', 'Sättigung', 'Degeneration']
+EXTERNAL: Änderungen=146
+--- EXTERNAL ---
+[16] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[16] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[17] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[17] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[18] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[18] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[19] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[19] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[21] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[21] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[22] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[22] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[23] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[23] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[24] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[24] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[28] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[28] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[29] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[29] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[31] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[31] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[32] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[32] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[33] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[33] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[34] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[34] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[35] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[35] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[36] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[36] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[37] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[37] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[38] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[38] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[39] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[39] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[41] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[41] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[42] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[42] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[43] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[43] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[44] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[44] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[45] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[45] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[46] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[46] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[47] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[47] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[48] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[48] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[49] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[50] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[50] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[51] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[51] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[52] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[52] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[53] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[53] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[54] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[54] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[55] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[55] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[56] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[56] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[57] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[57] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[58] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[59] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[59] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[60] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[60] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[61] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[61] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[62] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[62] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[63] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[63] Kontextfüllung: topic=kg, aspect=haftung, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[64] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[64] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[65] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[65] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[66] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[66] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[67] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[67] Kontextfüllung: topic=kg, aspect=haftung, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[68] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[68] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[69] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[69] Kontextfüllung: topic=kg, aspect=haftung, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[70] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[70] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[71] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[71] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[72] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[72] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[73] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[73] Kontextfüllung: topic=kg, aspect=haftung, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[74] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[74] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[75] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[76] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[77] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[78] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[79] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[80] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[81] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[82] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[83] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[84] Platzhalter entfernt: 'siehe Lerntext (korrekte Bezeichnung)' → '()'
+[85] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[89] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[89] Kontextfüllung: topic=genossenschaft, aspect=None, answer=['Generalversammlung', 'Vorstand', 'Aufsichtsrat']
+[90] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[90] Kontextfüllung: topic=genossenschaft, aspect=None, answer=['Generalversammlung', 'Vorstand', 'Aufsichtsrat']
+[91] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[92] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[93] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[94] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[95] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[95] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[98] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[98] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[99] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[100] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[101] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[101] Kontextfüllung: topic=og, aspect=None, answer=['persönlich unbeschränkt', 'unmittelbar', 'solidarisch']
+[102] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[102] Kontextfüllung: topic=og, aspect=None, answer=['persönlich unbeschränkt', 'unmittelbar', 'solidarisch']
+[103] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[103] Kontextfüllung: topic=og, aspect=haftung, answer=['persönlich unbeschränkt', 'unmittelbar', 'solidarisch']
+[104] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[104] Kontextfüllung: topic=gmbh, aspect=None, answer=beschränkt auf Gesellschaftsvermögen
+[105] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[106] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[107] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[107] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[108] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[108] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[110] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[110] Kontextfüllung: topic=genossenschaft, aspect=None, answer=['Generalversammlung', 'Vorstand', 'Aufsichtsrat']
+[111] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[111] Kontextfüllung: topic=genossenschaft, aspect=None, answer=['Generalversammlung', 'Vorstand', 'Aufsichtsrat']
+[112] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[113] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[114] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[115] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[116] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[117] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[118] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[119] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[120] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[121] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[121] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[122] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[122] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[123] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[123] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[124] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[124] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[125] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[125] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[126] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[126] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[127] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[127] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[128] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[128] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[129] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[129] Kontextfüllung: topic=unternehmer, aspect=None, answer=['selbständig, nachhaltig', 'Gewinnerzielungsabsicht']
+[130] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[130] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[131] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[131] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[132] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[132] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[133] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[133] Kontextfüllung: topic=prokura, aspect=None, answer=['umfassende handelsrechtliche Vollmacht', 'im Firmenbuch eingetragen']
+[134] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[134] Kontextfüllung: topic=prokura, aspect=None, answer=['umfassende handelsrechtliche Vollmacht', 'im Firmenbuch eingetragen']
+[135] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[135] Kontextfüllung: topic=prokura, aspect=None, answer=['umfassende handelsrechtliche Vollmacht', 'im Firmenbuch eingetragen']
+[136] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[136] Kontextfüllung: topic=prokura, aspect=None, answer=['umfassende handelsrechtliche Vollmacht', 'im Firmenbuch eingetragen']
+[137] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[137] Kontextfüllung: topic=prokura, aspect=None, answer=['umfassende handelsrechtliche Vollmacht', 'im Firmenbuch eingetragen']
+[138] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[138] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[139] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[139] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[140] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[140] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[141] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[141] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[142] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[142] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[143] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[143] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[144] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[144] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[145] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[145] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[146] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[146] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[147] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[147] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[148] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[148] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[149] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[149] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[150] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[150] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[151] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[151] Kontextfüllung: topic=handlungsvollmacht, aspect=None, answer=['beschränkte Vollmacht', 'nicht im Firmenbuch eingetragen']
+[152] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[152] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[153] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[153] Kontextfüllung: topic=firma, aspect=None, answer=['Kennzeichnungsfunktion', 'Unterscheidungsfunktion']
+[155] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[156] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[156] Kontextfüllung: topic=genossenschaft, aspect=None, answer=['Generalversammlung', 'Vorstand', 'Aufsichtsrat']
+[157] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[157] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[158] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[158] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[159] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[159] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[160] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[160] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[161] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[161] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[162] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[162] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[163] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[164] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[164] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[165] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[165] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[166] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[166] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[167] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[167] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[168] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[168] Kontextfüllung: topic=steuer_kg, aspect=None, answer=['Körperschaftsteuer (23 %)', 'KESt 27,5 % bei Ausschüttung']
+[169] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[169] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[170] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[170] Kontextfüllung: topic=kg, aspect=None, answer=['Komplementär unbeschränkt', 'Kommanditist beschränkt (Einlage)']
+[172] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[172] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[173] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[173] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[174] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[174] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']
+[175] Platzhalter entfernt: 'Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.' → ': Begriff definieren und 1–2 Merkmale nennen.'
+[175] Kontextfüllung: topic=firmenbuch, aspect=None, answer=['öffentliches Register', 'Eintragung von Unternehmen und Prokura']

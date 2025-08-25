@@ -1,0 +1,6 @@
+JSON Auto-Fix Report (2025-08-25T07:01:15.411413)
+Internal: geändert=0 | verbleibende Platzhalter/fehlend=0
+External: geändert=0 | verbleibende Platzhalter/fehlend=0
+Ausgabe:
+  - /mnt/data/questions_all_completed_marked_fixed.json
+  - /mnt/data/external_teacher_questions_marked_fixed.json

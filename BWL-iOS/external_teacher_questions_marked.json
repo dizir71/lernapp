@@ -370,7 +370,10 @@
     "id": "ext_0017",
     "type": "single_choice",
     "question_text": "Dazu gehören sowohl ____ Personen als auch ____ Personen?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -392,7 +395,10 @@
     "id": "ext_0018",
     "type": "single_choice",
     "question_text": "- ____ Personen → lebende, physische Personen, z. B. ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -414,7 +420,10 @@
     "id": "ext_0019",
     "type": "single_choice",
     "question_text": "- ____ Personen → Organisationen, die auf Basis eines ____ gegründet werden?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -436,7 +445,10 @@
     "id": "ext_0020",
     "type": "single_choice",
     "question_text": "Weitere Unternehmer sind z. B. ____, ____ Tätigkeiten (z. B. Arzt) und ____ Selbstständige (z. B. Künstler)?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -480,7 +492,10 @@
     "id": "ext_0022",
     "type": "single_choice",
     "question_text": "- betreibt er ____,?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -502,7 +517,10 @@
     "id": "ext_0023",
     "type": "single_choice",
     "question_text": "- gibt er seine ____ ab und?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -524,7 +542,10 @@
     "id": "ext_0024",
     "type": "single_choice",
     "question_text": "- kann er ____ bzw. ____ werden?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -546,7 +567,10 @@
     "id": "ext_0025",
     "type": "single_choice",
     "question_text": "Der Firmenname besteht aus ____ und ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -634,7 +658,10 @@
     "id": "ext_0029",
     "type": "single_choice",
     "question_text": "- ____kraft → neue Firmen müssen sich von anderen am selben Ort unterscheiden?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -656,7 +683,10 @@
     "id": "ext_0030",
     "type": "single_choice",
     "question_text": "- ____verbot → der Name darf keine falschen Informationen enthalten?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -700,7 +730,10 @@
     "id": "ext_0032",
     "type": "single_choice",
     "question_text": "- ____firma (Hinweis auf Tätigkeit)?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -722,7 +755,10 @@
     "id": "ext_0033",
     "type": "single_choice",
     "question_text": "- ____firma (erfundene Namen, Marken)?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -744,7 +780,10 @@
     "id": "ext_0034",
     "type": "single_choice",
     "question_text": "- ____ Firma (Mischung)?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -766,7 +805,10 @@
     "id": "ext_0035",
     "type": "single_choice",
     "question_text": "Beim Erwerb eines Unternehmens kann der bisherige Name ____ werden, aber nur mit ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -788,7 +830,10 @@
     "id": "ext_0036",
     "type": "single_choice",
     "question_text": "Eine Firma darf erst geführt werden, wenn sie im ____ steht?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -810,7 +855,10 @@
     "id": "ext_0037",
     "type": "single_choice",
     "question_text": "Das Firmenbuch ist ein ____es EDV-Verzeichnis, in dem ____ über ein Unternehmen eingetragen sind?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -832,7 +880,10 @@
     "id": "ext_0038",
     "type": "single_choice",
     "question_text": "Die Einträge werden auf ____ (Elektronische Verlautbarungs- und Informationsplattform) veröffentlicht?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -854,7 +905,10 @@
     "id": "ext_0039",
     "type": "single_choice",
     "question_text": "- Gesellschafter: alleine oder mit ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -876,7 +930,10 @@
     "id": "ext_0040",
     "type": "single_choice",
     "question_text": "- Finanzierung: Gibt es ein ____? Kann das Kapital ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -920,7 +977,10 @@
     "id": "ext_0042",
     "type": "single_choice",
     "question_text": "- Kontrolle: Leitungsbefugnis und ____recht?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -942,7 +1002,10 @@
     "id": "ext_0043",
     "type": "single_choice",
     "question_text": "- Erfolgsverteilung: richtet sich nach ____, ____ und ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -964,7 +1027,10 @@
     "id": "ext_0044",
     "type": "single_choice",
     "question_text": "- Buchführung: doppelte Buchführung bei ____, ____ und ab bestimmtem Umsatz bei ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -986,7 +1052,10 @@
     "id": "ext_0045",
     "type": "single_choice",
     "question_text": "- Ertragssteuerliche Belastung: abhängig von ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1008,7 +1077,10 @@
     "id": "ext_0046",
     "type": "single_choice",
     "question_text": "- Gesellschafter: ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1030,7 +1102,10 @@
     "id": "ext_0047",
     "type": "single_choice",
     "question_text": "- Gründung: erfolgt durch ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1052,7 +1127,10 @@
     "id": "ext_0048",
     "type": "single_choice",
     "question_text": "- Firmenbuch: je nach ____ verpflichtend?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1074,7 +1152,10 @@
     "id": "ext_0049",
     "type": "single_choice",
     "question_text": "- Finanzierung: Kapital wird vom ____ aufgebracht, kein ____ notwendig?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1118,7 +1199,10 @@
     "id": "ext_0051",
     "type": "single_choice",
     "question_text": "- Kontrolle: entscheidet ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1140,7 +1224,10 @@
     "id": "ext_0052",
     "type": "single_choice",
     "question_text": "- Erfolgsverteilung: trägt Gewinn und Verlust ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1162,7 +1249,10 @@
     "id": "ext_0053",
     "type": "single_choice",
     "question_text": "- Ertragsteuerliche Belastung: Gewinn unterliegt der ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1184,7 +1274,10 @@
     "id": "ext_0054",
     "type": "single_choice",
     "question_text": "**Vorteile:** ____, ____, ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1206,7 +1299,10 @@
     "id": "ext_0055",
     "type": "single_choice",
     "question_text": "**Nachteile:** ____, ____, ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1228,7 +1324,10 @@
     "id": "ext_0056",
     "type": "single_choice",
     "question_text": "- Gesellschafter: mindestens ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1250,7 +1349,10 @@
     "id": "ext_0057",
     "type": "single_choice",
     "question_text": "- Gründung: durch ____, keine Form vorgeschrieben?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1272,7 +1374,10 @@
     "id": "ext_0058",
     "type": "single_choice",
     "question_text": "- Firmenbuch: ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1316,7 +1421,10 @@
     "id": "ext_0060",
     "type": "single_choice",
     "question_text": "- Kontrolle: alle Gesellschafter sind ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1338,7 +1446,10 @@
     "id": "ext_0061",
     "type": "single_choice",
     "question_text": "- Erfolgsverteilung: im ____, sonst im ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1360,7 +1471,10 @@
     "id": "ext_0063",
     "type": "single_choice",
     "question_text": "- Komplementär = ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1382,7 +1496,10 @@
     "id": "ext_0064",
     "type": "single_choice",
     "question_text": "- Kommanditist = ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1404,7 +1521,10 @@
     "id": "ext_0065",
     "type": "single_choice",
     "question_text": "- Haftung: Komplementär ____, Kommanditist bis ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1426,7 +1546,10 @@
     "id": "ext_0066",
     "type": "single_choice",
     "question_text": "- Kontrolle: Komplementär leitet, Kommanditist hat nur ____recht?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1448,7 +1571,10 @@
     "id": "ext_0067",
     "type": "single_choice",
     "question_text": "- Beteiligung an einem ____ Unternehmen?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1470,7 +1596,10 @@
     "id": "ext_0068",
     "type": "single_choice",
     "question_text": "- Gründung durch ____vertrag?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1492,7 +1621,10 @@
     "id": "ext_0069",
     "type": "single_choice",
     "question_text": "- Haftung: nur bis zur ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1514,7 +1646,10 @@
     "id": "ext_0071",
     "type": "single_choice",
     "question_text": "- Erfolgsverteilung: am ____ beteiligt?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1536,7 +1671,10 @@
     "id": "ext_0074",
     "type": "single_choice",
     "question_text": "- Haftung: ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1558,7 +1696,10 @@
     "id": "ext_0075",
     "type": "single_choice",
     "question_text": "- Kontrolle: alle zur ____ befugt, außergewöhnliche Geschäfte nur ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1580,7 +1721,10 @@
     "id": "ext_0077",
     "type": "single_choice",
     "question_text": "- Gründung: durch ____vertrag (traditionell oder elektronisch)?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1602,7 +1746,10 @@
     "id": "ext_0078",
     "type": "single_choice",
     "question_text": "- Mindeststammkapital: ____, davon mindestens ____ bar einzuzahlen?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1624,7 +1771,10 @@
     "id": "ext_0079",
     "type": "single_choice",
     "question_text": "- Haftung: Gesellschaft mit ____, Gesellschafter nur mit ____?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1646,7 +1796,10 @@
     "id": "ext_0080",
     "type": "single_choice",
     "question_text": "- Erfolgsverteilung: durch ____ beschlossen?",
-    "correct_answer": "siehe Lerntext (korrekte Bezeichnung)",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lückentext",
     "tags": [
       "external_teacher"
@@ -1976,7 +2129,11 @@
     "id": "ext_0101",
     "type": "single_choice",
     "question_text": "Welche Rechtsform liegt vor?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Generalversammlung",
+      "Vorstand",
+      "Aufsichtsrat"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -1998,7 +2155,11 @@
     "id": "ext_0102",
     "type": "single_choice",
     "question_text": "Wie haftet sie?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Generalversammlung",
+      "Vorstand",
+      "Aufsichtsrat"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2108,7 +2269,10 @@
     "id": "ext_0107",
     "type": "single_choice",
     "question_text": "Wie hoch ist die Kapitalertragsteuer (27,5 %) auf den ausgeschütteten Gewinn (angenommen: der gesamte Gewinn wird ausgeschüttet)?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2174,7 +2338,10 @@
     "id": "ext_0115",
     "type": "single_choice",
     "question_text": "Gilt er nach UGB als Unternehmer?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2240,7 +2407,11 @@
     "id": "ext_0119",
     "type": "single_choice",
     "question_text": "Welche Vor- und Nachteile hat die OG?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "persönlich unbeschränkt",
+      "unmittelbar",
+      "solidarisch"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2262,7 +2433,11 @@
     "id": "ext_0120",
     "type": "single_choice",
     "question_text": "Wie hoch ist die Mindesteinlage für Gesellschafter?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "persönlich unbeschränkt",
+      "unmittelbar",
+      "solidarisch"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2284,7 +2459,11 @@
     "id": "ext_0121",
     "type": "single_choice",
     "question_text": "Welche Haftung hat der Investor?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "persönlich unbeschränkt",
+      "unmittelbar",
+      "solidarisch"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2306,7 +2485,7 @@
     "id": "ext_0122",
     "type": "single_choice",
     "question_text": "Wer leitet die GmbH?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": "beschränkt auf Gesellschaftsvermögen",
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2372,7 +2551,10 @@
     "id": "ext_0125",
     "type": "single_choice",
     "question_text": "Wenn 50 % ausgeschüttet werden, wie hoch ist die Kapitalertragsteuer (27,5 %)?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2394,7 +2576,10 @@
     "id": "ext_0131",
     "type": "single_choice",
     "question_text": "Was versteht man unter der Fortführung einer Firma?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2438,7 +2623,11 @@
     "id": "ext_0133",
     "type": "single_choice",
     "question_text": "Welche Buchführungspflicht trifft ihn?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Generalversammlung",
+      "Vorstand",
+      "Aufsichtsrat"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2460,7 +2649,11 @@
     "id": "ext_0134",
     "type": "single_choice",
     "question_text": "Wie haftet er?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Generalversammlung",
+      "Vorstand",
+      "Aufsichtsrat"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2680,7 +2873,10 @@
     "id": "ext_0145",
     "type": "single_choice",
     "question_text": "Was ist ein Unternehmer?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2702,7 +2898,10 @@
     "id": "ext_0146",
     "type": "single_choice",
     "question_text": "Was ist Außenhandel?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2724,7 +2923,10 @@
     "id": "ext_0147",
     "type": "single_choice",
     "question_text": "Was ist Marktforschung?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2746,7 +2948,10 @@
     "id": "ext_0148",
     "type": "single_choice",
     "question_text": "das sind alle inhalte aus allen 4 dateien inkl. alle inhalte der bilder?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2768,7 +2973,10 @@
     "id": "ext_0150",
     "type": "single_choice",
     "question_text": "Was bekommst du?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2790,7 +2998,10 @@
     "id": "ext_0151",
     "type": "single_choice",
     "question_text": "Möchtest du ein bestimmtes Kapitel/Thema zuerst? Oder alles am Stück als Mehrteiler?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2812,7 +3023,10 @@
     "id": "ext_0152",
     "type": "single_choice",
     "question_text": "Soll ich jedes Kapitel als Markdown-Datei, als Fließtext mit Formatierung, oder als ein einziges großes Dokument bereitstellen?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2834,7 +3048,10 @@
     "id": "ext_0153",
     "type": "single_choice",
     "question_text": "Wer ist ein Unternehmer?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2856,7 +3073,10 @@
     "id": "ext_0154",
     "type": "single_choice",
     "question_text": "Was ist ein Unternehmen?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "selbständig, nachhaltig",
+      "Gewinnerzielungsabsicht"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2878,7 +3098,10 @@
     "id": "ext_0155",
     "type": "single_choice",
     "question_text": "Was ist eine Firma?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2900,7 +3123,10 @@
     "id": "ext_0156",
     "type": "single_choice",
     "question_text": "Was ist das Firmenbuch?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2922,7 +3148,10 @@
     "id": "ext_0157",
     "type": "single_choice",
     "question_text": "Wichtige Info?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2944,7 +3173,10 @@
     "id": "ext_0158",
     "type": "single_choice",
     "question_text": "Was ist die Prokura?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "umfassende handelsrechtliche Vollmacht",
+      "im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2966,7 +3198,10 @@
     "id": "ext_0159",
     "type": "single_choice",
     "question_text": "Wie heißt so jemand, wenn er es bekommt?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "umfassende handelsrechtliche Vollmacht",
+      "im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -2988,7 +3223,10 @@
     "id": "ext_0160",
     "type": "single_choice",
     "question_text": "Was kann jedoch trotzdem passieren?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "umfassende handelsrechtliche Vollmacht",
+      "im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3010,7 +3248,10 @@
     "id": "ext_0161",
     "type": "single_choice",
     "question_text": "Wie unterschreibt ein Prokurist?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "umfassende handelsrechtliche Vollmacht",
+      "im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3032,7 +3273,10 @@
     "id": "ext_0162",
     "type": "single_choice",
     "question_text": "Wann erlischt die Prokura?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "umfassende handelsrechtliche Vollmacht",
+      "im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3054,7 +3298,10 @@
     "id": "ext_0164",
     "type": "single_choice",
     "question_text": "Was ist die Handlungsvollmacht?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3076,7 +3323,10 @@
     "id": "ext_0165",
     "type": "single_choice",
     "question_text": "Wie unterschreibt man bei einer Handlungsvollmacht?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3098,7 +3348,10 @@
     "id": "ext_0166",
     "type": "single_choice",
     "question_text": "Wann erlischt die Handlungsvollmacht?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3120,7 +3373,10 @@
     "id": "ext_0167",
     "type": "single_choice",
     "question_text": "Wann liegt ein echter Arbeitsauftrag vor?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3142,7 +3398,10 @@
     "id": "ext_0168",
     "type": "single_choice",
     "question_text": "Was muss der Arbeitnehmer tun?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3164,7 +3423,10 @@
     "id": "ext_0169",
     "type": "single_choice",
     "question_text": "Wovor schützt die Sozialversicherung?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3186,7 +3448,10 @@
     "id": "ext_0170",
     "type": "single_choice",
     "question_text": "Wann liegt ein freier Dienstvertrag vor?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3208,7 +3473,10 @@
     "id": "ext_0171",
     "type": "single_choice",
     "question_text": "Was kann der freie Dienstnehmer?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3230,7 +3498,10 @@
     "id": "ext_0172",
     "type": "single_choice",
     "question_text": "Wann liegt ein Werkvertrag vor?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3252,7 +3523,10 @@
     "id": "ext_0173",
     "type": "single_choice",
     "question_text": "Was kann der Werkvertragsnehmer?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3274,7 +3548,10 @@
     "id": "ext_0174",
     "type": "single_choice",
     "question_text": "Möchtest du mit dem nächsten Abschnitt fortfahren (z. B. \"Außenhandel & internationale Verträge\", \"Marketing, Marktforschung\", \"Beschaffungs- und Warenwirtschaft\")?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3296,7 +3573,10 @@
     "id": "ext_0178",
     "type": "single_choice",
     "question_text": "Was ist Marketing?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3318,7 +3598,10 @@
     "id": "ext_0179",
     "type": "single_choice",
     "question_text": "Ich fahre mit der Extraktion fort. Möchtest du den nächsten Block mit weiteren 25 Fragen, oder zuerst das App-Starterpaket?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Wiederholung",
     "tags": [
       "external_teacher"
@@ -3340,7 +3623,10 @@
     "id": "ext_0180",
     "type": "single_choice",
     "question_text": "1.Was ist bei der Fortführung eines Unternehmens zu beachten?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "beschränkte Vollmacht",
+      "nicht im Firmenbuch eingetragen"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3362,7 +3648,10 @@
     "id": "ext_0181",
     "type": "single_choice",
     "question_text": "3. Was ist eine Firma?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3384,7 +3673,10 @@
     "id": "ext_0182",
     "type": "single_choice",
     "question_text": "4. Welche Arten der Rechtsformen gibt es?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Kennzeichnungsfunktion",
+      "Unterscheidungsfunktion"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3450,7 +3742,11 @@
     "id": "ext_0185",
     "type": "single_choice",
     "question_text": "8. Ordentliche Hauptversammlung - was passiert da, was ist zu beachten?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Generalversammlung",
+      "Vorstand",
+      "Aufsichtsrat"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3472,7 +3768,10 @@
     "id": "ext_0186",
     "type": "single_choice",
     "question_text": "14. Welche Bestandteile hat das Firmenbuch?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3494,7 +3793,10 @@
     "id": "ext_0187",
     "type": "single_choice",
     "question_text": "15. Welche Arten von Firmen gibt es?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3516,7 +3818,10 @@
     "id": "ext_0188",
     "type": "single_choice",
     "question_text": "Allein oder mehr?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3538,7 +3843,10 @@
     "id": "ext_0189",
     "type": "single_choice",
     "question_text": "Wie viel braucht man?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3560,7 +3868,10 @@
     "id": "ext_0190",
     "type": "single_choice",
     "question_text": "Wer haftet?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3582,7 +3893,10 @@
     "id": "ext_0191",
     "type": "single_choice",
     "question_text": "Wer führt?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3626,7 +3940,10 @@
     "id": "ext_0193",
     "type": "single_choice",
     "question_text": "19. Firmenbuch - was ist das?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3648,7 +3965,10 @@
     "id": "ext_0194",
     "type": "single_choice",
     "question_text": "20. Ertragssteuerliche Belastung - wer zahlt's?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3670,7 +3990,10 @@
     "id": "ext_0195",
     "type": "single_choice",
     "question_text": "23. Kontrolle und Erfolgsverteilung?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3692,7 +4015,10 @@
     "id": "ext_0196",
     "type": "single_choice",
     "question_text": "24. Wie setzt sich der Firmenname zusammen?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3714,7 +4040,10 @@
     "id": "ext_0197",
     "type": "single_choice",
     "question_text": "25. Personengesellschaften - was ist daran wichtig?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Körperschaftsteuer (23 %)",
+      "KESt 27,5 % bei Ausschüttung"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3736,7 +4065,10 @@
     "id": "ext_0198",
     "type": "single_choice",
     "question_text": "26. Mischform: GmbH & Co KG - was ist das?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3758,7 +4090,10 @@
     "id": "ext_0199",
     "type": "single_choice",
     "question_text": "27. Buchführung - welche gibt es?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "Komplementär unbeschränkt",
+      "Kommanditist beschränkt (Einlage)"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3802,7 +4137,10 @@
     "id": "ext_0201",
     "type": "single_choice",
     "question_text": "29. Eintragung ins Firmenbuch - wann ist sie verpflichtend, wann freiwillig?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3824,7 +4162,10 @@
     "id": "ext_0202",
     "type": "single_choice",
     "question_text": "30. Was ist ein Firmenkern und was der Firmenzusatz?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3846,7 +4187,10 @@
     "id": "ext_0203",
     "type": "single_choice",
     "question_text": "31. Wo wird eine Erfolgsverteilung beschlossen?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"
@@ -3868,7 +4212,10 @@
     "id": "ext_0204",
     "type": "single_choice",
     "question_text": "32. Was kannst du mir über die Anzahl der Eigentümer/Gesellschafter erzählen?",
-    "correct_answer": "Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen.",
+    "correct_answer": [
+      "öffentliches Register",
+      "Eintragung von Unternehmen und Prokura"
+    ],
     "topic": "Lernfragen",
     "tags": [
       "external_teacher"

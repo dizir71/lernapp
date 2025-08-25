@@ -1,0 +1,186 @@
+JSON Replace Round2 – 2025-08-25T07:22:45.840064
+INTERNAL geändert=64, ungelöst=0
+--- INTERNAL ---
+[0] Wer ist ein Unternehmer im Sinne des UGB?... ergänzt: Wer ein Unternehmen betreibt → Unternehmer
+[4] Das Mindeststammkapital einer GmbH beträgt in Österreich 10.... ergänzt: true → Gesellschaft mit beschränkter Haftung
+[6] Was ist der Hauptunterschied zwischen einem echten Arbeitsve... ergänzt: Beim Arbeitsvertrag wird die Arbeitskraft geschuldet, beim Werkvertrag ein bestimmter Erfolg oder ein Werk. → Aktiengesellschaft
+[7] Welches Risiko sichert ein Dokumentenakkreditiv für den Expo... ergänzt: Zahlungsausfallrisiko → Export
+[8] Die vier Ps des Marketing-Mix sind: Produktpolitik, Preispol... ergänzt: Distributionspolitik → Marketing-Mix
+[14] Just-in-Time-Beschaffung senkt die Lagerkosten?... ergänzt: true → Aktiengesellschaft
+[15] Welche Vollmacht ist die umfangreichste im unternehmerischen... ergänzt: Prokura → Unternehmer
+[17] Was ist das Hauptmerkmal eines echten Arbeitsvertrages?... ergänzt: Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber. → Aktiengesellschaft
+[18] Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?... ergänzt: ['Schuldet einen bestimmten Erfolg/Werk', 'Echter Arbeitsvertrag'] → Aktiengesellschaft
+[18] Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?... ergänzt: ['Schuldet persönliche Arbeitskraft, ist weisungsgebunden', 'Echter Arbeitsvertrag'] → Aktiengesellschaft
+[18] Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?... ergänzt: ['Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden', 'Echter Arbeitsvertrag'] → Aktiengesellschaft
+[20] Die ___ kann nur von einem im Firmenbuch eingetragenen Unter... ergänzt: Prokura → Unternehmer
+[21] Ein Werkvertragsnehmer trägt in der Regel das wirtschaftlich... ergänzt: true → Aktiengesellschaft
+[22] Welche Art der Handlungsvollmacht ermächtigt zu allen Geschä... ergänzt: Artvollmacht → Handlungsvollmacht
+[24] Wann erlischt eine Prokura?... ergänzt: Bei Widerruf durch den Unternehmer → Prokura
+[24] Wann erlischt eine Prokura?... ergänzt: Durch den Tod des Prokuristen → Prokura
+[24] Wann erlischt eine Prokura?... ergänzt: Bei Konkurs des Unternehmens → Prokura
+[25] Was ist ein wesentliches Merkmal eines freien Dienstvertrags... ergänzt: Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen. → Aktiengesellschaft
+[26] Die Prokura berechtigt den Prokuristen zu allen ___ und ___ ... ergänzt: gerichtlichen und außergerichtlichen → Prokura
+[27] Wer ist für die Abfuhr der Sozialversicherungsbeiträge und d... ergänzt: Der Werkvertragsnehmer selbst → Aktiengesellschaft
+[28] Eine Filialprokura beschränkt die Vertretungsmacht auf eine ... ergänzt: true → Prokura
+[29] Welcher Vertragstyp liegt vor, wenn ein Grafiker beauftragt ... ergänzt: Werkvertrag → Offene Gesellschaft
+[30] Was ist das Hauptziel des Marketings?... ergänzt: Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen → Marketing-Mix
+[32] Die 4 Ps des Marketing-Mix umfassen Produkt-, Preis-, Distri... ergänzt: Kommunikationspolitik → Marketing-Mix
+[37] Welche Phase des Produktlebenszyklus ist durch den höchsten ... ergänzt: Reifephase → Produktlebenszyklus
+[46] Die Kennzahl, die das Verhältnis von Ertrag zu Aufwand misst... ergänzt: Wirtschaftlichkeit → Aktiengesellschaft
+[58] Die Kosten für die Miete eines Lagers sind typischerweise va... ergänzt: false → Aktiengesellschaft
+[61] Was ist der Hauptzweck einer Genossenschaft?... ergänzt: Förderung der Mitglieder → Genossenschaft
+[68] Zu welcher Phase des Produktlebenszyklus passt ein Relaunch ... ergänzt: Reife- oder Sättigungsphase → Produktlebenszyklus
+[70] Welche Art von Firma ist 'Huber & Söhne OG'?... ergänzt: Personenfirma → Firma
+[71] Ein stiller Gesellschafter scheint nach außen nicht auf und ... ergänzt: Firmenbuch → Aktiengesellschaft
+[74] Ordnen Sie die Begriffe dem richtigen Vertragstyp zu?... ergänzt: ['Persönliche Abhängigkeit', 'Werkvertrag'] → Aktiengesellschaft
+[74] Ordnen Sie die Begriffe dem richtigen Vertragstyp zu?... ergänzt: ['Herstellung eines Werks', 'Werkvertrag'] → Aktiengesellschaft
+[74] Ordnen Sie die Begriffe dem richtigen Vertragstyp zu?... ergänzt: ['Arbeitskraft zur Verfügung stellen ohne Weisungsbindung', 'Werkvertrag'] → Aktiengesellschaft
+[75] Eine Aktiengesellschaft (AG) benötigt in Österreich ein Mind... ergänzt: 70.000 € → Aktiengesellschaft
+[76] Welche der folgenden Aussagen zur Prokura ist FALSCH?... ergänzt: Sie berechtigt zum Verkauf des gesamten Unternehmens. → Aktiengesellschaft
+[77] Ein Exporteur liefert Ware, aber der Importeur zahlt nicht. ... ergänzt: Zahlungsausfallrisiko → Export
+[79] Berechne die Wirtschaftlichkeit: Ertrag = 150.000 €, Aufwand... ergänzt: 1.25 → Aktiengesellschaft
+[83] Welches Organ ist bei einer AG für die Geschäftsführung zust... ergänzt: Der Vorstand → Aktiengesellschaft
+[85] Ein Unternehmen kauft Rohstoffe in großen Mengen auf Lager, ... ergänzt: Vorratsbeschaffung → Aktiengesellschaft
+[87] Welche dieser Aussagen beschreibt solidarische Haftung?... ergänzt: Ein Gläubiger kann sich aussuchen, von welchem Gesellschafter er die gesamte Schuld fordert. → Aktiengesellschaft
+[88] Die Eintragung ins Firmenbuch ist für Kapitalgesellschaften ... ergänzt: true → Firmenbuch
+[89] Wie hoch ist die Mindestkörperschaftsteuer für eine GmbH pro... ergänzt: 500 € → Gesellschaft mit beschränkter Haftung
+[90] Was ist das Hauptziel des Marketings?... ergänzt: Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen → Marketing-Mix
+[92] Die 4 Ps des Marketing-Mix umfassen Produkt-, Preis-, Distri... ergänzt: Kommunikationspolitik → Marketing-Mix
+[97] Welche Phase des Produktlebenszyklus ist durch den höchsten ... ergänzt: Reifephase → Produktlebenszyklus
+[105] Welche Vollmacht ist die umfangreichste im unternehmerischen... ergänzt: Prokura → Unternehmer
+[107] Was ist das Hauptmerkmal eines echten Arbeitsvertrages?... ergänzt: Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber. → Aktiengesellschaft
+[108] Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?... ergänzt: ['Schuldet einen bestimmten Erfolg/Werk', 'Echter Arbeitsvertrag'] → Aktiengesellschaft
+[108] Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?... ergänzt: ['Schuldet persönliche Arbeitskraft, ist weisungsgebunden', 'Echter Arbeitsvertrag'] → Aktiengesellschaft
+[108] Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?... ergänzt: ['Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden', 'Echter Arbeitsvertrag'] → Aktiengesellschaft
+[110] Die ___ kann nur von einem im Firmenbuch eingetragenen Unter... ergänzt: Prokura → Unternehmer
+[111] Ein Werkvertragsnehmer trägt in der Regel das wirtschaftlich... ergänzt: true → Aktiengesellschaft
+[112] Welche Art der Handlungsvollmacht ermächtigt zu allen Geschä... ergänzt: Artvollmacht → Handlungsvollmacht
+[114] Wann erlischt eine Prokura?... ergänzt: Bei Widerruf durch den Unternehmer → Prokura
+[114] Wann erlischt eine Prokura?... ergänzt: Durch den Tod des Prokuristen → Prokura
+[114] Wann erlischt eine Prokura?... ergänzt: Bei Konkurs des Unternehmens → Prokura
+[115] Was ist ein wesentliches Merkmal eines freien Dienstvertrags... ergänzt: Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen. → Aktiengesellschaft
+[116] Die Prokura berechtigt den Prokuristen zu allen ___ und ___ ... ergänzt: gerichtlichen und außergerichtlichen → Prokura
+[117] Wer ist für die Abfuhr der Sozialversicherungsbeiträge und d... ergänzt: Der Werkvertragsnehmer selbst → Aktiengesellschaft
+[118] Eine Filialprokura beschränkt die Vertretungsmacht auf eine ... ergänzt: true → Prokura
+[119] Welcher Vertragstyp liegt vor, wenn ein Grafiker beauftragt ... ergänzt: Werkvertrag → Offene Gesellschaft
+[121] Die Kennzahl, die das Verhältnis von Ertrag zu Aufwand misst... ergänzt: Wirtschaftlichkeit → Aktiengesellschaft
+[133] Die Kosten für die Miete eines Lagers sind typischerweise va... ergänzt: false → Aktiengesellschaft
+EXTERNAL geändert=67, ungelöst=50
+--- EXTERNAL ---
+[0] Wer gilt nicht als Unternehmer im Sinne des UGB?... ergänzt: c) Angestellter in einem Unternehmen → Unternehmer
+[1] Was ist der Firmenzusatz?... ergänzt: c) Angabe der Rechtsform → Rechtsformzusatz
+[4] Wer haftet in der OG für Schulden?... ergänzt: c) Jeder Gesellschafter persönlich, unbeschränkt, solidarisch → Offene Gesellschaft
+[6] Welche Aussage zum Firmenbuch ist richtig?... ergänzt: b) Eine Firma darf erst geführt werden, wenn sie im Firmenbuch steht → Firmenbuch
+[9] Was trifft auf die Genossenschaft zu?... ergänzt: b) Sie verfolgt die Förderung der Mitglieder → Genossenschaft
+[10] Wer kann Unternehmer im Sinn des UGB sein?... ergänzt: a) Nur juristische Personen → Unternehmer
+[11] Welche Aussage zum Firmenkern ist richtig?... ergänzt: a) Er ist immer der Vorname des Unternehmers → Aktiengesellschaft
+[12] Welche Rechtsform erfordert keine Eintragung ins Firmenbuch?... ergänzt: c) GesbR → Firmenbuch
+[14] Welche Aussage zu Kapitalgesellschaften ist richtig?... ergänzt: b) Es ist immer ein Mindestkapital vorgeschrieben → Aktiengesellschaft
+[15] Ein **Unternehmer** im Sinne des Unternehmensgesetzbuches (U... ergänzt: ein Unternehmen → Unternehmer
+[16] Dazu gehören sowohl ____ Personen als auch ____ Personen?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[17] - ____ Personen → lebende, physische Personen, z. B. ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[18] - ____ Personen → Organisationen, die auf Basis eines ____ g... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[19] Weitere Unternehmer sind z. B. ____, ____ Tätigkeiten (z. B.... ergänzt: Natürliche oder juristische Person, die ein Unternehmen betreibt → Unternehmer
+[20] Die **Firma** ist der ins ____ eingetragene Name des Unterne... ergänzt: Firmenkern → Unternehmer
+[21] - betreibt er ____,?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[22] - gibt er seine ____ ab und?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[23] - kann er ____ bzw. ____ werden?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[24] Der Firmenname besteht aus ____ und ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[26] - Der **Firmenzusatz** gibt die ____ an, z. B. ____?... ergänzt: Firmenzusatz → Rechtsformzusatz
+[28] - ____kraft → neue Firmen müssen sich von anderen am selben ... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[29] - ____verbot → der Name darf keine falschen Informationen en... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[30] - ____firma (z. B. Name des Unternehmers)?... ergänzt: Firmenkern → Unternehmer
+[31] - ____firma (Hinweis auf Tätigkeit)?... ergänzt: Name, unter dem ein Unternehmer seine Geschäfte betreibt → Firma
+[32] - ____firma (erfundene Namen, Marken)?... ergänzt: Name, unter dem ein Unternehmer seine Geschäfte betreibt → Firma
+[33] - ____ Firma (Mischung)?... ergänzt: Name, unter dem ein Unternehmer seine Geschäfte betreibt → Firma
+[34] Beim Erwerb eines Unternehmens kann der bisherige Name ____ ... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[35] Eine Firma darf erst geführt werden, wenn sie im ____ steht?... ergänzt: Name, unter dem ein Unternehmer seine Geschäfte betreibt → Firma
+[36] Das Firmenbuch ist ein ____es EDV-Verzeichnis, in dem ____ ü... ersetzt: siehe Lerntext (korrekte Bezeichnung) → Firmenbuch
+[37] Die Einträge werden auf ____ (Elektronische Verlautbarungs- ... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[38] - Gesellschafter: alleine oder mit ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[39] - Finanzierung: Gibt es ein ____? Kann das Kapital ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[40] - Haftung: Unterscheidung zwischen ____ Haftung (mit Privatv... ergänzt: Unterscheidungskraft → Aktiengesellschaft
+[41] - Kontrolle: Leitungsbefugnis und ____recht?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[42] - Erfolgsverteilung: richtet sich nach ____, ____ und ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[43] - Buchführung: doppelte Buchführung bei ____, ____ und ab be... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[44] - Ertragssteuerliche Belastung: abhängig von ____?... ergänzt: Aktiengesellschaft, Kapitalgesellschaft mit in Aktien zerlegtem Kapital → Aktiengesellschaft
+[45] - Gesellschafter: ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[46] - Gründung: erfolgt durch ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[47] - Firmenbuch: je nach ____ verpflichtend?... ersetzt: siehe Lerntext (korrekte Bezeichnung) → Firmenbuch
+[48] - Finanzierung: Kapital wird vom ____ aufgebracht, kein ____... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[49] - Haftung: Unternehmer ist ____hafter, haftet mit ____?... ergänzt: Natürliche oder juristische Person, die ein Unternehmen betreibt → Unternehmer
+[50] - Kontrolle: entscheidet ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[51] - Erfolgsverteilung: trägt Gewinn und Verlust ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[52] - Ertragsteuerliche Belastung: Gewinn unterliegt der ____?... ergänzt: Aktiengesellschaft, Kapitalgesellschaft mit in Aktien zerlegtem Kapital → Aktiengesellschaft
+[53] **Vorteile:** ____, ____, ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[54] **Nachteile:** ____, ____, ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[55] - Gesellschafter: mindestens ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[56] - Gründung: durch ____, keine Form vorgeschrieben?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[57] - Firmenbuch: ____?... ersetzt: siehe Lerntext (korrekte Bezeichnung) → Firmenbuch
+[58] - Haftung: ____, ____ und ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[59] - Kontrolle: alle Gesellschafter sind ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[60] - Erfolgsverteilung: im ____, sonst im ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[61] - Komplementär = ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[62] - Kommanditist = ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[63] - Haftung: Komplementär ____, Kommanditist bis ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[64] - Kontrolle: Komplementär leitet, Kommanditist hat nur ____r... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[65] - Beteiligung an einem ____ Unternehmen?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[66] - Gründung durch ____vertrag?... ergänzt: Aktiengesellschaft, Kapitalgesellschaft mit in Aktien zerlegtem Kapital → Aktiengesellschaft
+[67] - Haftung: nur bis zur ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[68] - Erfolgsverteilung: am ____ beteiligt?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[69] - Haftung: ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[70] - Kontrolle: alle zur ____ befugt, außergewöhnliche Geschäft... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[71] - Gründung: durch ____vertrag (traditionell oder elektronisc... ergänzt: Aktiengesellschaft, Kapitalgesellschaft mit in Aktien zerlegtem Kapital → Aktiengesellschaft
+[72] - Mindeststammkapital: ____, davon mindestens ____ bar einzu... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[73] - Haftung: Gesellschaft mit ____, Gesellschafter nur mit ___... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[74] - Erfolgsverteilung: durch ____ beschlossen?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[75] - Steuer: Gewinne mit ____ %, Ausschüttung mit ____ %?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[76] - Mindestgrundkapital: ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[77] - Finanzierung durch Ausgabe von ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[78] - Haftung: nur mit ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[79] - Erfolgsverteilung: beschlossen in ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[80] - Steuer: Gewinne mit ____ %, Dividenden mit ____ %?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[81] - Finanzierung: kein ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[82] - Kontrolle: Organe sind ____, ____ und ____?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[83] - Erfolgsverteilung: als ____ an Mitglieder?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[84] - Steuer: Gewinn mit ____ %, Ausschüttungen mit ____ %?... ungelöst: siehe Lerntext (korrekte Bezeichnung)
+[87] Welche Unterschiede bestehen zwischen Vollhafter und Teilhaf... ergänzt: Komplementär haftet unbeschränkt und führt; Kommanditist haftet bis zur Einlage und führt nicht. → Kommanditgesellschaft
+[88] Was versteht man unter einer Genossenschaft?... ergänzt: Juristische Person zur Förderung der Mitglieder; Organe: Generalversammlung, Vorstand, Aufsichtsrat. → Genossenschaft
+[95] Wie hoch ist die Kapitalertragsteuer (27,5 %) auf den ausges... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[97] Was ist eine Mischform GmbH & Co KG?... ergänzt: KG, deren Komplementär eine GmbH ist; operative Leitung durch GmbH, Haftung beschränkt. → Kommanditgesellschaft
+[98] Gilt er nach UGB als Unternehmer?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Unternehmer
+[101] Welche Vor- und Nachteile hat die OG?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Offene Gesellschaft
+[102] Wie hoch ist die Mindesteinlage für Gesellschafter?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[104] Wer leitet die GmbH?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Gesellschaft mit beschränkter Haftung
+[105] Wie hoch ist die Körperschaftsteuer (23 %)?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Körperschaftsteuer
+[106] Wie hoch ist die gesetzliche Rücklage (5 % des Jahresgewinns... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[107] Wenn 50 % ausgeschüttet werden, wie hoch ist die Kapitalertr... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[108] Was versteht man unter der Fortführung einer Firma?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firma
+[109] Welche Organe gibt es bei einer Genossenschaft und welche Au... ergänzt: Juristische Person zur Förderung der Mitglieder; Organe: Generalversammlung, Vorstand, Aufsichtsrat. → Genossenschaft
+[118] Wie hoch ist die gesetzliche Rücklage (5 %)?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[119] Wie viel Gewinn kann maximal als Dividende ausgeschüttet wer... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Kommanditgesellschaft
+[121] Was ist ein Unternehmer?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Unternehmer
+[128] Wer ist ein Unternehmer?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Unternehmer
+[130] Was ist eine Firma?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firma
+[131] Was ist das Firmenbuch?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firmenbuch
+[133] Was ist die Prokura?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Prokura
+[137] Wann erlischt die Prokura?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Prokura
+[138] Was ist die Handlungsvollmacht?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Handlungsvollmacht
+[139] Wie unterschreibt man bei einer Handlungsvollmacht?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Handlungsvollmacht
+[140] Wann erlischt die Handlungsvollmacht?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Handlungsvollmacht
+[141] Wann liegt ein echter Arbeitsauftrag vor?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[144] Wann liegt ein freier Dienstvertrag vor?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[146] Wann liegt ein Werkvertrag vor?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[147] Was kann der Werkvertragsnehmer?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[148] Möchtest du mit dem nächsten Abschnitt fortfahren (z. B. "Au... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Marketing-Mix
+[149] Was ist Marketing?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Marketing-Mix
+[150] Ich fahre mit der Extraktion fort. Möchtest du den nächsten ... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[152] 3. Was ist eine Firma?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firma
+[154] 6. Welche Arten von Genossenschaften gibt es?... ergänzt: Juristische Person zur Förderung der Mitglieder; Organe: Generalversammlung, Vorstand, Aufsichtsrat. → Genossenschaft
+[157] 14. Welche Bestandteile hat das Firmenbuch?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firmenbuch
+[164] 19. Firmenbuch - was ist das?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firmenbuch
+[165] 20. Ertragssteuerliche Belastung - wer zahlt's?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Aktiengesellschaft
+[169] 26. Mischform: GmbH & Co KG - was ist das?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Kommanditgesellschaft
+[171] 28. Genossenschaften - was sind sie?... ergänzt: Juristische Person zur Förderung der Mitglieder; Organe: Generalversammlung, Vorstand, Aufsichtsrat. → Genossenschaft
+[172] 29. Eintragung ins Firmenbuch - wann ist sie verpflichtend, ... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Firmenbuch
+[173] 30. Was ist ein Firmenkern und was der Firmenzusatz?... ergänzt: Siehe Lehrtext: Begriff definieren und 1–2 Merkmale nennen. → Rechtsformzusatz
