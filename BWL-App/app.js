@@ -21,23 +21,34 @@ const UI = {
 const CACHE_BUSTER = () => `t=${Date.now()}`;
 
 // ---- Service-Worker/Cache-Hard-Refresh ----
+// In app.js hinzufügen oder ersetzen
 async function hardUpdate() {
   try {
+    // Service Worker Cache löschen
     if (window.caches) {
       const names = await caches.keys();
-      await Promise.all(names.map((n) => caches.delete(n)));
+      await Promise.all(names.map(n => caches.delete(n)));
     }
+
+    // Service Worker selbst deregistrieren
     if (navigator.serviceWorker?.getRegistrations) {
       const regs = await navigator.serviceWorker.getRegistrations();
-      await Promise.all(regs.map((r) => r.unregister()));
+      await Promise.all(regs.map(r => r.unregister()));
     }
+
+    // LocalStorage / SessionStorage leeren
     localStorage.clear();
     sessionStorage.clear();
-  } finally {
-    location.replace(location.pathname + `?refresh=${Date.now()}`);
+  } catch (e) {
+    console.warn("Hard update Fehler:", e);
   }
+
+  // Seite hart neu laden
+  location.replace(location.pathname + "?refresh=" + Date.now());
 }
-if (UI.btnRefresh) UI.btnRefresh.onclick = hardUpdate;
+
+// Button anbinden
+document.getElementById("btn-refresh").onclick = hardUpdate;
 
 // ---- Dateiliste ermitteln ----
 async function listJsonFiles() {
