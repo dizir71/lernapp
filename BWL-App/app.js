@@ -79,8 +79,8 @@ async function listJsonFiles() {
 
   // 3) Fallback bekannte Dateien
   return [
-    `${APP_DIR}/questions_all_completed_marked_final_ctx2_cleaned.json`,
-    `${APP_DIR}/external_teacher_questions_marked_final_ctx2_cleaned.json`,
+    `${APP_DIR}/questions_all_completed*.json`,
+    `${APP_DIR}/external_teacher_*.json`,
   ];
 }
 
