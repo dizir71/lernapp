@@ -3,21 +3,37 @@ import os
 import subprocess
 import importlib.util
 
+# --- Configuration ---
+VENV_DIR = "venv"
+
+# --- Core Functions ---
+
 def check_and_install_dependencies():
-    """Checks for the python-docx library and installs it if missing."""
+    """
+    Checks for the python-docx library inside the virtual environment
+    and installs it if missing.
+    """
     package_name = "python-docx"
     module_name = "docx"
     
+    print(f"Checking for '{package_name}'...")
     spec = importlib.util.find_spec(module_name)
+    
     if spec is None:
         print(f"'{package_name}' is not installed. Attempting to install...")
         try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
+            # Ensure we are using the pip from the venv
+            pip_executable = os.path.join(VENV_DIR, 'bin', 'pip') if sys.platform != "win32" else os.path.join(VENV_DIR, 'Scripts', 'pip.exe')
+            subprocess.check_call([pip_executable, "install", package_name])
             print(f"'{package_name}' installed successfully.")
-        except subprocess.CalledProcessError as e:
+        except (subprocess.CalledProcessError, FileNotFoundError) as e:
             print(f"Error: Failed to install '{package_name}'.")
-            print(f"Please try to install it manually by running: pip install {package_name}")
+            print(f"Please try to activate the venv and install manually: pip install {package_name}")
+            print(f"Details: {e}")
             sys.exit(1)
+    else:
+        print(f"'{package_name}' is already installed.")
+
 
 def convert_docx_to_text(docx_path):
     """Converts a single DOCX file to a plain text file in the same directory."""
@@ -27,7 +43,6 @@ def convert_docx_to_text(docx_path):
         doc = docx.Document(docx_path)
         full_text = [para.text for para in doc.paragraphs]
         
-        # Save the .txt file in the same directory as the .docx file
         base_name_without_ext = os.path.splitext(docx_path)[0]
         output_filepath = f"{base_name_without_ext}.txt"
         
@@ -37,7 +52,6 @@ def convert_docx_to_text(docx_path):
         print(f"Successfully converted '{docx_path}'")
 
     except Exception as e:
-        # Special handling for docx files that might be corrupted or in the wrong format
         if "File is not a zip file" in str(e):
              print(f"Skipping '{docx_path}': It may be a .doc file saved with a .docx extension, which is not supported.")
         else:
@@ -46,13 +60,10 @@ def convert_docx_to_text(docx_path):
 def process_all_directories():
     """Walks through all subdirectories and converts .docx files, skipping .doc files."""
     print("\nStarting search for Word documents...")
-    # Walk through the current directory '.'
     for root, dirs, files in os.walk('.'):
-        # To be safe, let's not search in any directory that might contain junk
-        if "junk" in dirs:
-            dirs.remove("junk")
-        if ".git" in dirs:
-            dirs.remove(".git")
+        # Exclude specific directories from the search
+        dirs_to_skip = {VENV_DIR, ".git", "junk"}
+        dirs[:] = [d for d in dirs if d not in dirs_to_skip]
 
         for filename in files:
             file_path = os.path.join(root, filename)
@@ -61,7 +72,36 @@ def process_all_directories():
             elif filename.lower().endswith(".doc"):
                 print(f"Skipping unsupported .doc file: '{file_path}'")
 
+# --- Main Execution Block ---
+
 if __name__ == "__main__":
-    check_and_install_dependencies()
-    process_all_directories()
-    print("\nConversion process finished.")
+    if sys.platform == "win32":
+        venv_python = os.path.join(VENV_DIR, 'Scripts', 'python.exe')
+    else:
+        venv_python = os.path.join(VENV_DIR, 'bin', 'python')
+
+    # Check if we are running outside the venv and need to relaunch
+    if os.path.abspath(sys.executable) != os.path.abspath(venv_python):
+        if not os.path.isdir(VENV_DIR):
+            print(f"Creating virtual environment at '{VENV_DIR}'...")
+            try:
+                subprocess.check_call([sys.executable, "-m", "venv", VENV_DIR])
+                print("Virtual environment created successfully.")
+            except subprocess.CalledProcessError as e:
+                print(f"Error: Failed to create virtual environment. {e}")
+                sys.exit(1)
+
+        print("Relaunching script inside the virtual environment...")
+        try:
+            subprocess.check_call([venv_python, __file__])
+            sys.exit(0)
+        except (subprocess.CalledProcessError, FileNotFoundError) as e:
+            print(f"Error: Failed to relaunch script in venv. {e}")
+            sys.exit(1)
+            
+    else:
+        # --- We are in the VIRTUAL environment ---
+        print("\n--- Running inside virtual environment ---")
+        check_and_install_dependencies()
+        process_all_directories()
+        print("\nConversion process finished.")
