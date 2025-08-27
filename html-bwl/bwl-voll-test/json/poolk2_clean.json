@@ -1,0 +1,176 @@
+[
+  {
+    "id": "vo_0106",
+    "question_text": "Welche Vollmacht ist die umfangreichste im unternehmerischen Kontext?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Handlungsvollmacht",
+      "Einzelvollmacht",
+      "Prokura",
+      "Artvollmacht"
+    ],
+    "correct_answer": "Prokura",
+    "explanation": "Die Prokura ist die umfangreichste, gesetzlich definierte Vollmacht, die ein Unternehmer erteilen kann.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "vo_0107",
+    "question_text": "Ein Prokurist unterschreibt mit dem Zusatz 'i.V.' (in Vertretung).",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Ein Prokurist unterschreibt mit 'ppa.' (per procura autoritate). Der Zusatz 'i.V.' wird bei Handlungsvollmachten verwendet.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "be_0108",
+    "question_text": "Was ist das Hauptmerkmal eines echten Arbeitsvertrages?",
+    "type": "open_text",
+    "correct_answer": "Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber.",
+    "explanation": "Merkmale sind Weisungsgebundenheit, Einbindung in die betriebliche Organisation und das Fehlen eines eigenen unternehmerischen Risikos.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "be_0109",
+    "question_text": "Ordnen Sie die Merkmale dem korrekten Vertragstyp zu.",
+    "type": "matching",
+    "options_left": [
+      "Schuldet einen bestimmten Erfolg/Werk",
+      "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+      "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden"
+    ],
+    "options_right": [
+      "Echter Arbeitsvertrag",
+      "Werkvertrag",
+      "Freier Dienstvertrag"
+    ],
+    "correct_matches": {
+      "Schuldet einen bestimmten Erfolg/Werk": "Werkvertrag",
+      "Schuldet persönliche Arbeitskraft, ist weisungsgebunden": "Echter Arbeitsvertrag",
+      "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden": "Freier Dienstvertrag"
+    },
+    "explanation": "Der Werkvertrag zielt auf ein Ergebnis, der Arbeitsvertrag auf die Arbeitsleistung in Abhängigkeit und der freie Dienstvertrag auf die Dienstleistung ohne Abhängigkeit.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "be_0110",
+    "question_text": "Wer meldet einen Arbeitnehmer im echten Arbeitsverhältnis zur Sozialversicherung an?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Der Arbeitnehmer selbst",
+      "Das Finanzamt",
+      "Der Arbeitgeber",
+      "Die Gewerkschaft"
+    ],
+    "correct_answer": "Der Arbeitgeber",
+    "explanation": "Der Arbeitgeber ist gesetzlich verpflichtet, den Arbeitnehmer bei der zuständigen Gebietskrankenkasse (ÖGK) anzumelden und die Beiträge abzuführen.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "vo_0111",
+    "question_text": "Die ___ kann nur von einem im Firmenbuch eingetragenen Unternehmer erteilt werden?",
+    "type": "gap_fill",
+    "correct_answer": "Prokura",
+    "explanation": "Die Erteilung der Prokura ist an die Kaufmannseigenschaft bzw. die Eintragung im Firmenbuch gebunden.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "be_0112",
+    "question_text": "Ein Werkvertragsnehmer trägt in der Regel das wirtschaftliche Risiko selbst.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Im Gegensatz zum Arbeitnehmer arbeitet der Werkvertragsnehmer auf eigene Rechnung und Gefahr.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "vo_0113",
+    "question_text": "Welche Art der Handlungsvollmacht ermächtigt zu allen Geschäften, die ein bestimmter Geschäftsbereich mit sich bringt?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Generalvollmacht",
+      "Einzelvollmacht",
+      "Artvollmacht",
+      "Spezialvollmacht"
+    ],
+    "correct_answer": "Artvollmacht",
+    "explanation": "Die Artvollmacht bezieht sich auf eine bestimmte Art von Geschäften (z.B. Kassierer, Einkäufer).",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "be_0114",
+    "question_text": "Ein freier Dienstnehmer hat Anspruch auf bezahlten Urlaub und Sonderzahlungen (Urlaubs-/Weihnachtsgeld).",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Diese Ansprüche sind typische Merkmale eines echten Arbeitsverhältnisses. Freie Dienstnehmer haben darauf keinen gesetzlichen Anspruch.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "vo_0115",
+    "question_text": "Wann erlischt eine Prokura?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Bei Widerruf durch den Unternehmer",
+      "Durch den Tod des Prokuristen",
+      "Bei Konkurs des Unternehmens",
+      "Durch den Verkauf einer einzelnen Filiale"
+    ],
+    "correct_answer": [
+      "Bei Widerruf durch den Unternehmer",
+      "Durch den Tod des Prokuristen",
+      "Bei Konkurs des Unternehmens"
+    ],
+    "explanation": "Die Prokura erlischt durch Widerruf, Tod des Prokuristen, Insolvenz des Unternehmens oder Kündigung des zugrundeliegenden Dienstverhältnisses.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "be_0116",
+    "question_text": "Was ist ein wesentliches Merkmal eines freien Dienstvertrags?",
+    "type": "open_text",
+    "correct_answer": "Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen.",
+    "explanation": "Fehlende persönliche Abhängigkeit, keine fixen Arbeitszeiten oder Arbeitsorte sind kennzeichnend für einen freien Dienstvertrag.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "vo_0117",
+    "question_text": "Die Prokura berechtigt den Prokuristen zu allen ___ und ___ Geschäften und Rechtshandlungen, die der Betrieb irgendeines Unternehmens mit sich bringt?",
+    "type": "gap_fill",
+    "correct_answer": "gerichtlichen und außergerichtlichen",
+    "explanation": "Der Umfang der Prokura ist gesetzlich festgelegt und sehr weitreichend.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "be_0118",
+    "question_text": "Wer ist für die Abfuhr der Sozialversicherungsbeiträge und der Lohnsteuer bei einem Werkvertrag zuständig?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Der Auftraggeber",
+      "Der Werkvertragsnehmer selbst",
+      "Die ÖGK",
+      "Das Finanzamt"
+    ],
+    "correct_answer": "Der Werkvertragsnehmer selbst",
+    "explanation": "Als Selbstständiger ist der Werkvertragsnehmer für seine Versteuerung (Einkommensteuer) und Sozialversicherung (SVS) selbst verantwortlich.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "vo_0119",
+    "question_text": "Eine Filialprokura beschränkt die Vertretungsmacht auf eine bestimmte Niederlassung.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Die Filialprokura ist eine im Firmenbuch eingetragene Beschränkung der Prokura auf den Betrieb einer einzelnen Filiale.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "be_0120",
+    "question_text": "Welcher Vertragstyp liegt vor, wenn ein Grafiker beauftragt wird, ein Logo für ein Unternehmen zu erstellen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Echter Arbeitsvertrag",
+      "Freier Dienstvertrag",
+      "Werkvertrag",
+      "Leihvertrag"
+    ],
+    "correct_answer": "Werkvertrag",
+    "explanation": "Hier wird ein bestimmter Erfolg, nämlich die Erstellung des Logos, geschuldet. Daher handelt es sich um einen Werkvertrag.",
+    "topic": "Beschäftigungsverhältnisse"
+  }
+]

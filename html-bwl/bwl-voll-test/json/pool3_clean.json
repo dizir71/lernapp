@@ -1,0 +1,169 @@
+[
+  {
+    "id": "ma_0091",
+    "question_text": "Was ist das Hauptziel des Marketings?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Nur die Produktion von Gütern",
+      "Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen",
+      "Die Verwaltung der Finanzen",
+      "Die Einhaltung rechtlicher Vorschriften"
+    ],
+    "correct_answer": "Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen",
+    "explanation": "Marketing stellt den Kunden in den Mittelpunkt, um dessen Bedürfnisse zu erfüllen und dadurch den Unternehmenserfolg zu sichern.",
+    "topic": "Marketing Grundlagen"
+  },
+  {
+    "id": "ma_0092",
+    "question_text": "Was versteht man unter Marktsegmentierung?",
+    "type": "open_text",
+    "correct_answer": "Die Aufteilung eines Gesamtmarktes in homogene Teilmärkte (Segmente).",
+    "explanation": "Die Aufteilung erfolgt nach Kriterien wie Demografie, Geografie oder Verhalten, um Zielgruppen genauer ansprechen zu können.",
+    "topic": "Marktforschung"
+  },
+  {
+    "id": "ma_0093",
+    "question_text": "Die 4 Ps des Marketing-Mix umfassen Produkt-, Preis-, Distributions- und ___?",
+    "type": "gap_fill",
+    "correct_answer": "Kommunikationspolitik",
+    "explanation": "Im Englischen: Product, Price, Place, Promotion.",
+    "topic": "Marketinginstrumente"
+  },
+  {
+    "id": "ma_0094",
+    "question_text": "Die Analyse von bereits vorhandenen, unternehmensinternen Verkaufsstatistiken ist ein Beispiel für Primärforschung.",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Das ist ein Beispiel für Sekundärforschung (Desk Research), da auf bereits bestehende Daten zurückgegriffen wird.",
+    "topic": "Marktforschung"
+  },
+  {
+    "id": "ma_0095",
+    "question_text": "Ordnen Sie die Methoden der richtigen Marktforschungsart zu.",
+    "type": "matching",
+    "options_left": [
+      "Befragung von Kunden",
+      "Analyse von Branchenberichten",
+      "Ein Experiment im Supermarkt"
+    ],
+    "options_right": [
+      "Primärforschung",
+      "Sekundärforschung"
+    ],
+    "correct_matches": {
+      "Befragung von Kunden": "Primärforschung",
+      "Analyse von Branchenberichten": "Sekundärforschung",
+      "Ein Experiment im Supermarkt": "Primärforschung"
+    },
+    "explanation": "Primärforschung erhebt neue Daten, Sekundärforschung wertet bestehende Daten aus.",
+    "topic": "Marktforschung"
+  },
+  {
+    "id": "pr_0096",
+    "question_text": "Wofür steht die Abkürzung USP?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Unique Sales Price",
+      "Unique Selling Proposition",
+      "Universal Service Provider",
+      "Under Sale Pressure"
+    ],
+    "correct_answer": "Unique Selling Proposition",
+    "explanation": "USP bezeichnet das einzigartige Verkaufsversprechen oder Alleinstellungsmerkmal eines Produkts.",
+    "topic": "Produktpolitik"
+  },
+  {
+    "id": "pr_0097",
+    "question_text": "Die Entwicklung eines komplett neuen Produkts für das Sortiment nennt man ___?",
+    "type": "gap_fill",
+    "correct_answer": "Produktinnovation",
+    "explanation": "Eine Produktinnovation ist die Einführung eines neuen oder wesentlich verbesserten Produkts.",
+    "topic": "Produktpolitik"
+  },
+  {
+    "id": "pr_0098",
+    "question_text": "Welche Phase des Produktlebenszyklus ist durch den höchsten Umsatz gekennzeichnet?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Einführungsphase",
+      "Wachstumsphase",
+      "Reifephase",
+      "Rückgangsphase"
+    ],
+    "correct_answer": "Reifephase",
+    "explanation": "In der Reifephase erreicht der Umsatz seinen Höhepunkt, bevor er in der Sättigungsphase zu sinken beginnt.",
+    "topic": "Produktpolitik"
+  },
+  {
+    "id": "pr_0099",
+    "question_text": "Eine versteckte Preiserhöhung liegt vor, wenn bei gleichem Preis die Inhaltsmenge reduziert wird.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Dieses Phänomen wird auch als 'Shrinkflation' bezeichnet.",
+    "topic": "Preispolitik"
+  },
+  {
+    "id": "ko_0100",
+    "question_text": "Was ist das Hauptziel der Kommunikationspolitik?",
+    "type": "open_text",
+    "correct_answer": "Die gezielte Beeinflussung von Wissen, Einstellungen und Verhalten der Zielgruppen zur Erreichung der Marketingziele.",
+    "explanation": "Instrumente sind z.B. Werbung, PR, Verkaufsförderung und Sponsoring.",
+    "topic": "Kommunikationspolitik"
+  },
+  {
+    "id": "ma_0101",
+    "question_text": "Welches der folgenden Instrumente gehört NICHT zur Kommunikationspolitik?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Werbung",
+      "Public Relations",
+      "Franchising",
+      "Sponsoring"
+    ],
+    "correct_answer": "Franchising",
+    "explanation": "Franchising ist eine Methode der Distributionspolitik, also des Vertriebs.",
+    "topic": "Marketinginstrumente"
+  },
+  {
+    "id": "ma_0102",
+    "question_text": "Die Materialwirtschaft befasst sich in einem Produktionsbetrieb mit der Beschaffung von ___?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Rohstoffen",
+      "Hilfsstoffen",
+      "Betriebsstoffen",
+      "Fertigen Handelswaren"
+    ],
+    "correct_answer": [
+      "Rohstoffen",
+      "Hilfsstoffen",
+      "Betriebsstoffen"
+    ],
+    "explanation": "Die Materialwirtschaft sichert die Versorgung der Produktion mit allen nötigen Materialien. Handelswaren fallen in die Warenwirtschaft eines Handelsbetriebs.",
+    "topic": "Materialwirtschaft"
+  },
+  {
+    "id": "ma_0103",
+    "question_text": "Ein Zielkonflikt in der Warenwirtschaft besteht zwischen niedrigen ___ und hoher Lieferbereitschaft?",
+    "type": "gap_fill",
+    "correct_answer": "Lagerkosten",
+    "explanation": "Hohe Lagerbestände sichern die Lieferbereitschaft, verursachen aber hohe Kosten. Niedrige Bestände senken die Kosten, erhöhen aber das Risiko von Lieferengpässen.",
+    "topic": "Materialwirtschaft"
+  },
+  {
+    "id": "ko_0104",
+    "question_text": "Die Formel der AIDAS-Werbewirkung lautet: Attention, Interest, ___, Action, Satisfaction?",
+    "type": "gap_fill",
+    "correct_answer": "Desire",
+    "explanation": "Nachdem Interesse geweckt wurde, soll der Wunsch (Desire) nach dem Produkt entstehen, der zur Handlung (Action) führt.",
+    "topic": "Kommunikationspolitik"
+  },
+  {
+    "id": "ma_0105",
+    "question_text": "Ein Unternehmen, das sich in der Öffentlichkeit als besonders umweltfreundlich darstellt, obwohl es das kaum ist, betreibt ___?",
+    "type": "gap_fill",
+    "correct_answer": "Greenwashing",
+    "explanation": "Greenwashing ist der Versuch, durch Marketing- und PR-Maßnahmen ein 'grünes' Image zu erlangen, ohne dass es dafür eine ausreichende Grundlage gibt.",
+    "topic": "Marketingethik"
+  }
+]

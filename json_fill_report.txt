@@ -1,0 +1,14 @@
+{
+  "internal": {
+    "label": "INTERNAL",
+    "cleaned": 46,
+    "filled": 1,
+    "out": "/mnt/data/questions_all_completed_marked_filled.json"
+  },
+  "external": {
+    "label": "EXTERNAL",
+    "cleaned": 308,
+    "filled": 1,
+    "out": "/mnt/data/external_teacher_questions_marked_filled.json"
+  }
+}

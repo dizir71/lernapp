@@ -1,0 +1,344 @@
+[
+  {
+    "id": "rf_16",
+    "question_text": "Die Abkürzung 'ppa.' unter einer Unterschrift steht für ___.",
+    "type": "gap_fill",
+    "correct_answer": "per procura",
+    "explanation": "ppa. (per procura autoritate) ist die Kennzeichnung für die Unterschrift eines Prokuristen.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "rf_17",
+    "question_text": "Was ist der Hauptzweck einer Genossenschaft?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Maximierung des Gewinns für Aktionäre",
+      "Förderung der Mitglieder",
+      "Geheimhaltung der Gesellschafter",
+      "Minimierung der Haftung"
+    ],
+    "correct_answer": "Förderung der Mitglieder",
+    "explanation": "Eine Genossenschaft (Gen) hat primär das Ziel, den Erwerb oder die Wirtschaft ihrer Mitglieder zu fördern.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_18",
+    "question_text": "Welches Dokument ist ein Wertpapier und berechtigt zur Abholung der Ware im Seehafen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "CMR-Frachtbrief",
+      "Ursprungszeugnis",
+      "Handelsrechnung",
+      "Konnossement (Bill of Lading)"
+    ],
+    "correct_answer": "Konnossement (Bill of Lading)",
+    "explanation": "Das Konnossement ist ein Traditionspapier, das den Anspruch auf die Ware im Zielhafen verbrieft.",
+    "topic": "Außenhandel"
+  },
+  {
+    "id": "rf_19",
+    "question_text": "Die SWOT-Analyse ist ein Instrument der ___.",
+    "type": "gap_fill",
+    "correct_answer": "Marktanalyse",
+    "explanation": "Die SWOT-Analyse (Strengths, Weaknesses, Opportunities, Threats) ist ein strategisches Planungsinstrument, das oft in der Marktanalyse verwendet wird.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "rf_20",
+    "question_text": "Was beschreibt 'Greenwashing'?",
+    "type": "open_text",
+    "correct_answer": "Ein Unternehmen gibt sich umweltfreundlicher, als es tatsächlich ist.",
+    "explanation": "Greenwashing ist eine PR-Methode, bei der Unternehmen durch gezielte Desinformation ein umweltfreundliches und verantwortungsbewusstes Image vortäuschen.",
+    "topic": "Marketingethik"
+  },
+  {
+    "id": "rf_21",
+    "question_text": "Ein Kommanditist haftet in der Regel...",
+    "type": "single_choice",
+    "possible_answers": [
+      "unbeschränkt.",
+      "nur mit seiner Einlage.",
+      "gar nicht.",
+      "solidarisch mit allen anderen."
+    ],
+    "correct_answer": "nur mit seiner Einlage.",
+    "explanation": "Der Kommanditist (Teilhafter) einer KG haftet nur bis zur Höhe seiner im Firmenbuch eingetragenen Haftsumme (Einlage).",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_22",
+    "question_text": "Berechne die Eigenkapitalrentabilität: Gewinn = 50.000 €, Eigenkapital = 500.000 €.",
+    "type": "calculation",
+    "correct_answer": "10",
+    "explanation": "Eigenkapitalrentabilität = (Gewinn / Eigenkapital) * 100 = (50.000 / 500.000) * 100 = 10%.",
+    "topic": "Rechenbeispiele"
+  },
+  {
+    "id": "rf_23",
+    "question_text": "Welche Incoterm-Klausel bedeutet, dass der Verkäufer die Ware am benannten Bestimmungsort entladebereit zur Verfügung stellt?",
+    "type": "single_choice",
+    "possible_answers": [
+      "EXW",
+      "FOB",
+      "CIF",
+      "DPU"
+    ],
+    "correct_answer": "DPU",
+    "explanation": "DPU (Delivered at Place Unloaded) bedeutet, dass der Verkäufer das Risiko und die Kosten bis zum Entladen am Bestimmungsort trägt.",
+    "topic": "Außenhandel"
+  },
+  {
+    "id": "rf_24",
+    "question_text": "Zu welcher Phase des Produktlebenszyklus passt ein Relaunch am besten?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Einführungsphase",
+      "Wachstumsphase",
+      "Reife- oder Sättigungsphase",
+      "Rückgangsphase"
+    ],
+    "correct_answer": "Reife- oder Sättigungsphase",
+    "explanation": "Ein Relaunch (Produktüberarbeitung) wird meist in der Reife- oder Sättigungsphase durchgeführt, um den Lebenszyklus zu verlängern.",
+    "topic": "Produktpolitik"
+  },
+  {
+    "id": "rf_25",
+    "question_text": "Eine Arbeitsgemeinschaft von zwei Bauunternehmen für ein großes Projekt ist typischerweise eine ___.",
+    "type": "gap_fill",
+    "correct_answer": "GesbR",
+    "explanation": "Eine Gesellschaft bürgerlichen Rechts (GesbR) wird oft für zeitlich begrenzte Projekte oder Arbeitsgemeinschaften (ARGE) gegründet.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_26",
+    "question_text": "Welche Art von Firma ist 'Huber & Söhne OG'?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Sachfirma",
+      "Personenfirma",
+      "Fantasiefirma",
+      "Gemischte Firma"
+    ],
+    "correct_answer": "Personenfirma",
+    "explanation": "Eine Personenfirma enthält den Namen eines oder mehrerer Gesellschafter.",
+    "topic": "Unternehmensgrundlagen"
+  },
+  {
+    "id": "rf_27",
+    "question_text": "Ein stiller Gesellschafter scheint nach außen nicht auf und wird nicht im ___ eingetragen.",
+    "type": "gap_fill",
+    "correct_answer": "Firmenbuch",
+    "explanation": "Die stille Gesellschaft ist eine reine Innengesellschaft, die Beteiligung ist nach außen nicht ersichtlich.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_28",
+    "question_text": "Welche der folgenden Tätigkeiten ist eine typische Aufgabe der Distributionspolitik?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Eine Werbekampagne gestalten",
+      "Einen neuen Produktpreis festlegen",
+      "Einen Online-Shop einrichten",
+      "Eine Rabattaktion planen"
+    ],
+    "correct_answer": "Einen Online-Shop einrichten",
+    "explanation": "Die Distributionspolitik (Place) befasst sich mit den Wegen, wie das Produkt zum Kunden gelangt, z.B. über Filialen, Händler oder einen Online-Shop.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "rf_29",
+    "question_text": "Was ist der Hauptvorteil einer dezentralen Beschaffung?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Bessere Mengenrabatte",
+      "Schnellere Reaktion auf spezifische Bedarfe",
+      "Geringerer Verwaltungsaufwand",
+      "Bessere Übersicht über alle Einkäufe"
+    ],
+    "correct_answer": "Schnellere Reaktion auf spezifische Bedarfe",
+    "explanation": "Bei der dezentralen Beschaffung können Abteilungen schneller und flexibler auf ihren eigenen, spezifischen Bedarf reagieren.",
+    "topic": "Materialwirtschaft"
+  },
+  {
+    "id": "rf_30",
+    "question_text": "Ordnen Sie die Begriffe dem richtigen Vertragstyp zu.",
+    "type": "matching",
+    "options_left": [
+      "Persönliche Abhängigkeit",
+      "Herstellung eines Werks",
+      "Arbeitskraft zur Verfügung stellen ohne Weisungsbindung"
+    ],
+    "options_right": [
+      "Werkvertrag",
+      "Freier Dienstvertrag",
+      "Echter Arbeitsvertrag"
+    ],
+    "correct_matches": {
+      "Persönliche Abhängigkeit": "Echter Arbeitsvertrag",
+      "Herstellung eines Werks": "Werkvertrag",
+      "Arbeitskraft zur Verfügung stellen ohne Weisungsbindung": "Freier Dienstvertrag"
+    },
+    "explanation": "Die persönliche Abhängigkeit ist das Kernmerkmal des echten Arbeitsvertrags, der Werkvertrag zielt auf ein Ergebnis ab und der freie Dienstvertrag stellt Arbeitskraft ohne Weisungsbindung bereit.",
+    "topic": "Beschäftigungsverhältnisse"
+  },
+  {
+    "id": "rf_31",
+    "question_text": "Eine Aktiengesellschaft (AG) benötigt in Österreich ein Mindestgrundkapital von ___.",
+    "type": "gap_fill",
+    "correct_answer": "70.000 €",
+    "explanation": "Das gesetzliche Mindestgrundkapital für eine AG in Österreich beträgt 70.000 Euro.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_32",
+    "question_text": "Welche der folgenden Aussagen zur Prokura ist FALSCH?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Sie muss im Firmenbuch eingetragen werden.",
+      "Sie kann nur von einem im Firmenbuch eingetragenen Unternehmer erteilt werden.",
+      "Sie berechtigt zum Verkauf des gesamten Unternehmens.",
+      "Der Prokurist unterschreibt mit 'ppa.'"
+    ],
+    "correct_answer": "Sie berechtigt zum Verkauf des gesamten Unternehmens.",
+    "explanation": "Die Prokura ist zwar sehr umfangreich, ermächtigt aber nicht zu sogenannten Grundlagengeschäften wie dem Verkauf des Unternehmens.",
+    "topic": "Vollmachten"
+  },
+  {
+    "id": "rf_33",
+    "question_text": "Ein Exporteur liefert Ware, aber der Importeur zahlt nicht. Dieses Risiko nennt man ___.",
+    "type": "gap_fill",
+    "correct_answer": "Zahlungsausfallrisiko",
+    "explanation": "Das Zahlungsausfallrisiko (oder Delkredererisiko) ist das Risiko, dass der Käufer die Rechnung nicht begleicht.",
+    "topic": "Außenhandel"
+  },
+  {
+    "id": "rf_34",
+    "question_text": "Die Erhebung neuer, bisher unbekannter Daten am Markt nennt man Primärforschung.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Primärforschung (Field Research) umfasst Methoden wie Befragung, Beobachtung oder Experiment, um neue Daten zu gewinnen.",
+    "topic": "Marktforschung"
+  },
+  {
+    "id": "rf_35",
+    "question_text": "Berechne die Wirtschaftlichkeit: Ertrag = 150.000 €, Aufwand = 120.000 €.",
+    "type": "calculation",
+    "correct_answer": "1.25",
+    "explanation": "Wirtschaftlichkeit = Ertrag / Aufwand = 150.000 / 120.000 = 1,25. Ein Wert über 1 bedeutet, das Unternehmen arbeitet wirtschaftlich.",
+    "topic": "Rechenbeispiele"
+  },
+  {
+    "id": "rf_36",
+    "question_text": "Was gehört zur Konditionenpolitik?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Gewährung von Rabatten",
+      "Festlegung von Zahlungszielen",
+      "Verpackungsdesign",
+      "Garantiebestimmungen"
+    ],
+    "correct_answer": [
+      "Gewährung von Rabatten",
+      "Festlegung von Zahlungszielen",
+      "Garantiebestimmungen"
+    ],
+    "explanation": "Die Konditionenpolitik regelt alle Bedingungen rund um den Preis, wie Rabatte, Skonti, Liefer- und Zahlungsbedingungen sowie Garantien.",
+    "topic": "Preispolitik"
+  },
+  {
+    "id": "rf_37",
+    "question_text": "Ein Unternehmen nimmt eine völlig neue Produktgruppe in sein Sortiment auf. Diesen Vorgang nennt man ___.",
+    "type": "gap_fill",
+    "correct_answer": "Diversifikation",
+    "explanation": "Bei der Diversifikation erweitert ein Unternehmen sein Angebot um Produkte, die in keinem direkten Zusammenhang zum bisherigen Sortiment stehen.",
+    "topic": "Produktpolitik"
+  },
+  {
+    "id": "rf_38",
+    "question_text": "Die Incoterm-Klausel 'FOB' steht für 'Free On Board' und wird hauptsächlich im See- und Binnenschiffsverkehr verwendet.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "FOB ist eine klassische Klausel für den Schiffsverkehr, bei der die Gefahr auf den Käufer übergeht, sobald die Ware an Bord des Schiffes ist.",
+    "topic": "Außenhandel"
+  },
+  {
+    "id": "rf_39",
+    "question_text": "Welches Organ ist bei einer AG für die Geschäftsführung zuständig?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Die Hauptversammlung",
+      "Der Aufsichtsrat",
+      "Der Vorstand",
+      "Der Geschäftsführer"
+    ],
+    "correct_answer": "Der Vorstand",
+    "explanation": "Die Leitung (Geschäftsführung) einer AG obliegt dem Vorstand. Der Aufsichtsrat bestellt und kontrolliert den Vorstand.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_40",
+    "question_text": "Die AIDAS-Formel beschreibt die Phasen der Werbewirkung. Wofür steht das 'D'?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Decision (Entscheidung)",
+      "Desire (Wunsch)",
+      "Distribution (Verteilung)",
+      "Development (Entwicklung)"
+    ],
+    "correct_answer": "Desire (Wunsch)",
+    "explanation": "AIDAS steht für Attention, Interest, Desire, Action, Satisfaction. Das 'D' steht für Desire, den Kaufwunsch.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "rf_41",
+    "question_text": "Ein Unternehmen kauft Rohstoffe in großen Mengen auf Lager, um von Mengenrabatten zu profitieren. Dies ist ein Beispiel für ___.",
+    "type": "gap_fill",
+    "correct_answer": "Vorratsbeschaffung",
+    "explanation": "Bei der Vorratsbeschaffung werden größere Mengen auf einmal beschafft und gelagert, um günstige Einkaufspreise zu erzielen.",
+    "topic": "Materialwirtschaft"
+  },
+  {
+    "id": "rf_42",
+    "question_text": "Was ist der Hauptnachteil der unbeschränkten Haftung?",
+    "type": "open_text",
+    "correct_answer": "Der Unternehmer haftet mit seinem gesamten Privatvermögen.",
+    "explanation": "Bei der unbeschränkten Haftung ist das private Vermögen des Unternehmers nicht vor dem Zugriff der Gläubiger geschützt.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_43",
+    "question_text": "Welche dieser Aussagen beschreibt solidarische Haftung?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Jeder haftet nur für seinen eigenen Anteil.",
+      "Ein Gläubiger kann sich aussuchen, von welchem Gesellschafter er die gesamte Schuld fordert.",
+      "Die Haftung ist auf das Gesellschaftsvermögen beschränkt.",
+      "Nur der Geschäftsführer haftet."
+    ],
+    "correct_answer": "Ein Gläubiger kann sich aussuchen, von welchem Gesellschafter er die gesamte Schuld fordert.",
+    "explanation": "Solidarische Haftung (Gesamtschuldnerische Haftung) bedeutet, dass jeder Gesellschafter für die gesamten Schulden der Gesellschaft haftet.",
+    "topic": "Rechtsformen"
+  },
+  {
+    "id": "rf_44",
+    "question_text": "Die Eintragung ins Firmenbuch ist für Kapitalgesellschaften verpflichtend.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Alle Kapitalgesellschaften (wie GmbH und AG) müssen zwingend ins Firmenbuch eingetragen werden, um rechtlich zu entstehen.",
+    "topic": "Unternehmensgrundlagen"
+  },
+  {
+    "id": "rf_45",
+    "question_text": "Wie hoch ist die Mindestkörperschaftsteuer für eine GmbH pro Jahr in Österreich?",
+    "type": "single_choice",
+    "possible_answers": [
+      "0 €",
+      "500 €",
+      "1.750 €",
+      "3.500 €"
+    ],
+    "correct_answer": "500 €",
+    "explanation": "Für eine GmbH beträgt die Mindest-KöSt 500 € pro Jahr (für Neugründungen in den ersten Jahren reduziert). 3.500 € gilt für eine AG.",
+    "topic": "Steuern"
+  }
+]

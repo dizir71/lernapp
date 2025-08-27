@@ -1,0 +1,16 @@
+[
+  {
+    "id": "le_01",
+    "question_text": "Welche beiden Hauptfaktoren werden für die betriebliche Leistungserstellung benötigt?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Menschliche Arbeitsleistung",
+      "Betriebsvermögen",
+      "Staatliche Subventionen",
+      "Werbekampagnen"
+    ],
+    "correct_answer": ["Menschliche Arbeitsleistung", "Betriebsvermögen"],
+    "explanation": "Die Leistungserstellung basiert auf dem kombinierten Einsatz von menschlicher Arbeit und dem Betriebsvermögen (Maschinen, Anlagen, etc.).",
+    "topic": "Leistungserstellung"
+  }
+]

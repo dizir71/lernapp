@@ -1,0 +1,364 @@
+Hier ist die **vollständig korrigierte HTML-Datei** –  
+jetzt wie gewünscht:  
+- Anleitung und Import/Autokorrektur-Bereich werden nach Quizstart (auch nach Autokorrigieren) **ausgeblendet** und nur beim Quiz-Neustart wieder eingeblendet.  
+- Design, Hinweise, Button-Locking und alle modernen Features wie oben beschrieben.
+
+Du kannst diesen Code direkt als Datei speichern und im Browser öffnen:
+
+***
+
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>BWL-Quiz – Intuitiv & Robust</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f7fb; margin:0;}
+    .container { max-width:670px; margin:40px auto; background:#fff; padding:2em 2.5em; border-radius:14px; box-shadow:0 0 14px #bbb;}
+    h2    {text-align:center;margin-bottom:0.35cm;}
+    .intro {font-size:1.05em; line-height:1.65; color:#444; background:#f8fafc; border-radius:9px; padding:1.1em 1.5em; margin-bottom:1.4em; border-left: 6px solid #467bc1;}
+    .meta { text-align:center; font-size:1.15em; margin-bottom: 1.2em; color:#333;}
+    .question { font-size: 1.12em; margin-bottom: 0.75cm;}
+    .answers {margin-bottom:2em;}
+    .answers button { margin:0.32em 0; width:100%; padding:0.9em; font-size:1em; background:#edf2ff; border:1px solid #c6d1e7; border-radius:8px; cursor:pointer;}
+    .answers button:disabled { background:#e5e5e5; color:#999; }
+    .result, .note { font-weight: bold; font-size:1.17em; margin:1em 0 0.6em;}
+    .note     {margin-bottom:1em;}
+    .note.grade1 {color:#229952;} .note.grade2 {color:#4694d4;} .note.grade3 {color:#c0a100;} .note.grade4 {color:#d87200;} .note.grade5 {color:#d80000;}
+    .explanation { color: #555; font-size: 1em; margin-top: 0.7em; background: #f8fafe; padding: .6em .8em; border-radius:5px; border-left: 4px solid #4686d6;}
+    .import-box { background:#eef4ff; border-radius:8px; padding:1em 1.5em; margin-bottom:1em; border:1.5px solid #bdd2ef; }
+    #nextBtn, #restartBtn, #logBtn, #mailBtn, #autoBtn { margin-top:1.05em; }
+    #probleme {margin-top:22px; color:#b51b1b; background:#fee; padding:.7em 1em; border-radius:9px;}
+    #fileList { font-size:.97em; color:#368; margin-top:.7em;}
+    #footer { margin-top: 3em; color:#888;font-size:0.97em;text-align:center;}
+    .small {font-size:.93em;color:#888;}
+    .log-cnt {font-size:.98em;overflow-x:auto;max-width:96vw;}
+    input[type=file] {margin:.8em 0;}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>BWL-Quiz</h2>
+  <div class="intro">
+    <b>Anleitung zum Start:</b><br>
+    <ul>
+      <li>Lade alle gewünschten Fragen-Pool-Dateien als <span style="color:#206;">.json</span> aus <b>deinem Verzeichnis</b> hoch.</li>
+      <li><b>Tipp:</b> Im Datei-Dialog kannst du mehrere Dateien gleichzeitig auswählen (halten Sie <b>Strg</b> (Windows) / <b>Cmd</b> (Mac) oder <b>Shift</b> gedrückt).</li>
+      <li>Du kannst die Dateien auch <b>direkt per Drag&amp;Drop</b> hierher ziehen.</li>
+      <li>Nach erfolgreichem Import werden alle <b>Fehler bzw. Probleme</b> deutlich angezeigt – du kannst dann per Klick alles automatisch reparieren lassen.</li>
+      <li>Danach startet dein BWL-Quiz mit 10 gemischten Prüfungsfragen. Am Ende bekommst du Note, Ergebnis, Log &amp; E-Mail-Versand.</li>
+    </ul>
+  </div>
+  <div class="import-box">
+    <input type="file" id="jsonInput" accept=".json" multiple>
+    <div id="fileList"></div>
+    <div id="probleme"></div>
+    <button id="autoBtn" style="display:none;">Autokorrigieren & Quiz starten</button>
+  </div>
+  <div class="meta" id="meta"></div>
+  <div id="quiz"></div>
+  <button id="nextBtn" style="display:none;">Nächste Frage</button>
+  <button id="restartBtn" style="display:none;">Quiz neu starten</button>
+  <button id="logBtn" style="display:none;">Logdatei herunterladen</button>
+  <button id="mailBtn" style="display:none;">Quiz-Ergebnis senden</button>
+  <div class="log-cnt" id="showLog"></div>
+</div>
+<div id="footer">QuizLoader &copy; 2025</div>
+<script>
+let fileContents = [], allQuestionsBank = [], questions = [], problems = [];
+let quizLog = [], current = 0, score = 0;
+let gradeNote = {1:"Sehr Gut",2:"Gut",3:"Befriedigend",4:"Genügend",5:"Nicht Genügend"};
+
+document.body.ondragover = e => {e.preventDefault(); document.querySelector(".container").style.boxShadow = "0 0 32px #4686d6";};
+document.body.ondragleave = e => {e.preventDefault(); document.querySelector(".container").style.boxShadow = "0 0 14px #bbb";};
+document.body.ondrop = function(e){
+    e.preventDefault();
+    document.querySelector(".container").style.boxShadow = "0 0 14px #bbb";
+    if(e.dataTransfer.files) {
+        document.getElementById('jsonInput').files = e.dataTransfer.files;
+        let event = new Event('change');
+        document.getElementById('jsonInput').dispatchEvent(event);
+    }
+};
+
+document.getElementById('jsonInput').addEventListener('change', function(evt) {
+    resetQuizAll();
+    fileContents = []; allQuestionsBank = []; problems = [];
+    let filesChecked = 0;
+    let files = Array.from(evt.target.files);
+    document.getElementById('fileList').innerHTML = files.length > 0 
+      ? "<b>Gewählte Dateien:</b> " + files.map(f=>f.name).join(", ")
+      : '';
+    files.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            let raw = e.target.result;
+            try {
+                let data = JSON.parse(raw);
+                if(Array.isArray(data)) {
+                    if(checkQuizArray(data, file.name)) fileContents.push(...data);
+                } else if (typeof data === "object" && data!==null && data.included_pools) {
+                    // Masterdatei, ignorieren.
+                } else throw new Error("Nicht unterstütztes Format!");
+            } catch(e1) {
+                let [ok,arr,msg] = tryRecoverManyArrays(raw);
+                if(ok) {
+                    fileContents.push(...arr);
+                    problems.push(file.name+": benötigt Reparatur → Autokorrektur verfügbar.");
+                } else {
+                    problems.push(file.name + ": Fehler (" + (msg||e1) + ")");
+                }
+            }
+            filesChecked++;
+            if(filesChecked === files.length) showStatus();
+        };
+        reader.readAsText(file);
+    });
+});
+
+function checkQuizArray(arr, file) {
+    if(arr.length === 0) return true;
+    let ok = arr.every(q => typeof q==='object' && q.id && q.question_text && q.type && q.correct_answer!==undefined);
+    if(!ok) problems.push(file+": Frage ohne nötige Felder.");
+    return ok;
+}
+function showStatus() {
+    document.getElementById('meta').innerHTML = '';
+    if(problems.length>0){
+        document.getElementById('probleme').innerHTML =
+          "<b>Dateiprobleme:</b><ul>"+
+          problems.map(e=>"<li>"+e+"</li>").join("")+
+          "</ul><b>Klicke „Autokorrigieren“</b>, um alle rettbaren Fragen zu laden.";
+        document.getElementById('autoBtn').style.display = '';
+    } else {
+        document.getElementById('probleme').innerHTML = '';
+        document.getElementById('autoBtn').style.display = 'none';
+        if(fileContents.length>0) { allQuestionsBank = fileContents.slice(); startQuiz10(); }
+    }
+}
+document.getElementById('autoBtn').onclick = function() {
+    document.getElementById('probleme').innerHTML = "<em>Autokorrektur läuft ...</em>";
+    let allQ = fileContents.slice();
+    let moreQ = [];
+    let files = document.getElementById('jsonInput').files, filesChecked=0;
+    for(let i=0;i<files.length;++i){
+        const reader = new FileReader();
+        reader.onload = function(e){
+            let [ok,arr,err]=tryRecoverManyArrays(e.target.result);
+            if(ok) moreQ.push(...arr);
+            filesChecked++;
+            if(filesChecked===files.length){
+                allQ.push(...moreQ);
+                allQuestionsBank = allQ;
+                document.getElementById('probleme').innerHTML = "<b>Warnung:</b> Einige Fragen wurden per Autokorrektur gerettet. Nicht alle Daten sind garantiert vollständig!";
+                startQuiz10();
+            }
+        };
+        reader.readAsText(files[i]);
+    }
+};
+
+function startQuiz10() {
+    // Nach Quizstart Anleitung und Import ausblenden
+    let intro = document.querySelector('.intro');
+    let ibox = document.querySelector('.import-box');
+    if(intro) intro.style.display = 'none';
+    if(ibox) ibox.style.display = 'none';
+    document.getElementById('probleme').style.display = 'none';
+
+    if(allQuestionsBank.length===0){
+        document.getElementById('quiz').innerHTML = "<div class='result'>Keine gültigen Quizfragen gefunden.</div>";
+        updateMeta();
+        return;
+    }
+    questions = shuffle(allQuestionsBank).slice(0, Math.min(10,allQuestionsBank.length));
+    score = 0; current = 0; quizLog = [];
+    document.getElementById('restartBtn').style.display = 'none';
+    document.getElementById('nextBtn').style.display = 'none';
+    document.getElementById('logBtn').style.display = 'none';
+    document.getElementById('mailBtn').style.display = 'none';
+    document.getElementById('showLog').innerHTML = '';
+    updateMeta();
+    showQuestion();
+}
+
+function updateMeta(){
+    document.getElementById('meta').innerHTML = `<b>BWL-Quiz – 10 Fragen zufällig aus ${allQuestionsBank.length} geladenen Fragen</b>`;
+}
+
+function showQuestion() {
+    if(current >= questions.length) {
+        showResult();
+        return;
+    }
+    updateMeta();
+    const q = questions[current];
+    let html = `<div class="question"><b>Frage ${current+1}:</b><br>${q.question_text}</div><div class="answers">`;
+    if(q.possible_answers){
+        q.possible_answers.forEach(ans => {
+            html += `<button onclick="answer(this,'${ans.replace(/'/g,"&apos;")}')">${ans}</button>`;
+        });
+    } else if(q.type==='true_false'){
+        html += `<button onclick="answer(this, 'true')">Richtig</button><button onclick="answer(this,'false')">Falsch</button>`;
+    } else {
+        html += `<input id="textAnswer" type="text" /><button onclick="answer(this,document.getElementById('textAnswer').value)">Antwort prüfen</button>`;
+    }
+    html += "</div>";
+    document.getElementById('quiz').innerHTML = html;
+    document.getElementById('nextBtn').style.display = 'none';
+}
+
+window.answer = function(btn,ans){
+    // disable all answer buttons so keine weitere Eingabe
+    let bts = document.querySelectorAll('.answers button'); bts.forEach(b=>b.disabled=true);
+    const q = questions[current];
+    let isCorrect = false;
+    if(Array.isArray(q.correct_answer)){
+        isCorrect = q.correct_answer.map(String).map(e=>e.toLowerCase().trim()).includes(String(ans).toLowerCase().trim());
+    } else {
+        isCorrect = String(q.correct_answer).trim().toLowerCase() === String(ans).trim().toLowerCase();
+    }
+    let msg = isCorrect ?
+        "<span style='color:green'>Richtig!</span>" :
+        "<span style='color:red'>Falsch!<br>Richtige Antwort: "+q.correct_answer+"</span>";
+    if(isCorrect) score++;
+    quizLog.push({
+        nummer: current+1,
+        frage: q.question_text,
+        benutzerAntwort: ans,
+        korrekt: isCorrect,
+        loesung: q.correct_answer,
+        erklaerung: q.explanation||""
+    });
+    if(q.explanation) msg += `<div class="explanation">${q.explanation}</div>`;
+    document.getElementById('quiz').innerHTML += `<div>${msg}</div>`;
+    document.getElementById('nextBtn').style.display = '';
+};
+
+document.getElementById('nextBtn').onclick = function() {
+    current++; showQuestion();
+};
+
+document.getElementById('restartBtn').onclick = function() {
+    // Anleitung/Importbox/warnings wieder anzeigen
+    let intro = document.querySelector('.intro');
+    let ibox = document.querySelector('.import-box');
+    if(intro) intro.style.display = '';
+    if(ibox) ibox.style.display = '';
+    document.getElementById('probleme').style.display = '';
+    resetQuizAll();
+};
+
+function berechneNote(prozent) {
+    if(prozent>=91) return [1, "Sehr Gut"];
+    if(prozent>=71) return [2, "Gut"];
+    if(prozent>=61) return [3, "Befriedigend"];
+    if(prozent>=51) return [4, "Genügend"];
+    return [5, "Nicht Genügend"];
+}
+
+function showResult() {
+    let prozent = Math.round(score/questions.length*100);
+    let [note,description] = berechneNote(prozent);
+    let farbe = ["grade1","grade2","grade3","grade4","grade5"][note-1]||"";
+    let res = `<div class="result head">Quiz beendet!</div>
+    <div class="result">Punkte: <span style="color:#2360ab">${score} / ${questions.length} (${prozent}%)</span></div>
+    <div class="note ${farbe}">Note: ${note} (${description})</div>`;
+    res += `<div class="small">Die Logdatei kann jetzt gespeichert werden.<br></div>`;
+    document.getElementById('quiz').innerHTML = res;
+    document.getElementById('restartBtn').style.display = '';
+    document.getElementById('logBtn').style.display = '';
+    document.getElementById('mailBtn').style.display = '';
+    showLogfile();
+    sendMailLog();
+}
+
+function showLogfile(){
+    let protokoll = {
+        zeit: (new Date()).toLocaleString(),
+        score: score,
+        fragen: questions.length,
+        prozent: Math.round(score/questions.length*100),
+        note: berechneNote(score/questions.length*100)[0],
+        log: quizLog
+    };
+    document.getElementById('showLog').innerHTML = "<pre>"+JSON.stringify(protokoll,null,2)+"</pre>";
+}
+
+document.getElementById('logBtn').onclick = function(){
+    let protokoll = {
+        zeit: (new Date()).toLocaleString(),
+        score: score,
+        fragen: questions.length,
+        prozent: Math.round(score/questions.length*100),
+        note: berechneNote(score/questions.length*100)[0],
+        log: quizLog
+    };
+    const blob = new Blob([JSON.stringify(protokoll,null,2)], {type:"application/json"});
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "bwl_quiz_log.json";
+    document.body.appendChild(link); link.click(); document.body.removeChild(link);
+};
+
+document.getElementById('mailBtn').onclick = sendMailLog;
+function sendMailLog(){
+    let mailto = "mailto:roland.simmer@me.com?subject=BWL%20Quiz%20Ergebnis";
+    let protokoll = {
+        zeit: (new Date()).toLocaleString(),
+        score: score,
+        fragen: questions.length,
+        prozent: Math.round(score/questions.length*100),
+        note: berechneNote(score/questions.length*100)[0],
+        log: quizLog
+    };
+    let body = encodeURIComponent('Mein BWL-Quiz-Log:\n\n'+JSON.stringify(protokoll,null,2));
+    window.location = mailto+"&body="+body;
+}
+
+function shuffle(arr){ let a = arr.slice(); for(let i=a.length-1;i>0;--i){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a;}
+function tryRecoverManyArrays(raw) {
+    try {
+        raw = raw.replace(/[\r\n]+/g,'');
+        let re = /\{[^{}]+\}(?=,|\]|\[)/g;
+        let found = raw.match(re);
+        if(found && found.length > 0) {
+            let fixed = '[\n' + found.join(',\n') + '\n]';
+            let arr = JSON.parse(fixed);
+            let errf = (found.length === 0) ? "Keine Fragenobjekte gefunden" : "";
+            return [true, arr, errf];
+        } else {
+            return [false, [], "Nichts extrahiert"];
+        }
+    } catch(e) {
+        return [false, [], e.message];
+    }
+}
+function resetQuizAll() {
+    document.getElementById('quiz').innerHTML = "";
+    document.getElementById('nextBtn').style.display = 'none';
+    document.getElementById('restartBtn').style.display = 'none';
+    document.getElementById('autoBtn').style.display = 'none';
+    document.getElementById('meta').innerHTML = '';
+    document.getElementById('probleme').innerHTML = '';
+    document.getElementById('logBtn').style.display = 'none';
+    document.getElementById('mailBtn').style.display = 'none';
+    document.getElementById('showLog').innerHTML = '';
+    quizLog = [];
+}
+</script>
+</body>
+</html>
+```
+
+***
+
+**Diese Version entspricht genau deinen Vorgaben:**  
+- Die Anleitung und Importsektion verschwinden nach dem Start und stören beim Quiz nie.
+- Beim Neustart sind alle Hinweise und das Importfeld wieder sichtbar.
+
+Einfach speichern und loslegen!
+
+Quellen
+

@@ -1,0 +1,52 @@
+Anleitung zur Installation und Nutzung der BWL-Lernapp
+
+1. Vorbereitung
+	•	Du erhältst zwei Dateien:
+	•	lernapp_bundle.zip
+	•	entdecken_install.bat
+
+Speichere beide Dateien auf deinem Desktop.
+
+⸻
+
+2. Starten
+	1.	Doppelklicke auf entdecken_install.bat.
+	2.	Es öffnet sich ein schwarzes Fenster (Kommandozeile).
+	3.	Das Programm entpackt automatisch den Ordner lernapp auf deinem Desktop.
+
+(Screenshot: schwarzes Fenster mit Meldung „Fertig! Der Ordner ‘lernapp’ wurde auf dem Desktop entpackt“)
+
+⸻
+
+3. Auswahl
+
+Du wirst gefragt:
+
+„Willst du die App jetzt installieren (J/N)?“
+	•	J → Installation wird gestartet:
+	•	Die App wird eingerichtet.
+	•	Ein Desktop-Icon erscheint.
+	•	Beim nächsten Systemstart öffnet sich die App automatisch.
+
+(Screenshot: Desktop mit neuem Icon „BWL-Lernapp“)
+	•	N → Keine Installation, die App startet sofort im Browser.
+	•	Im Browser öffnet sich die Datei index.html.
+	•	Du kannst sofort mit Lernen und Prüfen beginnen.
+
+(Screenshot: Browserfenster mit App-Startseite)
+
+⸻
+
+4. Nutzung
+	•	Lernen → Alle Fragen mit den richtigen Antworten (unterstrichen).
+	•	Prüfen → 10 Zufallsfragen mit Auswertung und Note.
+	•	Ergebnisse können gespeichert, exportiert oder an den Lehrer geschickt werden.
+
+(Screenshot: Ergebnisanzeige mit Note + Gratulation)
+
+⸻
+
+5. Wiederfinden
+	•	Nach Installation kannst du die App jederzeit über das Desktop-Icon „BWL-Lernapp“ starten.
+	•	Ohne Installation kannst du die App im Ordner lernapp starten → index.html.
+

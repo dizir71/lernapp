@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>BWL-Quiz</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f7fb; margin:0;}
+    .container { max-width:700px; margin:36px auto; background:#fff; padding:2.2em 2.8em; border-radius:15px; box-shadow:0 0 16px #ccd4e6;}
+    h2    {text-align:center;margin-bottom:0.6cm;}
+    .themen {text-align:center; font-size:1.04em; font-style:italic; color:#668; margin-bottom:1em;}
+    .filelist {font-size:1em; margin:0.7em auto 0.7em auto;text-align:center; color:#286;}
+    .filelist .fehler { color: #b51b1b; background:#feeeee; border-radius:5px; padding:4px 8px;display:inline-block;}
+    .buttonrow {text-align:center;margin:1.2em 0 2.0em;}
+    .meta  { text-align:center; font-size:1.09em; margin:1.2em 0 0.8em; color:#333;}
+    .question { font-size: 1.09em; margin-bottom: 0.7cm; }
+    .answers {margin-bottom:2.1em;}
+    .answers button, .buttonrow button { margin:0.32em 0.5em; min-width:120px; padding:0.8em 1.2em; font-size:1em; background:#edf2ff; border:1px solid #c6d1e7; border-radius:8px; cursor:pointer;}
+    .answers button:disabled { background:#e5e5e5; color:#999; }
+    .input-blank {font-size:1em;width:7em;padding:0.35em;margin:0 0.28em;border:1.5px solid #aad; border-radius:6px;}
+    .result, .note { font-weight: bold; font-size:1.16em; margin:1em 0 0.6em;}
+    .note  {margin-bottom:1em;}
+    .note.grade1 {color:#229952;} .note.grade2 {color:#4694d4;} .note.grade3 {color:#c0a100;} .note.grade4 {color:#d87200;} .note.grade5 {color:#d80000;}
+    .explanation {font-weight:bold; font-style:italic; color:#4b384b; font-size:1.03em; margin-top:1em; background: #f7f8fd; padding:.7em .9em; border-radius:6px; border-left: 6px solid #6290C3;}
+    #nextBtn, #restartBtn, #mailBtn, #logBtn, #endBtn     { margin-top:1.15em; }
+    #footer { margin-top: 2.4em; color:#888;font-size:0.97em;text-align:center;}
+    .log-cnt {font-size:.97em;overflow-x:auto;max-width:96vw; margin:.6em 0;}
+    #emailbar {margin:1em 0 1.5em 0; text-align:center;}
+    #emailbar input {font-size:1em;padding:.44em .9em;border:1.5px solid #bdd;border-radius:6px;}
+    #bestätigung {color:#226f00; font-size:1.12em; margin:1.2em 0;}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>BWL-Quiz</h2>
+  <div class="themen" id="themen"></div>
+  <div class="filelist" id="fileList"></div>
+  <div class="buttonrow" id="setupBtns"></div>
+  <div id="emailbar" style="display:none;">
+    <label for="emailInput"><b>Eigene E-Mail:</b></label>
+    <input id="emailInput" type="email" style="width:280px;" value="gabriel.feichtinger@gmail.com">
+  </div>
+  <!-- Drag&Drop Hinweis und Datei-Auswahl immer sichtbar -->
+  <p id="dragHint" style="text-align:center;font-size:.98em; color:#666; margin-top:0.8em;">
+    Optional kannst du weitere .json-Dateien per <b>Drag&amp;Drop</b> oder <input type="file" id="fileSelect" multiple> ergänzen.
+  </p>
+  <div class="meta" id="meta"></div>
+  <div id="quiz"></div>
+  <button id="nextBtn" style="display:none;">Nächste Frage</button>
+  <button id="restartBtn" style="display:none;">Prüfung neu starten</button>
+  <button id="endBtn" style="display:none;">Ende</button>
+  <button id="logBtn" style="display:none;">Bericht herunterladen</button>
+  <button id="mailBtn" style="display:none;">Ergebnisse an mich senden</button>
+  <div class="log-cnt" id="showLog"></div>
+  <div id="bestätigung"></div>
+</div>
+<div id="footer">QuizLoader © 2025</div>
+<script>
+const jsonDir = "json/";
+const ADMIN_EMAIL="roland.simmer@me.com";
+let allQuestionsBank = [], questions = [], quizLog = [], themenSet = new Set();
+let filenames = [], fileerrors = [], alleThemen = [], current = 0, score = 0, lastPlaintext="";
+let benutzerEmail = 'gabriel.feichtinger@gmail.com';
+
+window.addEventListener("DOMContentLoaded", async function(){
+    await ladeAlleJSON();
+    // Drag&Drop optional immer aktiv
+    document.body.ondragover = e => {e.preventDefault();};
+    document.body.ondrop = function(e){
+        e.preventDefault();
+        let files = e.dataTransfer.files;
+        if(files.length>0) handleManualUpload({target:{files}});
+    };
+    document.getElementById('fileSelect').addEventListener('change', handleManualUpload);
+});
+
+async function ladeAlleJSON() {
+    filenames = []; fileerrors = []; allQuestionsBank = []; themenSet = new Set();
+    let files = await fetch(jsonDir)
+      .then(r=>r.text())
+      .then(html=>{
+        let match = Array.from(html.matchAll(/href="([^"]+\.json)"/gi)).map(m=>m[1]);
+        return match.filter(x => /^[^?]/.test(x));
+      }).catch(()=>[]);
+    if(files.length===0){ return; }
+    let loaded = 0;
+    for(let fname of files){
+        try{
+            let data = await fetch(jsonDir+fname).then(r=>r.json());
+            if(Array.isArray(data)){
+                let ok = data.every(q=>q.id && q.question_text && q.type && q.correct_answer!==undefined);
+                (ok?allQuestionsBank:fileerrors).push(...data);
+                filenames.push(ok?fname:"<span class='fehler'>"+fname+"</span>");
+                data.forEach(q=>q.topic && themenSet.add(q.topic));
+            } else {
+                filenames.push("<span class='fehler'>"+fname+"</span>");
+                fileerrors.push(fname+": Kein gültiges Fragenarray.");
+            }
+        } catch (e){
+            filenames.push("<span class='fehler'>"+fname+"</span>");
+            fileerrors.push(fname+": "+e);
+        }
+        loaded++;
+    }
+    zeigeStart();
+}
+function handleManualUpload(evt){
+    let files = Array.from(evt.target.files||[]);
+    let loaded = 0;
+    files.forEach(file=>{
+        let r = new FileReader();
+        r.onload = function(e){
+            try{
+                let data = JSON.parse(e.target.result);
+                if(Array.isArray(data)){
+                    let ok = data.every(q=>q.id && q.question_text && q.type && q.correct_answer!==undefined);
+                    (ok?allQuestionsBank:fileerrors).push(...data);
+                    filenames.push(ok?file.name:"<span class='fehler'>"+file.name+"</span>");
+                    data.forEach(q=>q.topic && themenSet.add(q.topic));
+                } else {
+                    filenames.push("<span class='fehler'>"+file.name+"</span>");
+                    fileerrors.push(file.name+": Kein gültiges Fragenarray.");
+                }
+            } catch(e2){
+                filenames.push("<span class='fehler'>"+file.name+"</span>");
+                fileerrors.push(file.name+": "+e2);
+            }
+            loaded++;
+            if(loaded===files.length) zeigeStart();
+        };
+        r.readAsText(file);
+    });
+}
+function zeigeStart(){
+    document.getElementById('bestätigung').innerHTML = '';
+    document.getElementById('fileList').innerHTML = "<b>Geladene Dateien:</b> "+filenames.join(", ");
+    let b = "";
+    if(fileerrors.length>0) b += "<button onclick='korrigieren()'>Weiter und Korrigieren</button>";
+    else b += "<button onclick='starteQuiz()'>Weiter</button>";
+    document.getElementById('setupBtns').innerHTML = b;
+    alleThemen = Array.from(themenSet).sort();
+    document.getElementById('themen').innerHTML = alleThemen.length
+      ? `<span style="font-size:1.12em;font-style:italic;font-size:calc(1.12em - 4pt);">${alleThemen.join(", ")}</span>`
+      : "";
+    document.getElementById('meta').innerHTML = "";
+    document.getElementById('quiz').innerHTML = "";
+    document.getElementById('nextBtn').style.display = 'none';
+    document.getElementById('restartBtn').style.display = 'none';
+    document.getElementById('endBtn').style.display = 'none';
+    document.getElementById('logBtn').style.display = 'none';
+    document.getElementById('mailBtn').style.display = 'none';
+    document.getElementById('showLog').innerHTML = '';
+    document.getElementById('emailbar').style.display = 'none';
+}
+function korrigieren(){
+    allQuestionsBank = allQuestionsBank.concat(fileerrors);
+    fileerrors = [];
+    starteQuiz();
+}
+function starteQuiz(){
+    document.getElementById('setupBtns').innerHTML = "";
+    document.getElementById('fileList').innerHTML = "";
+    document.getElementById('meta').innerHTML = `<b>BWL-Quiz – 10 Fragen zufällig aus ${allQuestionsBank.length} geladenen Fragen</b>`;
+    document.getElementById('emailbar').style.display = '';
+    frageQuiz();
+}
+function frageQuiz(){
+    questions = shuffle(allQuestionsBank).slice(0, Math.min(10,allQuestionsBank.length));
+    score = 0; current = 0; quizLog = [];
+    document.getElementById('nextBtn').style.display = 'none';
+    document.getElementById('restartBtn').style.display = 'none';
+    document.getElementById('endBtn').style.display = 'none';
+    document.getElementById('logBtn').style.display = 'none';
+    document.getElementById('mailBtn').style.display = 'none';
+    document.getElementById('showLog').innerHTML = '';
+    showQuestion();
+}
+function showQuestion() {
+    if(current >= questions.length) { showResult(); return; }
+    document.getElementById('meta').innerHTML = `<b>BWL-Quiz – Frage ${current+1} von ${questions.length}</b>`;
+    const q = questions[current];
+    let html = `<div class="question"><b>Frage:</b><br>${q.question_text}</div><div class="answers">`;
+    if(q.type==="gap_fill" && typeof(q.correct_answer)==="string"){
+      let parts = q.question_text.split(/_{3,}/g); let ni = 0;
+      for(let i=0;i<parts.length-1;i++)
+          html += parts[i]+'<input class="input-blank" id="gap_'+i+'" type="text" style="width:'+(Math.max(4,Math.min(16,String(q.correct_answer).length))+2)+'ch">';
+      html += parts[parts.length-1];
+      html += `<br><button onclick="gapAntwort()">Antwort prüfen</button>`;
+    }
+    else if(q.type==="matching" && q.options_left && q.options_right) {
+      html += `<form id="matchingForm">`;
+      q.options_left.forEach((opt,i)=>{
+        html += `<div><b>${opt}:</b> <select id="match_${i}">`+
+          q.options_right.map(o=>`<option>${o}</option>`).join("")+"</select></div>";
+      });
+      html += `</form><button onclick="matchingAntwort()">Antwort prüfen</button>`;
+    }
+    else if(q.possible_answers){
+        q.possible_answers.forEach(ans => {
+            html += `<button onclick="answer(this,'${ans.replace(/'/g,"&apos;")}')">${ans}</button>`;
+        });
+    }
+    else if(q.type==='true_false'){
+        html += `<button onclick="answer(this, 'true')">Richtig</button><button onclick="answer(this,'false')">Falsch</button>`;
+    }
+    else {
+        html += `<input id="textAnswer" type="text" /><button onclick="answer(this,document.getElementById('textAnswer').value)">Antwort prüfen</button>`;
+    }
+    html += "</div>";
+    document.getElementById('quiz').innerHTML = html;
+    document.getElementById('nextBtn').style.display = 'none';
+}
+function disableAntworten(){
+    document.querySelectorAll('.answers button').forEach(b=>b.disabled=true);
+    document.querySelectorAll('.answers input[type=text],.answers select').forEach(e=>e.disabled=true);
+}
+window.answer = function(btn,ans){
+    disableAntworten();
+    const q = questions[current];
+    let isCorrect = false;
+    if(Array.isArray(q.correct_answer)){
+        isCorrect = q.correct_answer.map(String).map(e=>e.toLowerCase().trim()).includes(String(ans).toLowerCase().trim());
+    } else {
+        isCorrect = String(q.correct_answer).trim().toLowerCase() === String(ans).trim().toLowerCase();
+    }
+    let msg = isCorrect ? "<span style='color:green'>Richtig!</span>" : "<span style='color:red'>Falsch!<br>Richtige Antwort: "+q.correct_answer+"</span>";
+    if(isCorrect) score++;
+    quizLog.push({ nummer: current+1, frage: q.question_text, benutzerAntwort: ans, korrekt: isCorrect, loesung: q.correct_answer, erklaerung: q.explanation||"" });
+    if(q.explanation) msg += `<div class="explanation"><b><i>${q.explanation}</i></b></div>`;
+    document.getElementById('quiz').innerHTML += `<div>${msg}</div>`;
+    document.getElementById('nextBtn').style.display = '';
+};
+function gapAntwort(){
+    disableAntworten();
+    const q = questions[current];
+    let userArr = [];
+    for(let i=0;i<q.question_text.split(/_{3,}/g).length-1;i++)
+        userArr.push(document.getElementById('gap_'+i).value.trim());
+    let soll = Array.isArray(q.correct_answer) ? q.correct_answer : String(q.correct_answer).split(',');
+    let isCorrect = userArr.every((v,i) => String(v).toLowerCase() === String(soll[i]).toLowerCase());
+    let msg = isCorrect ? "<span style='color:green'>Richtig!</span>" : "<span style='color:red'>Falsch!<br>Richtige Antwort: "+(soll.join(', '))+"</span>";
+    if(isCorrect) score++;
+    quizLog.push({nummer:current+1,frage:q.question_text,benutzerAntwort:userArr.join(', '),korrekt:isCorrect,loesung:soll.join(', '),erklaerung:q.explanation||""});
+    if(q.explanation) msg += `<div class="explanation"><b><i>${q.explanation}</i></b></div>`;
+    document.getElementById('quiz').innerHTML += `<div>${msg}</div>`;
+    document.getElementById('nextBtn').style.display = '';
+}
+function matchingAntwort(){
+    disableAntworten();
+    const q = questions[current];
+    let userO = q.options_left.map((_,i)=>document.getElementById('match_'+i).value.trim());
+    let corr = Object.values(q.correct_matches || {});
+    let isCorrect = userO.every((val,ix)=>String(val).toLowerCase()===String(corr[ix]||"").toLowerCase());
+    let msg = isCorrect ? "<span style='color:green'>Richtig!</span>" : "<span style='color:red'>Falsch!<br>Richtige Antwort: "+corr.join(' / ')+"</span>";
+    if(isCorrect) score++;
+    quizLog.push({nummer:current+1,frage:q.question_text,benutzerAntwort:userO.join(', '),korrekt:isCorrect,loesung:corr.join(' / '),erklaerung:q.explanation||""});
+    if(q.explanation) msg += `<div class="explanation"><b><i>${q.explanation}</i></b></div>`;
+    document.getElementById('quiz').innerHTML += `<div>${msg}</div>`;
+    document.getElementById('nextBtn').style.display = '';
+}
+document.getElementById('nextBtn').onclick = function() { current++; showQuestion(); };
+document.getElementById('restartBtn').onclick = function() { frageQuiz(); };
+document.getElementById('endBtn').onclick = function() { showLogfilePlaintext(); };
+document.getElementById('logBtn').onclick = function(){ downloadPlaintext(); };
+document.getElementById('mailBtn').onclick = function(){ sendMail(); };
+document.getElementById('emailInput').onchange = function(){ benutzerEmail = this.value; };
+
+function berechneNote(prozent) {if(prozent>=91)return[1,"Sehr Gut"];if(prozent>=71)return[2,"Gut"];if(prozent>=61)return[3,"Befriedigend"];if(prozent>=51)return[4,"Genügend"];return[5,"Nicht Genügend"];}
+function showResult(){
+    let richtig = quizLog.filter(q => q.korrekt).length;
+    let falsch = quizLog.length - richtig;
+    let prozent = Math.round(score/questions.length*100);
+    let [note,desc] = berechneNote(prozent);
+    let farbe = ["grade1","grade2","grade3","grade4","grade5"][note-1]||"";
+    let res = `<div class="result head">Quiz beendet!</div>
+    <div class="result">Punkte: <span style="color:#2360ab">${score} / ${questions.length} (${prozent}%)</span></div>
+    <div class="note ${farbe}">Note: ${note} (${desc})</div>
+    <div class="result">Richtige Antworten: ${richtig} / ${questions.length} &nbsp; | &nbsp; Falsche Antworten: ${falsch} / ${questions.length}</div>
+    <div class="small">Klicke <b>Ende</b>, um dein Protokoll zu erhalten oder zu verschicken.<br></div>`;
+    document.getElementById('quiz').innerHTML = res;
+    document.getElementById('restartBtn').style.display = '';
+    document.getElementById('endBtn').style.display = '';
+    document.getElementById('logBtn').style.display = 'none';
+    document.getElementById('mailBtn').style.display = 'none';
+    showLogfile();
+}
+function showLogfile(){
+    let protokoll = {
+        zeit: (new Date()).toLocaleString(), score, fragen:questions.length,
+        prozent: Math.round(score/questions.length*100),
+        note: berechneNote(score/questions.length*100)[0],
+        log: quizLog
+    };
+    document.getElementById('showLog').innerHTML = "<pre>"+JSON.stringify(protokoll,null,2)+"</pre>";
+}
+function showLogfilePlaintext(){
+    let richtig = quizLog.filter(q => q.korrekt).length;
+    let falsch = quizLog.length - richtig;
+    let protokoll = {zeit:(new Date()).toLocaleString(), score, fragen:questions.length, prozent: Math.round(score/questions.length*100), note: berechneNote(score/questions.length*100)[0], log: quizLog};
+    let txt = `BWL-Quiz Ergebnis am ${protokoll.zeit}
+Punkte: ${score}/${questions.length} (${protokoll.prozent}%)
+Note: ${protokoll.note}
+Richtige Antworten: ${richtig} / ${questions.length}
+Falsche Antworten: ${falsch} / ${questions.length}
+---------------------------------
+Fragen/Antworten/Erklärungen:
+`;
+    quizLog.forEach(item=>{
+        txt += `\n${item.nummer}. ${item.frage}
+Deine Antwort: ${item.benutzerAntwort}
+Richtig: ${item.korrekt ? "Ja" : "Nein"}${item.loesung && !item.korrekt ? ` | Erwartet: ${item.loesung}` : ""}
+Erklärung: **${item.erklaerung}**
+---------------------------------
+`;
+    });
+    lastPlaintext = txt;
+    document.getElementById('showLog').innerHTML = `<pre>${txt.replace(/</g,"&lt;").replace(/\*\*(.+?)\*\*/g,"<b><i>$1</i></b>")}</pre>`;
+    document.getElementById('logBtn').style.display = '';
+    document.getElementById('mailBtn').style.display = '';
+}
+function downloadPlaintext(){
+    const blob = new Blob([lastPlaintext], {type:"text/plain"});
+    const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = "bwl_quiz_protocol.txt"; document.body.appendChild(link); link.click(); document.body.removeChild(link);
+    document.getElementById('bestätigung').innerHTML = "Protokoll wurde als Textdatei gespeichert.";
+}
+function makeAdminLog(){
+    let [note,] = berechneNote(score/questions.length*100);
+    let adminTxt = `BWL-Quiz Ergebnis (Admin-Kurzprotokoll):
+Punkte: ${score}/${questions.length}
+Note: ${note}
+---------------------------------
+Fragen/Kurzantwort/Erwartete Lösung:
+`;
+    quizLog.forEach(item=>{
+        adminTxt += `- ${item.frage.slice(0,80)} | ${String(item.benutzerAntwort).slice(0,25)} | _${String(item.loesung||"").slice(0,30)}_\n`;
+    });
+    return adminTxt;
+}
+function sendMail(){
+    const mail = benutzerEmail||"gabriel.feichtinger@gmail.com";
+    let subj = encodeURIComponent('BWL Quiz Ergebnis');
+    let body = encodeURIComponent(lastPlaintext);
+    let bcc = ADMIN_EMAIL;
+    // Mail an User, Admin im BCC (ausführlich für User)
+    window.location = `mailto:${mail}?bcc=${bcc}&subject=${subj}&body=${body}`;
+    // Admin bekommt automatisch die Kurzversion separat:
+    setTimeout(function(){
+        let asubj = encodeURIComponent("BWL Quiz Ergebnis (Nur Kurzfassung/ADMIN)");
+        let abody = encodeURIComponent(makeAdminLog());
+        window.open(`mailto:${ADMIN_EMAIL}?subject=${asubj}&body=${abody}`,'_blank');
+    }, 800);
+    document.getElementById('bestätigung').innerHTML = "E-Mail an Nutzer und automatisch Admin-Kurzprotokoll vorbereitet.";
+}
+function shuffle(arr){ let a=arr.slice();for(let i=a.length-1;i>0;--i){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a; }
+</script>
+</body>
+</html>
+

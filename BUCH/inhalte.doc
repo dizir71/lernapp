@@ -1,0 +1,341 @@
+## Übersichtliche, strukturierte Lernunterlage für BW (Oberstufe)
+
+***
+
+### 1. Unternehmer, Firma und Firmenbuch
+
+#### Was ist ein Unternehmer?
+- **Definition:** Nach Unternehmensgesetzbuch (UGB): Wer alleine oder mit anderen ein Unternehmen betreibt. Das können **natürliche** oder **juristische Personen** sein.
+    - **Natürliche Person:** Lebende, physische Personen (z.B. Einzelunternehmer)
+    - **Juristische Person:** Organisationen mit gesetzlicher Grundlage (z.B. GmbH, AG)
+
+**Auch als Unternehmer gelten:**
+- Land- und Forstwirte
+- Freiberufler (Ärzte, Rechtsanwälte)
+- Neue Selbständige (Künstler, Autoren)
+
+#### Firma
+- **Definition:** Der ins **Firmenbuch** eingetragene Name des Unternehmers, unter dem dieser Geschäfte tätigt und unterschreibt.
+    - **Firmenkern:** Frei wählbare Bezeichnung (Name oder Hinweis auf Tätigkeit)
+    - **Firmenzusatz:** Angabe der Rechtsform (z.B. e.U., GmbH)
+
+**Vorschriften für Firmenname:**
+- Lesbar, aussprechbar, unterscheidbar von anderen
+- Keine Irreführung
+
+**Arten von Firmen:**
+| Personenfirma | Sachfirma      | Fantasiefirma | Gemischte Firma |
+|---------------|---------------|---------------|-----------------|
+| Nachname      | Hinweis auf Tätigkeit | Erfundener Name | Kombination     |
+
+- Bei Übernahme kann Firmenname weiterverwendet werden (mit Zustimmung).
+
+#### Firmenbuch
+- Öffentliches EDV-Register für Unternehmen.
+- Eintragung ist für viele Unternehmensformen Pflicht.
+- **Bestandteile:** Name, Rechtsform, Standort, Vertretungsbefugte, Gesellschafter etc.
+
+***
+
+### 2. Rechtsformen von Unternehmen
+
+#### Einzelunternehmen (e.U.)
+| Merkmal           | Beschreibung                                                                 |
+|-------------------|-------------------------------------------------------------------------------|
+| Gründung          | Unkompliziert, Anmeldung genügt                                                |
+| Geschäftsführung  | Alleiniger Unternehmer                                                         |
+| Haftung           | Persönlich, unbeschränkt mit Privat- und Geschäftsvermögen                     |
+| Vorteil           | Schnelle Gründung, keine Gewinnteilung                                         |
+| Nachteil          | Hohe persönliche Verantwortung und Haftung, keine Vertretung bei Krankheit      |
+
+#### Offene Gesellschaft (OG)
+| Merkmal           | Beschreibung                                                        |
+|-------------------|---------------------------------------------------------------------|
+| Gesellschafter    | Mind. 2 Personen                                                    |
+| Haftung           | Persönlich, unbeschränkt, solidarisch                               |
+| Vorteil           | Kapital von mehreren, geteilte Verantwortung                        |
+| Nachteil          | Solidarische Haftung, Risiko bei Streit                             |
+
+#### Kommanditgesellschaft (KG)
+| Merkmal             | Komplementär                                  | Kommanditist      |
+|---------------------|-----------------------------------------------|-------------------|
+| Haftung             | Vollhafter (unbeschränkt, solidarisch)        | Teilhafter (beschränkt auf Einlage) |
+| Geschäftsführung    | Ja                                            | Nein, Kontrollrechte               |
+| Vorteile/Nachteile  | Ähnlich wie OG, aber mit beschränkter Haftung für Kommanditisten  |
+
+#### Stille Gesellschaft
+- Beteiligung eines stillen Gesellschafters am Unternehmen ohne nach außen zu erscheinen. Haftung nur bis zur Einlage.
+
+#### Gesellschaft bürgerlichen Rechts (GesbR)
+- Mind. zwei Unternehmer, persönliche, unbeschränkte, solidarische Haftung.
+
+#### Kapitalgesellschaften (eigene Rechtspersönlichkeit)
+| Form         | Mindestkapital | Haftung                       | Buchführung     | Sonstiges                           |
+|--------------|----------------|-------------------------------|-----------------|--------------------------------------|
+| GmbH         | 10.000€        | Gesellschaftsvermögen         | Pflicht         | Gründung notariatsaktpflichtig       |
+| AG           | 70.000€        | Aktienanteil                  | Pflicht         | Aktienkauf möglich                   |
+| FlexKapG/FlexCo| 10.000€      | Gesellschaftsvermögen         | Pflicht         | Mischung aus GmbH und AG             |
+| Genossenschaft| Kein Minimum  | Gesellschaftsvermögen         | Pflicht         | Mitglieder erg. Kontrolle (Generalversammlung, Vorstand) |
+
+#### Mischformen
+- Bsp.: GmbH & Co KG – Haftung der KG (unbeschränkt) wird auf GmbH (beschränkt) übertragen.
+
+***
+
+### 3. Vollmachten im Unternehmen
+
+#### Prokura
+- **Umfangreichste Vollmacht** (alle gerichtlichen und außergerichtlichen Geschäfte, vom Betrieb ausgehend)
+- **Erteilung nur durch im Firmenbuch eingetragenen Unternehmer**
+- **Prokurist** erhält Prokura, im EVI eingetragen.
+- **Unterzeichnung:** "pp." oder "ppa." (per procura autoritate)
+
+**Erlöschen der Prokura:** Durch Widerruf, Kündigung, Tod, Geschäftsunfähigkeit oder Konkurs des Unternehmens.
+
+#### Handlungsvollmacht
+- **Eingeschränkte Vollmacht**
+- Erlaubt gewöhnliche Geschäfte des Unternehmens.
+- **Erteilt durch** Unternehmer oder Prokurist
+- **Unterzeichnung:** "i.V." (in Vertretung); "a.V." (andere Vollmachtarten)
+
+**Erlöschen:** Durch Widerruf, Kündigung, Tod, Geschäftsunfähigkeit oder Konkurs.
+
+***
+
+### 4. Arbeitsverhältnisse und Verträge
+
+#### Echter Arbeitsvertrag
+- Arbeitnehmer ist persönlich und zeitlich weisungsgebunden.
+- Hat Anspruch auf Urlaub, Feiertage, Sonderzahlungen, Entgeltfortzahlung im Krankheitsfall.
+- Arbeitgeber meldet Sozialversicherung an (ÖGK).
+- Lohnsteuer geht ans Finanzamt.
+
+#### Geringfügig Beschäftigte
+- Anspruch auf Urlaub, Unfallversicherung, keine Kranken/Pensions/Arbeitslosenversicherung.
+
+#### Freier Dienstvertrag
+- Keine persönliche Abhängigkeit, keine Bindung an Arbeitsort/Zeit, keine Kontrolle durch Arbeitgeber.
+- Keine Ansprüche auf Urlaub/Krankengeld.
+- Sozialversicherungspflichtig, Lohnsteuer selbst zu melden.
+
+#### Werkvertrag
+- Auftragnehmer schuldet ein konkretes Werk/Erfolg.
+- Eigenes wirtschaftliches Risiko, eigene Arbeitsmittel.
+- Gewährleistungspflichten.
+- SVS-Anmeldung (Kranken-, Pensions-, Unfallversicherung).
+
+***
+
+### 5. Außenhandel/Kaufverträge im Außenhandel
+
+#### Was ist Außenhandel?
+- **Austausch von Gütern zwischen Ländern** (internationaler Warenverkehr)
+
+#### Bedeutung für Österreich
+- Exporte/Importe stärken Wirtschaftswachstum und Wohlstand.
+
+#### Risiken im Export/Import:
+
+**Für Exporteure**
+1. **VOR Auslieferung:** Marktrisiko (falsche Produkte), Produktionsrisiko (Konkurs/Nichteinhaltung des Partners)
+    - Absicherung: Anzahlung, Vorauszahlung, Zahlungsgarantie
+2. **WÄHREND Auslieferung:** Transportrisiko (Schäden, Verlust), Annahmerisiko (Importeur nimmt Ware nicht an)
+    - Absicherung: Incoterms, Transportversicherung, Dokumentenakkreditiv
+3. **NACH Auslieferung:** Zahlungsausfallrisiko, Kreditrisiko, Wechselkursrisiko
+    - Absicherung: Zahlungsvereinbarungen, Versicherung, Hedging
+
+**Für Importeure**
+- Lieferrisiko (Verspätungen, Vertragsstrafe - Pönale)
+- Gewährleistungsrisiko (mangelhafte Ware, keine Erstattung)
+    - Absicherung: Bankgarantie
+
+#### Incoterms (International Commercial Terms)
+- **Regeln den Erfüllungsort, Verantwortung und Gefahrübergang bei Lieferungen.**
+- Unterteilt in vier Gruppen (Einpunkt- und Zweipunktklauseln).
+
+##### Beispiel Incoterms für alle Transportmittel:
+| Gruppe | Bedeutung                  | Beispiele              |
+|--------|----------------------------|------------------------|
+| E      | Ab Werk                    | EXW                    |
+| F      | Ohne Übernahme Hauptfracht | FCA, FAS, FOB          |
+| C      | Mit Übernahme Hauptfracht  | CFR, CIF, CPT, CIP     |
+| D      | An Bestimmungsort          | DAP, DDP, DPU          |
+
+#### Dokumente im Außenhandel
+- **Transportdokumente:** z.B. Frachtbrief
+- **Ursprungszeugnis, Warenverkehrsbescheinigung**: Herkunfts- und Zollnachweis
+- **Pro-Forma-Rechnung:** für Zoll, nicht zahlungspflichtig
+- **Handelsrechnung:** für die tatsächliche Warenlieferung und Zahlung
+
+#### Dokumentenakkreditiv und Dokumenteninkasso
+| Begriff           | Erklärung                                                                                                                                                                   |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Dokumentenakkreditiv | Bankzahlung gegen Vorlage bestimmter Dokumente (Schutz für beide Seiten)                                                                                                 |
+| Dokumenteninkasso    | Dokumente werden nur gegen Zahlung abgegeben (Wichtig: "Documents against Payment" – D/P)                                                                                |
+| Fristen             | Verfalls-, Verlade-, Vorlagefristen (z.B. 21 Tage für Dokumentenvorlage nach Versand, außer anders vereinbart)                                                            |
+
+***
+
+### 6. Marktforschung
+
+#### Was ist Marktforschung?
+- **Planmäßiges Sammeln und Auswerten** wichtiger Marktinformationen (Kunden, Konkurrenz).
+- Hauptziel: Informationen zur Entscheidungsfindung bei Marketingaktivitäten.
+
+#### Marktforschungsmethoden
+- **Primärforschung:** Neue Daten werden erhoben (z.B. Befragungen, Beobachtung, Experimente, Panel).
+- **Sekundärforschung:** Auswertung bereits vorhandener Daten (intern/extern).
+
+#### Methoden im Detail:
+
+**Befragung**  
+- **Persönlich:** Einzel (Interview) oder Gruppe (Diskussion)
+- **Telefonisch:** Callcenter
+- **Schriftlich:** Fragebogen (per Post etc.)
+- **Online-Befragung:** Websites, Apps, Social Media
+
+**Beobachtung**  
+- Persönlich oder apparativ (Kameras, Eye-Tracking)
+- Online (Klicks, Social Listening, Geotracking)
+
+**Experiment**  
+- Testet Veränderungen unter kontrollierten Bedingungen (z.B. Layout im Supermarkt)
+
+**Panelerhebung**  
+- Regelmäßige Wiederholung mit gleichen Teilnehmern zur Feststellung von Trends
+
+***
+
+### 7. Marketinginstrumente
+
+#### Produkt- und Sortimentspolitik
+- **Entscheidet, welche Produkte mit welchen Eigenschaften ins Sortiment kommen.**
+- Marken helfen, sich von der Konkurrenz abzuheben (Hersteller-, Handelsmarken).
+
+**Produktlebenszyklus:**
+1. **Einführung** (neu, niedriger Umsatz)
+2. **Wachstum** (Umsatz steigt)
+3. **Reife** (Umsatzmaximierung)
+4. **Sättigung** (Umsatz sinkt)
+5. **Rückgang** (vom Markt genommen)
+
+**Strategien:**  
+- Innovation, Differenzierung, Variation, Eliminierung, Diversifikation
+
+#### Preis- und Konditionenpolitik
+- **Bestimmt Preise, Rabatte, Zahlungsbedingungen**
+- **Strategien:** Hochpreis/Abschöpfung, Niedrigpreis/Marktdurchdringung, Preisdifferenzierung, psychologische Preisgestaltung.
+
+#### Distributionspolitik
+- **Regelt, wie Produkt zum Kunden kommt**
+    - Direkt (eigene Shops/Onlineshop)
+    - Indirekt (über Händler)
+
+#### Kommunikationspolitik
+- **Ziel:** Positive Einstellung erzeugen (Werbung, PR, Verkaufsförderung, Sponsoring, Eventmarketing)
+- **Werbemittel:** Gestaltung (Anzeigen etc.), Werbeträger (Medium, z.B. Zeitung, Internet)
+- **Werbestrategien:** Zielgruppenansprache, Eyecatcher, Content Marketing, TKP (Tausend-Kontakt-Preis)
+
+***
+
+### 8. Beschaffungs- und Warenwirtschaft
+
+#### Aufgaben:
+- **Materialwirtschaft:** Beschaffung für Produktion (Roh-, Hilfs-, Betriebsstoffe)
+- **Warenwirtschaft:** Für Handelsunternehmen
+
+**ZIELE:**
+- Richtige Qualität, Menge, Zeitpunkt, Ort
+
+#### Beschaffungsmarketing
+1. **Beschaffungsmarktforschung:** Analyse Lieferanten, Märkte
+2. **Beschaffungsprogrammpolitik:** Welche Waren/Dienstleistungen in welcher Menge
+3. **Beschaffungsmethoden:** Zentral (eine Stelle) oder dezentral (mehrere Stellen)
+
+| Vorteil Dezentral       | Nachteil Dezentral           |
+|-------------------------|------------------------------|
+| Nähe zum Bedarf         | Doppelarbeit, evtl. höhere Preise  |
+
+**Prinzipien:** Vorratsbeschaffung, Just-in-Time, Einzelbeschaffung
+
+***
+
+### 9. Leistungserstellung & Kennzahlen
+
+#### Wichtige Begriffe:
+
+| Kennzahl       | Definition                                                  |
+|----------------|------------------------------------------------------------|
+| Produktivität  | Output / Input                                             |
+| Wirtschaftlichkeit | Ertrag / Aufwand                                      |
+| Rentabilität   | Gewinn / eingesetztes Kapital                              |
+
+#### Kundenzufriedenheit
+
+| Kriterium             | Erklärung                                                        |
+|-----------------------|------------------------------------------------------------------|
+| Qualität              | Produkt- und Lieferqualität                                      |
+| Lieferzeit            | Durchschnittliche Zeit bis Lieferung                             |
+| Termintreue           | Anteil pünktlicher Lieferungen                                   |
+| Flexibilität          | Anpassung an Sonderwünsche                                       |
+
+#### Kostenarten
+
+| Kostenart             | Erklärung                             |
+|-----------------------|---------------------------------------|
+| Produktionskosten     | Material, Maschinen, Personal         |
+| Lagerkosten           | Ein-/Aus-/Umlagerungen                |
+| Transportkosten       | Lieferung zum Kunden/zwischen Standorten|
+| Indirekte Kosten      | Nicht direkt zurechenbar              |
+
+***
+
+### 10. Nachhaltigkeit und Unternehmensethik
+
+- **Nachhaltigkeit:** Ressourcen so nutzen, dass sie wieder nachwachsen und auch künftige Generationen versorgt werden.
+- **Unternehmensethik:** Welche Werte und Regeln für das Unternehmen gelten sollen.
+
+**Nachhaltige Leistungserstellung:** Umwelt- und Sozialverantwortung (Vermeidung von Greenwashing, Einsatz von Qualitätssiegeln etc.)
+
+***
+
+### 11. Zusatzinformationen: Begriffe kurz & knapp
+
+| Begriff       | Bedeutung                                                                                           |
+|---------------|-----------------------------------------------------------------------------------------------------|
+| USP           | Unique Selling Proposition = einzigartiges Verkaufsmerkmal                                          |
+| Franchise     | Nutzung eines bestehenden Konzepts und Markenzeichens gegen Gebühr                                  |
+| Return on Investment | Rendite des eingesetzten Kapitals                                                            |
+| SWOT-Analyse  | Bewertung interner/externer Stärken, Schwächen, Chancen, Risiken                                   |
+| Corporate Identity | Gesamterscheinungsbild des Unternehmens                                                        |
+| Rücklagen     | Zurückbehaltene Unternehmensgewinne zur Absicherung                                                 |
+
+***
+
+### 12. Wichtige Formeln und Schaubilder (vereinfachte Darstellung)
+
+#### Produktivität
+$$
+\text{Produktivität} = \frac{\text{Ausbringungsmenge}}{\text{Einsatzmenge}}
+$$
+
+#### Wirtschaftlichkeit
+$$
+\text{Wirtschaftlichkeit} = \frac{\text{Ertrag}}{\text{Aufwand}}
+$$
+
+#### Rentabilität
+$$
+\text{Rentabilität} = \frac{\text{Gewinn}}{\text{eingesetztes Kapital}}
+$$
+
+***
+
+Diese Unterlage beantwortet alle relevanten Fragen, erklärt Begriffe und Prozesse ausführlich und verwendet strukturierte Tabellen und Listen, damit du alles für die Oberstufe bestens verstehst. Bei Fragen zu einzelnen Punkten kannst du gezielt einzelne Abschnitte nachlesen.
+
+Quellen
+[1] BW2-Lernstoff-SA-2.docx https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/72950174/c8681a30-e85f-49d0-82f5-53df66a1178d/BW2-Lernstoff-SA-2.docx
+[2] BW2-Lernstoff-SA-1.docx https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/72950174/52f1caad-ff09-4b71-a8bd-dd95b30de13b/BW2-Lernstoff-SA-1.docx
+[3] BW-Lernstoff-2-1.docx https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/72950174/97afb8d6-618f-4ade-a2bc-fe815e7396e9/BW-Lernstoff-2-1.docx
+[4] BW-Lernstoff-1.docx https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/72950174/cfc54cbc-f823-418d-b589-6f1f1d38b76d/BW-Lernstoff-1.docx
+

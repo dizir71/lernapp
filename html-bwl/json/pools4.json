@@ -1,0 +1,142 @@
+[
+  {
+    "id": "le_01",
+    "question_text": "Welche beiden Hauptfaktoren werden für die betriebliche Leistungserstellung benötigt?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Menschliche Arbeitsleistung",
+      "Betriebsvermögen",
+      "Staatliche Subventionen",
+      "Werbekampagnen"
+    ],
+    "correct_answer": ["Menschliche Arbeitsleistung", "Betriebsvermögen"],
+    "explanation": "Die Leistungserstellung basiert auf dem kombinierten Einsatz von menschlicher Arbeit und dem Betriebsvermögen (Maschinen, Anlagen, etc.).",
+    "topic": "Leistungserstellung"
+  },
+  {
+    "id": "le_02",
+    "question_text": "Die Kennzahl, die das Verhältnis von Ertrag zu Aufwand misst, nennt sich ___.",
+    "type": "gap_fill",
+    "correct_answer": "Wirtschaftlichkeit",
+    "explanation": "Wirtschaftlichkeit = Ertrag / Aufwand. Ein Wert > 1 bedeutet, dass das Unternehmen wirtschaftlich arbeitet.",
+    "topic": "Kennzahlen"
+  },
+  {
+    "id": "le_03",
+    "question_text": "Was misst die Kennzahl 'Produktivität'?",
+    "type": "open_text",
+    "correct_answer": "Das Mengenverhältnis zwischen Output (Ausbringungsmenge) und Input (Einsatzmenge).",
+    "explanation": "Die Produktivität misst die reine Mengeneffizienz, z.B. Stück pro Stunde, unabhängig von Preisen oder Kosten.",
+    "topic": "Kennzahlen"
+  },
+  {
+    "id": "le_04",
+    "question_text": "Ordnen Sie die Kostenarten den richtigen Beispielen zu.",
+    "type": "matching",
+    "options_left": ["Kosten für Rohstoffe", "Miete für die Produktionshalle", "Gehälter der Verwaltung"],
+    "options_right": ["Variable Kosten", "Fixkosten", "Gemeinkosten"],
+    "correct_matches": {
+      "Kosten für Rohstoffe": "Variable Kosten",
+      "Miete für die Produktionshalle": "Fixkosten",
+      "Gehälter der Verwaltung": "Gemeinkosten"
+    },
+    "explanation": "Variable Kosten ändern sich mit der Produktionsmenge. Fixkosten bleiben gleich. Gemeinkosten können nicht direkt einem Produkt zugeordnet werden.",
+    "topic": "Kostenarten"
+  },
+  {
+    "id": "le_05",
+    "question_text": "Die Kennzahl, die angibt, wie viele der gelieferten Bestellungen pünktlich waren, ist die ___.",
+    "type": "gap_fill",
+    "correct_answer": "Termintreue",
+    "explanation": "Die Termintreue ist ein wichtiger Indikator für die Lieferqualität und die Kundenzufriedenheit.",
+    "topic": "Kundenzufriedenheit"
+  },
+  {
+    "id": "le_06",
+    "question_text": "Nachhaltigkeit in der Leistungserstellung bedeutet, Ressourcen so einzusetzen, dass auch zukünftige Generationen ihre Bedürfnisse befriedigen können.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Dies ist die Kerndefinition der Nachhaltigkeit nach dem Brundtland-Bericht.",
+    "topic": "Nachhaltigkeit"
+  },
+  {
+    "id": "le_07",
+    "question_text": "Was versteht man unter Unternehmensethik?",
+    "type": "open_text",
+    "correct_answer": "Die Auseinandersetzung mit moralischen Wertvorstellungen und Verhaltensregeln, die ein Unternehmen vertreten und einhalten sollte.",
+    "explanation": "Unternehmensethik befasst sich mit der gesellschaftlichen Verantwortung und dem moralischen Handeln von Unternehmen.",
+    "topic": "Unternehmensethik"
+  },
+  {
+    "id": "le_08",
+    "question_text": "Berechnen Sie die Rentabilität des Eigenkapitals: Gewinn = 20.000 €, Eigenkapital = 200.000 €.",
+    "type": "calculation",
+    "correct_answer": "10",
+    "explanation": "Rentabilität = (Gewinn / Eigenkapital) * 100 = (20.000 / 200.000) * 100 = 10%.",
+    "topic": "Rechenbeispiele"
+  },
+  {
+    "id": "le_09",
+    "question_text": "Welche der folgenden Maßnahmen dient direkt der Steigerung der Produktqualität?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Verkürzung der Lieferzeit",
+      "Reduzierung der Fehlerquote in der Produktion",
+      "Erhöhung des Werbebudgets",
+      "Anbieten von mehr Rabatten"
+    ],
+    "correct_answer": "Reduzierung der Fehlerquote in der Produktion",
+    "explanation": "Die Produktqualität wird direkt durch die Anzahl der fehlerfreien Produkte im Verhältnis zur Gesamtmenge gemessen.",
+    "topic": "Qualität"
+  },
+  {
+    "id": "le_10",
+    "question_text": "Die Kosten für den Transport von Waren vom Lieferanten zum Betrieb zählen zu den ___.",
+    "type": "gap_fill",
+    "correct_answer": "Beschaffungskosten",
+    "explanation": "Transportkosten im Rahmen der Beschaffung sind Teil der Beschaffungskosten.",
+    "topic": "Kostenarten"
+  },
+  {
+    "id": "le_11",
+    "question_text": "Ein Unternehmen, das sehr flexibel auf Sonderwünsche von Kunden eingeht, hat eine hohe Flexibilität.",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Die Flexibilität misst, inwieweit ein Unternehmen in der Lage ist, individuelle Kundenwünsche zu erfüllen.",
+    "topic": "Kundenzufriedenheit"
+  },
+  {
+    "id": "le_12",
+    "question_text": "Arbeitsintensive Leistungserstellung bedeutet, dass der Anteil der ___ an den Gesamtkosten sehr hoch ist.",
+    "type": "gap_fill",
+    "correct_answer": "Personalkosten",
+    "explanation": "Bei arbeitsintensiven Prozessen dominieren die Lohn- und Gehaltskosten, z.B. bei Dienstleistungen.",
+    "topic": "Produktionskosten"
+  },
+  {
+    "id": "le_13",
+    "question_text": "Welche der folgenden Kennzahlen ist am besten geeignet, um den finanziellen Erfolg eines Unternehmens im Verhältnis zum eingesetzten Kapital zu messen?",
+    "type": "single_choice",
+    "possible_answers": ["Produktivität", "Wirtschaftlichkeit", "Rentabilität", "Termintreue"],
+    "correct_answer": "Rentabilität",
+    "explanation": "Die Rentabilität (z.B. Eigenkapitalrentabilität) setzt den Gewinn ins Verhältnis zum Kapital und misst so den finanziellen Erfolg der Investition.",
+    "topic": "Kennzahlen"
+  },
+  {
+    "id": "le_14",
+    "question_text": "Die Kosten für die Miete eines Lagers sind typischerweise variable Kosten.",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Mietkosten sind Fixkosten, da sie unabhängig von der eingelagerten Menge oder der Produktionsmenge anfallen.",
+    "topic": "Kostenarten"
+  },
+  {
+    "id": "le_15",
+    "question_text": "Was ist das Ziel der Beschaffungsmarktforschung?",
+    "type": "open_text",
+    "correct_answer": "Informationen über Beschaffungsmärkte und Lieferanten zu sammeln und zu analysieren.",
+    "explanation": "Sie dient dazu, die besten Lieferanten, Materialien und Konditionen für die Beschaffung zu finden.",
+    "topic": "Beschaffungsmarketing"
+  }
+]
+

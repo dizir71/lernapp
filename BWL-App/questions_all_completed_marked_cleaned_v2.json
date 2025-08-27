@@ -1,0 +1,3240 @@
+[
+  {
+    "id": "rf_01",
+    "question_text": "Wer ist ein Unternehmer im Sinne des UGB?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Nur eine juristische Person",
+      "Wer ein Unternehmen betreibt",
+      "Nur wer im Firmenbuch steht",
+      "Ausschließlich Freiberufler"
+    ],
+    "correct_answer": "Wer ein Unternehmen betreibt",
+    "explanation": "Ein Unternehmer ist, wer ein Unternehmen betreibt. Dies können natürliche oder juristische Personen sein.",
+    "topic": "Unternehmensgrundlagen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_02",
+    "question_text": "Woraus setzt sich ein Firmenname zusammen?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Firmenkern",
+      "Firmenzusatz",
+      "Firmenlogo",
+      "Firmenadresse"
+    ],
+    "correct_answer": [
+      "Firmenkern",
+      "Firmenzusatz"
+    ],
+    "explanation": "Ein Firmenname besteht immer aus dem Firmenkern (z.B. Name oder Tätigkeit) und dem Firmenzusatz (Rechtsform, z.B. e.U., GmbH).",
+    "topic": "Unternehmensgrundlagen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_03",
+    "question_text": "Die Haftung beim Einzelunternehmen ist ___?",
+    "type": "single_choice",
+    "correct_answer": "unbeschränkt",
+    "explanation": "Der Inhaber eines Einzelunternehmens haftet unbeschränkt mit seinem gesamten Privat- und Betriebsvermögen.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "unbeschränkt"
+    ]
+  },
+  {
+    "id": "rf_04",
+    "question_text": "Ordnen Sie die Haftung der richtigen Rechtsform zu?",
+    "type": "matching",
+    "options_left": [
+      "Unbeschränkt & solidarisch",
+      "Beschränkt auf Stammeinlage",
+      "Komplementär unbeschränkt, Kommanditist beschränkt"
+    ],
+    "options_right": [
+      "GmbH",
+      "KG",
+      "OG"
+    ],
+    "correct_matches": [
+      [
+        "Unbeschränkt & solidarisch",
+        "GmbH"
+      ],
+      [
+        "Beschränkt auf Stammeinlage",
+        "GmbH"
+      ],
+      [
+        "Komplementär unbeschränkt, Kommanditist beschränkt",
+        "KG"
+      ]
+    ],
+    "explanation": "OG: Alle Gesellschafter haften voll. KG: Haftung ist geteilt. GmbH: Haftung auf Gesellschaftsvermögen beschränkt.",
+    "topic": "Rechtsformen",
+    "correct_answer": [
+      [
+        "Unbeschränkt & solidarisch",
+        "GmbH"
+      ],
+      [
+        "Beschränkt auf Stammeinlage",
+        "GmbH"
+      ],
+      [
+        "Komplementär unbeschränkt, Kommanditist beschränkt",
+        "KG"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_05",
+    "question_text": "Das Mindeststammkapital einer GmbH beträgt in Österreich 10.000 €?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Seit der GmbH-Reform beträgt das Mindeststammkapital 10.000 €, wovon die Hälfte (5.000 €) bar eingezahlt werden muss.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_06",
+    "question_text": "Ein Prokurist darf Grundstücke des Unternehmens verkaufen?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Ein Prokurist darf ohne besondere Ermächtigung keine Grundstücke veräußern oder belasten. Dies zählt zu den Grundlagengeschäften.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_07",
+    "question_text": "Was ist der Hauptunterschied zwischen einem echten Arbeitsvertrag und einem Werkvertrag?",
+    "type": "single_choice",
+    "correct_answer": "Beim Arbeitsvertrag wird die Arbeitskraft geschuldet, beim Werkvertrag ein bestimmter Erfolg oder ein Werk.",
+    "explanation": "Der Arbeitsvertrag fokussiert auf die zur Verfügung gestellte Zeit und Arbeitsleistung, der Werkvertrag auf das fertige Ergebnis.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Beim Arbeitsvertrag wird die Arbeitskraft geschuldet, beim Werkvertrag ein bestimmter Erfolg oder ein Werk."
+    ]
+  },
+  {
+    "id": "rf_08",
+    "question_text": "Welches Risiko sichert ein Dokumentenakkreditiv für den Exporteur ab?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Transportrisiko",
+      "Produktionsrisiko",
+      "Zahlungsausfallrisiko",
+      "Marktrisiko"
+    ],
+    "correct_answer": "Zahlungsausfallrisiko",
+    "explanation": "Das Dokumentenakkreditiv ist ein Zahlungsversprechen der Bank und sichert den Exporteur hauptsächlich gegen den Ausfall der Zahlung ab.",
+    "topic": "Außenhandel",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_09",
+    "question_text": "Die vier Ps des Marketing-Mix sind: Produktpolitik, Preispolitik, ___ und Kommunikationspolitik?",
+    "type": "single_choice",
+    "correct_answer": "Distributionspolitik",
+    "explanation": "Die vier Ps sind Product (Produkt), Price (Preis), Place (Distribution) und Promotion (Kommunikation).",
+    "topic": "Marketing",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Distributionspolitik"
+    ]
+  },
+  {
+    "id": "rf_10",
+    "question_text": "Was ist der Zweck der Sekundärforschung?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Neue Daten durch Umfragen erheben",
+      "Bestehende Datenquellen auswerten",
+      "Experimente im Labor durchführen",
+      "Kunden direkt beobachten"
+    ],
+    "correct_answer": "Bestehende Datenquellen auswerten",
+    "explanation": "Bei der Sekundärforschung (Desk Research) werden bereits vorhandene interne oder externe Daten analysiert.",
+    "topic": "Marktforschung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_11",
+    "question_text": "Ein Unternehmen senkt den Preis für ein neues Produkt stark, um schnell Marktanteile zu gewinnen. Wie nennt man diese Strategie?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Abschöpfungsstrategie",
+      "Marktdurchdringungsstrategie",
+      "Preisdifferenzierung",
+      "Kalkulatorischer Ausgleich"
+    ],
+    "correct_answer": "Marktdurchdringungsstrategie",
+    "explanation": "Bei der Marktdurchdringungsstrategie wird mit einem niedrigen Einführungspreis versucht, schnell eine große Käuferschicht zu erreichen.",
+    "topic": "Preispolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_13",
+    "question_text": "Ein Unternehmen stellt Schrauben her. Die Kosten für Stahl sind ___?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Fixkosten",
+      "Variable Kosten",
+      "Indirekte Kosten",
+      "Lagerkosten"
+    ],
+    "correct_answer": "Variable Kosten",
+    "explanation": "Materialkosten wie Stahl sind variable Kosten, da sie direkt von der Produktionsmenge abhängen.",
+    "topic": "Kostenrechnung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_14",
+    "question_text": "Berechnen Sie die Produktivität: 1.200 produzierte Einheiten bei 120 Arbeitsstunden?",
+    "type": "calculation",
+    "correct_answer": "10",
+    "explanation": "Produktivität = Output / Input = 1.200 Einheiten / 120 Stunden = 10 Einheiten pro Stunde.",
+    "topic": "Rechenbeispiele",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_15",
+    "question_text": "Just-in-Time-Beschaffung senkt die Lagerkosten?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Da bei der Just-in-Time-Beschaffung die Materialien erst bei Bedarf geliefert werden, fallen kaum Lagerkosten an.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "vm_01",
+    "question_text": "Welche Vollmacht ist die umfangreichste im unternehmerischen Kontext?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Handlungsvollmacht",
+      "Einzelvollmacht",
+      "Prokura",
+      "Artvollmacht"
+    ],
+    "correct_answer": "Prokura",
+    "explanation": "Die Prokura ist die umfangreichste, gesetzlich definierte Vollmacht, die ein Unternehmer erteilen kann.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "26ee53b67121e6531f597233fa71861837467069",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_02",
+    "question_text": "Ein Prokurist unterschreibt mit dem Zusatz 'i.V.' (in Vertretung)?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Ein Prokurist unterschreibt mit 'ppa.' (per procura autoritate). Der Zusatz 'i.V.' wird bei Handlungsvollmachten verwendet.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "40ebabbaaf9d839d8789b4be97c27e3934306ce2",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_03",
+    "question_text": "Was ist das Hauptmerkmal eines echten Arbeitsvertrages?",
+    "type": "single_choice",
+    "correct_answer": "Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber.",
+    "explanation": "Merkmale sind Weisungsgebundenheit, Einbindung in die betriebliche Organisation und das Fehlen eines eigenen unternehmerischen Risikos.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "a242dfdb5afcff9e0e2e4aed50b27a95dff70a2d",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Erlös / variable Kosten",
+      "Output / Input",
+      "Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber."
+    ]
+  },
+  {
+    "id": "vm_04",
+    "question_text": "Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?",
+    "type": "matching",
+    "options_left": [
+      "Schuldet einen bestimmten Erfolg/Werk",
+      "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+      "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden"
+    ],
+    "options_right": [
+      "Echter Arbeitsvertrag",
+      "Werkvertrag",
+      "Freier Dienstvertrag"
+    ],
+    "correct_matches": [
+      [
+        "Schuldet einen bestimmten Erfolg/Werk",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ]
+    ],
+    "explanation": "Der Werkvertrag zielt auf ein Ergebnis, der Arbeitsvertrag auf die Arbeitsleistung in Abhängigkeit und der freie Dienstvertrag auf die Dienstleistung ohne Abhängigkeit.",
+    "topic": "Beschäftigungsverhältnisse",
+    "correct_answer": [
+      [
+        "Schuldet einen bestimmten Erfolg/Werk",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "58360a1ef896c135d6e1a609aa129f30d6ea43d8",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_05",
+    "question_text": "Wer meldet einen Arbeitnehmer im echten Arbeitsverhältnis zur Sozialversicherung an?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Der Arbeitnehmer selbst",
+      "Das Finanzamt",
+      "Der Arbeitgeber",
+      "Die Gewerkschaft"
+    ],
+    "correct_answer": "Der Arbeitgeber",
+    "explanation": "Der Arbeitgeber ist gesetzlich verpflichtet, den Arbeitnehmer bei der zuständigen Gebietskrankenkasse (ÖGK) anzumelden und die Beiträge abzuführen.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "2a21aa2d9db0364b0fd8fa96f03299c45dbe30f8",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_06",
+    "question_text": "Die ___ kann nur von einem im Firmenbuch eingetragenen Unternehmer erteilt werden?",
+    "type": "single_choice",
+    "correct_answer": "Prokura",
+    "explanation": "Die Erteilung der Prokura ist an die Kaufmannseigenschaft bzw. die Eintragung im Firmenbuch gebunden.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "793ee94c9191b57d9b14421fd4ecb43f31ccd89b",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Prokura",
+      "Nur interne Vollmacht",
+      "Nicht im Firmenbuch einzutragen"
+    ]
+  },
+  {
+    "id": "vm_07",
+    "question_text": "Ein Werkvertragsnehmer trägt in der Regel das wirtschaftliche Risiko selbst?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Im Gegensatz zum Arbeitnehmer arbeitet der Werkvertragsnehmer auf eigene Rechnung und Gefahr.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "cda690edc19a00ce2ce92d562a8f249c63dfafe4",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_08",
+    "question_text": "Welche Art der Handlungsvollmacht ermächtigt zu allen Geschäften, die ein bestimmter Geschäftsbereich mit sich bringt?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Generalvollmacht",
+      "Einzelvollmacht",
+      "Artvollmacht",
+      "Spezialvollmacht"
+    ],
+    "correct_answer": "Artvollmacht",
+    "explanation": "Die Artvollmacht bezieht sich auf eine bestimmte Art von Geschäften (z.B. Kassierer, Einkäufer).",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "18e75325fa8a55ee70221990eacecef3cbb40a0a",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_09",
+    "question_text": "Ein freier Dienstnehmer hat Anspruch auf bezahlten Urlaub und Sonderzahlungen (Urlaubs-/Weihnachtsgeld)?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Diese Ansprüche sind typische Merkmale eines echten Arbeitsverhältnisses. Freie Dienstnehmer haben darauf keinen gesetzlichen Anspruch.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "9916d90347e0c8783bf2af43ed195e4139ac5ccf",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_10",
+    "question_text": "Wann erlischt eine Prokura?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Bei Widerruf durch den Unternehmer",
+      "Durch den Tod des Prokuristen",
+      "Bei Konkurs des Unternehmens",
+      "Durch den Verkauf einer einzelnen Filiale"
+    ],
+    "correct_answer": [
+      "Bei Widerruf durch den Unternehmer",
+      "Durch den Tod des Prokuristen",
+      "Bei Konkurs des Unternehmens"
+    ],
+    "explanation": "Die Prokura erlischt durch Widerruf, Tod des Prokuristen, Insolvenz des Unternehmens oder Kündigung des zugrundeliegenden Dienstverhältnisses.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "454db6d6717a25d6c63658f74493ab97c6c24e23",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_11",
+    "question_text": "Was ist ein wesentliches Merkmal eines freien Dienstvertrags?",
+    "type": "single_choice",
+    "correct_answer": "Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen.",
+    "explanation": "Fehlende persönliche Abhängigkeit, keine fixen Arbeitszeiten oder Arbeitsorte sind kennzeichnend für einen freien Dienstvertrag.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "c2387c0692bf128b61860ed7a1edfd97ca99345d",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen."
+    ]
+  },
+  {
+    "id": "vm_12",
+    "question_text": "Die Prokura berechtigt den Prokuristen zu allen ___ und ___ Geschäften und Rechtshandlungen, die der Betrieb irgendeines Unternehmens mit sich bringt?",
+    "type": "single_choice",
+    "correct_answer": "gerichtlichen und außergerichtlichen",
+    "explanation": "Der Umfang der Prokura ist gesetzlich festgelegt und sehr weitreichend.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "941af44a889ebd2de1610992711fa5f6ff49811c",
+    "is_duplicate": false,
+    "possible_answers": [
+      "gerichtlichen und außergerichtlichen"
+    ]
+  },
+  {
+    "id": "vm_13",
+    "question_text": "Wer ist für die Abfuhr der Sozialversicherungsbeiträge und der Lohnsteuer bei einem Werkvertrag zuständig?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Der Auftraggeber",
+      "Der Werkvertragsnehmer selbst",
+      "Die ÖGK",
+      "Das Finanzamt"
+    ],
+    "correct_answer": "Der Werkvertragsnehmer selbst",
+    "explanation": "Als Selbstständiger ist der Werkvertragsnehmer für seine Versteuerung (Einkommensteuer) und Sozialversicherung (SVS) selbst verantwortlich.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f3e29383cb2451633e48496c98000fc28ed01f8a",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_14",
+    "question_text": "Eine Filialprokura beschränkt die Vertretungsmacht auf eine bestimmte Niederlassung?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Die Filialprokura ist eine im Firmenbuch eingetragene Beschränkung der Prokura auf den Betrieb einer einzelnen Filiale.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "a8aa8406e6ec7dbc80b64b4b423c043baa00108a",
+    "is_duplicate": false
+  },
+  {
+    "id": "vm_15",
+    "question_text": "Welcher Vertragstyp liegt vor, wenn ein Grafiker beauftragt wird, ein Logo für ein Unternehmen zu erstellen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Echter Arbeitsvertrag",
+      "Freier Dienstvertrag",
+      "Werkvertrag",
+      "Leihvertrag"
+    ],
+    "correct_answer": "Werkvertrag",
+    "explanation": "Hier wird ein bestimmter Erfolg, nämlich die Erstellung des Logos, geschuldet. Daher handelt es sich um einen Werkvertrag.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "2d662db8094fe6323654ddba2660e16d155edd3d",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_01",
+    "question_text": "Was ist das Hauptziel des Marketings?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Nur die Produktion von Gütern",
+      "Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen",
+      "Die Verwaltung der Finanzen",
+      "Die Einhaltung rechtlicher Vorschriften"
+    ],
+    "correct_answer": "Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen",
+    "explanation": "Marketing stellt den Kunden in den Mittelpunkt, um dessen Bedürfnisse zu erfüllen und dadurch den Unternehmenserfolg zu sichern.",
+    "topic": "Marketing Grundlagen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "7adf8d70d6afc6bf00e7f45f2a2587e0465ac463",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_02",
+    "question_text": "Was versteht man unter Marktsegmentierung?",
+    "type": "single_choice",
+    "correct_answer": "Die Aufteilung eines Gesamtmarktes in homogene Teilmärkte (Segmente).",
+    "explanation": "Die Aufteilung erfolgt nach Kriterien wie Demografie, Geografie oder Verhalten, um Zielgruppen genauer ansprechen zu können.",
+    "topic": "Marktforschung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "85946c31660ba67f96a416c0375619080db2dcf4",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Nur Gesellschaft haftet",
+      "Die Aufteilung eines Gesamtmarktes in homogene Teilmärkte (Segmente).",
+      "Nur Kommanditisten haften"
+    ]
+  },
+  {
+    "id": "mk_03",
+    "question_text": "Die 4 Ps des Marketing-Mix umfassen Produkt-, Preis-, Distributions- und ___?",
+    "type": "single_choice",
+    "correct_answer": "Kommunikationspolitik",
+    "explanation": "Im Englischen: Product, Price, Place, Promotion.",
+    "topic": "Marketinginstrumente",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "7f82a6f317525a2bcfe539e6e71267a7dcec9652",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Kommunikationspolitik"
+    ]
+  },
+  {
+    "id": "mk_04",
+    "question_text": "Die Analyse von bereits vorhandenen, unternehmensinternen Verkaufsstatistiken ist ein Beispiel für Primärforschung?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Das ist ein Beispiel für Sekundärforschung (Desk Research), da auf bereits bestehende Daten zurückgegriffen wird.",
+    "topic": "Marktforschung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "0a6bcfbc054ec106f09467901c319ec6231bec40",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_05",
+    "question_text": "Ordnen Sie die Methoden der richtigen Marktforschungsart zu?",
+    "type": "matching",
+    "options_left": [
+      "Befragung von Kunden",
+      "Analyse von Branchenberichten",
+      "Ein Experiment im Supermarkt"
+    ],
+    "options_right": [
+      "Primärforschung",
+      "Sekundärforschung"
+    ],
+    "correct_matches": [
+      [
+        "Befragung von Kunden",
+        "Primärforschung"
+      ],
+      [
+        "Analyse von Branchenberichten",
+        "Primärforschung"
+      ],
+      [
+        "Ein Experiment im Supermarkt",
+        "Primärforschung"
+      ]
+    ],
+    "explanation": "Primärforschung erhebt neue Daten, Sekundärforschung wertet bestehende Daten aus.",
+    "topic": "Marktforschung",
+    "correct_answer": [
+      [
+        "Befragung von Kunden",
+        "Primärforschung"
+      ],
+      [
+        "Analyse von Branchenberichten",
+        "Primärforschung"
+      ],
+      [
+        "Ein Experiment im Supermarkt",
+        "Primärforschung"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "3805a0122ea9bed96e04eba4953f07fc8baeba6a",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_06",
+    "question_text": "Wofür steht die Abkürzung USP?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Unique Sales Price",
+      "Unique Selling Proposition",
+      "Universal Service Provider",
+      "Under Sale Pressure"
+    ],
+    "correct_answer": "Unique Selling Proposition",
+    "explanation": "USP bezeichnet das einzigartige Verkaufsversprechen oder Alleinstellungsmerkmal eines Produkts.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "53cfa1db36b2a2c05d3a3fade6fb1e32173480e3",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_07",
+    "question_text": "Die Entwicklung eines komplett neuen Produkts für das Sortiment nennt man ___?",
+    "type": "single_choice",
+    "correct_answer": "Produktinnovation",
+    "explanation": "Eine Produktinnovation ist die Einführung eines neuen oder wesentlich verbesserten Produkts.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "e701d52efc7ba14c8379e34fa2bbc67f1a410225",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Produkt, Preis, Platzierung, Publicity",
+      "Produkt, Preis, People, Prozesse",
+      "Produktinnovation"
+    ]
+  },
+  {
+    "id": "mk_08",
+    "question_text": "Welche Phase des Produktlebenszyklus ist durch den höchsten Umsatz gekennzeichnet?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Einführungsphase",
+      "Wachstumsphase",
+      "Reifephase",
+      "Rückgangsphase"
+    ],
+    "correct_answer": "Reifephase",
+    "explanation": "In der Reifephase erreicht der Umsatz seinen Höhepunkt, bevor er in der Sättigungsphase zu sinken beginnt.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "0bcc80c5f4b694d3f519a441aca8d72b01015a43",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_09",
+    "question_text": "Eine versteckte Preiserhöhung liegt vor, wenn bei gleichem Preis die Inhaltsmenge reduziert wird?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Dieses Phänomen wird auch als 'Shrinkflation' bezeichnet.",
+    "topic": "Preispolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "e3d17fe89ae4776fea9f7472aa9710e09785b139",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_10",
+    "question_text": "Was ist das Hauptziel der Kommunikationspolitik?",
+    "type": "single_choice",
+    "correct_answer": "Die gezielte Beeinflussung von Wissen, Einstellungen und Verhalten der Zielgruppen zur Erreichung der Marketingziele.",
+    "explanation": "Instrumente sind z.B. Werbung, PR, Verkaufsförderung und Sponsoring.",
+    "topic": "Kommunikationspolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "d8f4f1bd8f662de4e7626ed2712bc7c33a6f8fc1",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Die gezielte Beeinflussung von Wissen, Einstellungen und Verhalten der Zielgruppen zur Erreichung der Marketingziele."
+    ]
+  },
+  {
+    "id": "mk_11",
+    "question_text": "Welches der folgenden Instrumente gehört NICHT zur Kommunikationspolitik?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Werbung",
+      "Public Relations",
+      "Franchising",
+      "Sponsoring"
+    ],
+    "correct_answer": "Franchising",
+    "explanation": "Franchising ist eine Methode der Distributionspolitik, also des Vertriebs.",
+    "topic": "Marketinginstrumente",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "5d64720ccd85011ac5ee7004b94056eb60f42cba",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_12",
+    "question_text": "Die Materialwirtschaft befasst sich in einem Produktionsbetrieb mit der Beschaffung von ___?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Rohstoffen",
+      "Hilfsstoffen",
+      "Betriebsstoffen",
+      "Fertigen Handelswaren"
+    ],
+    "correct_answer": [
+      "Rohstoffen",
+      "Hilfsstoffen",
+      "Betriebsstoffen"
+    ],
+    "explanation": "Die Materialwirtschaft sichert die Versorgung der Produktion mit allen nötigen Materialien. Handelswaren fallen in die Warenwirtschaft eines Handelsbetriebs.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "36d3e054ac5815dfe5f24655bd50e7bc17725493",
+    "is_duplicate": false
+  },
+  {
+    "id": "mk_13",
+    "question_text": "Ein Zielkonflikt in der Warenwirtschaft besteht zwischen niedrigen ___ und hoher Lieferbereitschaft?",
+    "type": "single_choice",
+    "correct_answer": "Lagerkosten",
+    "explanation": "Hohe Lagerbestände sichern die Lieferbereitschaft, verursachen aber hohe Kosten. Niedrige Bestände senken die Kosten, erhöhen aber das Risiko von Lieferengpässen.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f98810f0a3fb690ec240daaad65f494b16f0daf4",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Lagerkosten"
+    ]
+  },
+  {
+    "id": "mk_14",
+    "question_text": "Die Formel der AIDAS-Werbewirkung lautet: Attention, Interest, ___, Action, Satisfaction?",
+    "type": "single_choice",
+    "correct_answer": "Desire",
+    "explanation": "Nachdem Interesse geweckt wurde, soll der Wunsch (Desire) nach dem Produkt entstehen, der zur Handlung (Action) führt.",
+    "topic": "Kommunikationspolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "336a0885fabddeaaf1bc0f7a86ae99ebbb9bdca9",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Desire"
+    ]
+  },
+  {
+    "id": "mk_15",
+    "question_text": "Ein Unternehmen, das sich in der Öffentlichkeit als besonders umweltfreundlich darstellt, obwohl es das kaum ist, betreibt ___?",
+    "type": "single_choice",
+    "correct_answer": "Greenwashing",
+    "explanation": "Greenwashing ist der Versuch, durch Marketing- und PR-Maßnahmen ein 'grünes' Image zu erlangen, ohne dass es dafür eine ausreichende Grundlage gibt.",
+    "topic": "Marketingethik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f71b0ac24769f611c52212ae553094f8d2b0d4b8",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Greenwashing"
+    ]
+  },
+  {
+    "id": "le_01",
+    "question_text": "Welche beiden Hauptfaktoren werden für die betriebliche Leistungserstellung benötigt?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Menschliche Arbeitsleistung",
+      "Betriebsvermögen",
+      "Staatliche Subventionen",
+      "Werbekampagnen"
+    ],
+    "correct_answer": [
+      "Menschliche Arbeitsleistung",
+      "Betriebsvermögen"
+    ],
+    "explanation": "Die Leistungserstellung basiert auf dem kombinierten Einsatz von menschlicher Arbeit und dem Betriebsvermögen (Maschinen, Anlagen, etc.).",
+    "topic": "Leistungserstellung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "5902c99defc4dfb6f3f0c04e0db66b92f282e54b",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_02",
+    "question_text": "Die Kennzahl, die das Verhältnis von Ertrag zu Aufwand misst, nennt sich ___?",
+    "type": "single_choice",
+    "correct_answer": "Wirtschaftlichkeit",
+    "explanation": "Wirtschaftlichkeit = Ertrag / Aufwand. Ein Wert > 1 bedeutet, dass das Unternehmen wirtschaftlich arbeitet.",
+    "topic": "Kennzahlen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "8ba7add32d4dd75e1bee1bc845babe59f2c87de4",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Erlös / variable Kosten",
+      "Output / Input",
+      "Wirtschaftlichkeit"
+    ]
+  },
+  {
+    "id": "le_03",
+    "question_text": "Was misst die Kennzahl 'Produktivität'?",
+    "type": "single_choice",
+    "correct_answer": "Das Mengenverhältnis zwischen Output (Ausbringungsmenge) und Input (Einsatzmenge).",
+    "explanation": "Die Produktivität misst die reine Mengeneffizienz, z.B. Stück pro Stunde, unabhängig von Preisen oder Kosten.",
+    "topic": "Kennzahlen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "4a394cd7740c22fdb8cff1643b721f6cfa19f338",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Das Mengenverhältnis zwischen Output (Ausbringungsmenge) und Input (Einsatzmenge)."
+    ]
+  },
+  {
+    "id": "le_04",
+    "question_text": "Ordnen Sie die Kostenarten den richtigen Beispielen zu?",
+    "type": "matching",
+    "options_left": [
+      "Kosten für Rohstoffe",
+      "Miete für die Produktionshalle",
+      "Gehälter der Verwaltung"
+    ],
+    "options_right": [
+      "Produktionskosten",
+      "Indirekte Kosten",
+      "Fixkosten"
+    ],
+    "correct_matches": [
+      [
+        "Kosten für Rohstoffe",
+        "Produktionskosten"
+      ],
+      [
+        "Miete für die Produktionshalle",
+        "Produktionskosten"
+      ],
+      [
+        "Gehälter der Verwaltung",
+        "Produktionskosten"
+      ]
+    ],
+    "explanation": "Produktionskosten sind direkt der Herstellung zuzuordnen. Fixkosten fallen unabhängig von der Produktionsmenge an. Indirekte Kosten können nicht direkt einem Produkt zugeordnet werden.",
+    "topic": "Kostenarten",
+    "correct_answer": [
+      [
+        "Kosten für Rohstoffe",
+        "Produktionskosten"
+      ],
+      [
+        "Miete für die Produktionshalle",
+        "Produktionskosten"
+      ],
+      [
+        "Gehälter der Verwaltung",
+        "Produktionskosten"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "898e80307cbcf4c682112493a5a0977c5827d3d2",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_05",
+    "question_text": "Die Kennzahl, die angibt, wie viele der gelieferten Bestellungen pünktlich waren, ist die ___?",
+    "type": "single_choice",
+    "correct_answer": "Termintreue",
+    "explanation": "Die Termintreue ist ein wichtiger Indikator für die Lieferqualität und die Kundenzufriedenheit.",
+    "topic": "Kundenzufriedenheit",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "16ad2fdd5e4aa0859586dd7a44bbb9c49fea4baa",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Termintreue"
+    ]
+  },
+  {
+    "id": "le_06",
+    "question_text": "Nachhaltigkeit in der Leistungserstellung bedeutet, Ressourcen so einzusetzen, dass auch zukünftige Generationen ihre Bedürfnisse befriedigen können?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Dies ist die Kerndefinition der Nachhaltigkeit nach dem Brundtland-Bericht.",
+    "topic": "Nachhaltigkeit",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "be3e0c2e0d4c40bf4d2d60aebdfe012ee8c1b32d",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_07",
+    "question_text": "Was versteht man unter Unternehmensethik?",
+    "type": "single_choice",
+    "correct_answer": "Die Auseinandersetzung mit moralischen Wertvorstellungen und Verhaltensregeln, die ein Unternehmen vertreten und einhalten sollte.",
+    "explanation": "Unternehmensethik befasst sich mit der gesellschaftlichen Verantwortung und dem moralischen Handeln von Unternehmen.",
+    "topic": "Unternehmensethik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f95c3ba44053e9bd2d41fdd3b21e9981505de87f",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Die Auseinandersetzung mit moralischen Wertvorstellungen und Verhaltensregeln, die ein Unternehmen vertreten und einhalten sollte."
+    ]
+  },
+  {
+    "id": "le_08",
+    "question_text": "Berechnen Sie die Rentabilität des Eigenkapitals: Gewinn = 20.000 €, Eigenkapital = 200.000 €?",
+    "type": "calculation",
+    "correct_answer": "10",
+    "explanation": "Rentabilität = (Gewinn / Eigenkapital) * 100 = (20.000 / 200.000) * 100 = 10%.",
+    "topic": "Rechenbeispiele",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "c6ae906a73f4c18dd4412a5af3b7a37270781d0b",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_09",
+    "question_text": "Welche der folgenden Maßnahmen dient direkt der Steigerung der Produktqualität?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Verkürzung der Lieferzeit",
+      "Reduzierung der Fehlerquote in der Produktion",
+      "Erhöhung des Werbebudgets",
+      "Anbieten von mehr Rabatten"
+    ],
+    "correct_answer": "Reduzierung der Fehlerquote in der Produktion",
+    "explanation": "Die Produktqualität wird direkt durch die Anzahl der fehlerfreien Produkte im Verhältnis zur Gesamtmenge gemessen.",
+    "topic": "Qualität",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "382911d181049930039a5f8b988c3d06522d408d",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_10",
+    "question_text": "Die Kosten für den Transport von Waren vom Lieferanten zum Betrieb zählen zu den ___?",
+    "type": "single_choice",
+    "correct_answer": "Transportkosten",
+    "explanation": "Transportkosten umfassen alle Kosten für die Beförderung von Gütern, sowohl extern als auch intern.",
+    "topic": "Kostenarten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "a27d75b7caece3044e81ec14b1eddf1e7578ab92",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Transportkosten"
+    ]
+  },
+  {
+    "id": "le_11",
+    "question_text": "Ein Unternehmen, das sehr flexibel auf Sonderwünsche von Kunden eingeht, hat eine hohe Flexibilität?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Die Flexibilität misst, inwieweit ein Unternehmen in der Lage ist, individuelle Kundenwünsche zu erfüllen.",
+    "topic": "Kundenzufriedenheit",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "8edabd96363f7849d39d45fd92f31ee0b5293f4b",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_12",
+    "question_text": "Arbeitsintensive Leistungserstellung bedeutet, dass der Anteil der ___ an den Gesamtkosten sehr hoch ist?",
+    "type": "single_choice",
+    "correct_answer": "Personalkosten",
+    "explanation": "Bei arbeitsintensiven Prozessen dominieren die Lohn- und Gehaltskosten, z.B. bei Dienstleistungen.",
+    "topic": "Produktionskosten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "c2bb39956381bb3a5da176fcbfc0997e0b53ee94",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Personalkosten"
+    ]
+  },
+  {
+    "id": "le_13",
+    "question_text": "Welche der folgenden Kennzahlen ist am besten geeignet, um den finanziellen Erfolg eines Unternehmens im Verhältnis zum eingesetzten Kapital zu messen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Produktivität",
+      "Wirtschaftlichkeit",
+      "Rentabilität",
+      "Termintreue"
+    ],
+    "correct_answer": "Rentabilität",
+    "explanation": "Die Rentabilität (z.B. Eigenkapitalrentabilität) setzt den Gewinn ins Verhältnis zum Kapital und misst so den finanziellen Erfolg der Investition.",
+    "topic": "Kennzahlen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "6017b557eaf044748210cef50850e4fff8b7bfe0",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_14",
+    "question_text": "Die Kosten für die Miete eines Lagers sind typischerweise variable Kosten?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Mietkosten sind Fixkosten, da sie unabhängig von der eingelagerten Menge oder der Produktionsmenge anfallen.",
+    "topic": "Kostenarten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "e06629f2ac905441852dd13e818112886efdf060",
+    "is_duplicate": false
+  },
+  {
+    "id": "le_15",
+    "question_text": "Was ist das Ziel der Beschaffungsmarktforschung?",
+    "type": "single_choice",
+    "correct_answer": "Informationen über Beschaffungsmärkte und Lieferanten zu sammeln und zu analysieren.",
+    "explanation": "Sie dient dazu, die besten Lieferanten, Materialien und Konditionen für die Beschaffung zu finden.",
+    "topic": "Beschaffungsmarketing",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "78940b44060f9bca3bf42d172aeae730b33428e0",
+    "is_duplicate": false,
+    "possible_answers": [
+      "Informationen über Beschaffungsmärkte und Lieferanten zu sammeln und zu analysieren."
+    ]
+  },
+  {
+    "id": "rf_16",
+    "question_text": "Die Abkürzung 'ppa.' unter einer Unterschrift steht für ___?",
+    "type": "single_choice",
+    "correct_answer": "per procura",
+    "explanation": "ppa. (per procura autoritate) ist die Kennzeichnung für die Unterschrift eines Prokuristen.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "per procura"
+    ]
+  },
+  {
+    "id": "rf_17",
+    "question_text": "Was ist der Hauptzweck einer Genossenschaft?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Maximierung des Gewinns für Aktionäre",
+      "Förderung der Mitglieder",
+      "Geheimhaltung der Gesellschafter",
+      "Minimierung der Haftung"
+    ],
+    "correct_answer": "Förderung der Mitglieder",
+    "explanation": "Eine Genossenschaft (Gen) hat primär das Ziel, den Erwerb oder die Wirtschaft ihrer Mitglieder zu fördern.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_18",
+    "question_text": "Welches Dokument ist ein Wertpapier und berechtigt zur Abholung der Ware im Seehafen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "CMR-Frachtbrief",
+      "Ursprungszeugnis",
+      "Handelsrechnung",
+      "Konnossement (Bill of Lading)"
+    ],
+    "correct_answer": "Konnossement (Bill of Lading)",
+    "explanation": "Das Konnossement ist ein Traditionspapier, das den Anspruch auf die Ware im Zielhafen verbrieft.",
+    "topic": "Außenhandel",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_19",
+    "question_text": "Die SWOT-Analyse ist ein Instrument der ___?",
+    "type": "single_choice",
+    "correct_answer": "Marktanalyse",
+    "explanation": "Die SWOT-Analyse (Strengths, Weaknesses, Opportunities, Threats) ist ein strategisches Planungsinstrument, das oft in der Marktanalyse verwendet wird.",
+    "topic": "Marketing",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Marktanalyse"
+    ]
+  },
+  {
+    "id": "rf_20",
+    "question_text": "Was beschreibt 'Greenwashing'?",
+    "type": "single_choice",
+    "correct_answer": "Ein Unternehmen gibt sich umweltfreundlicher, als es tatsächlich ist.",
+    "explanation": "Greenwashing ist eine PR-Methode, bei der Unternehmen durch gezielte Desinformation ein umweltfreundliches und verantwortungsbewusstes Image vortäuschen.",
+    "topic": "Marketingethik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Ein Unternehmen gibt sich umweltfreundlicher, als es tatsächlich ist."
+    ]
+  },
+  {
+    "id": "rf_21",
+    "question_text": "Ein Kommanditist haftet in der Regel?",
+    "type": "single_choice",
+    "possible_answers": [
+      "unbeschränkt.",
+      "nur mit seiner Einlage.",
+      "gar nicht.",
+      "solidarisch mit allen anderen."
+    ],
+    "correct_answer": "nur mit seiner Einlage.",
+    "explanation": "Der Kommanditist (Teilhafter) einer KG haftet nur bis zur Höhe seiner im Firmenbuch eingetragenen Haftsumme (Einlage).",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_22",
+    "question_text": "Berechne die Eigenkapitalrentabilität: Gewinn = 50.000 €, Eigenkapital = 500.000 €?",
+    "type": "calculation",
+    "correct_answer": "10",
+    "explanation": "Eigenkapitalrentabilität = (Gewinn / Eigenkapital) * 100 = (50.000 / 500.000) * 100 = 10%.",
+    "topic": "Rechenbeispiele",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_23",
+    "question_text": "Welche Incoterm-Klausel bedeutet, dass der Verkäufer die Ware am benannten Bestimmungsort entladebereit zur Verfügung stellt?",
+    "type": "single_choice",
+    "possible_answers": [
+      "EXW",
+      "FOB",
+      "CIF",
+      "DPU"
+    ],
+    "correct_answer": "DPU",
+    "explanation": "DPU (Delivered at Place Unloaded) bedeutet, dass der Verkäufer das Risiko und die Kosten bis zum Entladen am Bestimmungsort trägt.",
+    "topic": "Außenhandel",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_24",
+    "question_text": "Zu welcher Phase des Produktlebenszyklus passt ein Relaunch am besten?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Einführungsphase",
+      "Wachstumsphase",
+      "Reife- oder Sättigungsphase",
+      "Rückgangsphase"
+    ],
+    "correct_answer": "Reife- oder Sättigungsphase",
+    "explanation": "Ein Relaunch (Produktüberarbeitung) wird meist in der Reife- oder Sättigungsphase durchgeführt, um den Lebenszyklus zu verlängern.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_25",
+    "question_text": "Eine Arbeitsgemeinschaft von zwei Bauunternehmen für ein großes Projekt ist typischerweise eine ___?",
+    "type": "single_choice",
+    "correct_answer": "GesbR",
+    "explanation": "Eine Gesellschaft bürgerlichen Rechts (GesbR) wird oft für zeitlich begrenzte Projekte oder Arbeitsgemeinschaften (ARGE) gegründet.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "GesbR"
+    ]
+  },
+  {
+    "id": "rf_26",
+    "question_text": "Welche Art von Firma ist 'Huber & Söhne OG'?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Sachfirma",
+      "Personenfirma",
+      "Fantasiefirma",
+      "Gemischte Firma"
+    ],
+    "correct_answer": "Personenfirma",
+    "explanation": "Eine Personenfirma enthält den Namen eines oder mehrerer Gesellschafter.",
+    "topic": "Unternehmensgrundlagen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_27",
+    "question_text": "Ein stiller Gesellschafter scheint nach außen nicht auf und wird nicht im ___ eingetragen?",
+    "type": "single_choice",
+    "correct_answer": "Firmenbuch",
+    "explanation": "Die stille Gesellschaft ist eine reine Innengesellschaft, die Beteiligung ist nach außen nicht ersichtlich.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Nicht öffentlich",
+      "Firmenbuch",
+      "Kein Rechtsformzusatz nötig"
+    ]
+  },
+  {
+    "id": "rf_28",
+    "question_text": "Welche der folgenden Tätigkeiten ist eine typische Aufgabe der Distributionspolitik?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Eine Werbekampagne gestalten",
+      "Einen neuen Produktpreis festlegen",
+      "Einen Online-Shop einrichten",
+      "Eine Rabattaktion planen"
+    ],
+    "correct_answer": "Einen Online-Shop einrichten",
+    "explanation": "Die Distributionspolitik (Place) befasst sich mit den Wegen, wie das Produkt zum Kunden gelangt, z.B. über Filialen, Händler oder einen Online-Shop.",
+    "topic": "Marketing",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_29",
+    "question_text": "Was ist der Hauptvorteil einer dezentralen Beschaffung?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Bessere Mengenrabatte",
+      "Schnellere Reaktion auf spezifische Bedarfe",
+      "Geringerer Verwaltungsaufwand",
+      "Bessere Übersicht über alle Einkäufe"
+    ],
+    "correct_answer": "Schnellere Reaktion auf spezifische Bedarfe",
+    "explanation": "Bei der dezentralen Beschaffung können Abteilungen schneller und flexibler auf ihren eigenen, spezifischen Bedarf reagieren.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_30",
+    "question_text": "Ordnen Sie die Begriffe dem richtigen Vertragstyp zu?",
+    "type": "matching",
+    "options_left": [
+      "Persönliche Abhängigkeit",
+      "Herstellung eines Werks",
+      "Arbeitskraft zur Verfügung stellen ohne Weisungsbindung"
+    ],
+    "options_right": [
+      "Werkvertrag",
+      "Freier Dienstvertrag",
+      "Echter Arbeitsvertrag"
+    ],
+    "correct_matches": [
+      [
+        "Persönliche Abhängigkeit",
+        "Werkvertrag"
+      ],
+      [
+        "Herstellung eines Werks",
+        "Werkvertrag"
+      ],
+      [
+        "Arbeitskraft zur Verfügung stellen ohne Weisungsbindung",
+        "Werkvertrag"
+      ]
+    ],
+    "explanation": "Die persönliche Abhängigkeit ist das Kernmerkmal des echten Arbeitsvertrags, der Werkvertrag zielt auf ein Ergebnis ab und der freie Dienstvertrag stellt Arbeitskraft ohne Weisungsbindung bereit.",
+    "topic": "Beschäftigungsverhältnisse",
+    "correct_answer": [
+      [
+        "Persönliche Abhängigkeit",
+        "Werkvertrag"
+      ],
+      [
+        "Herstellung eines Werks",
+        "Werkvertrag"
+      ],
+      [
+        "Arbeitskraft zur Verfügung stellen ohne Weisungsbindung",
+        "Werkvertrag"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_31",
+    "question_text": "Eine Aktiengesellschaft (AG) benötigt in Österreich ein Mindestgrundkapital von ___?",
+    "type": "single_choice",
+    "correct_answer": "70.000 €",
+    "explanation": "Das gesetzliche Mindestgrundkapital für eine AG in Österreich beträgt 70.000 Euro.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "70.000 €"
+    ]
+  },
+  {
+    "id": "rf_32",
+    "question_text": "Welche der folgenden Aussagen zur Prokura ist FALSCH?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Sie muss im Firmenbuch eingetragen werden.",
+      "Sie kann nur von einem im Firmenbuch eingetragenen Unternehmer erteilt werden.",
+      "Sie berechtigt zum Verkauf des gesamten Unternehmens.",
+      "Der Prokurist unterschreibt mit 'ppa.'"
+    ],
+    "correct_answer": "Sie berechtigt zum Verkauf des gesamten Unternehmens.",
+    "explanation": "Die Prokura ist zwar sehr umfangreich, ermächtigt aber nicht zu sogenannten Grundlagengeschäften wie dem Verkauf des Unternehmens.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_33",
+    "question_text": "Ein Exporteur liefert Ware, aber der Importeur zahlt nicht. Dieses Risiko nennt man ___?",
+    "type": "single_choice",
+    "correct_answer": "Zahlungsausfallrisiko",
+    "explanation": "Das Zahlungsausfallrisiko (oder Delkredererisiko) ist das Risiko, dass der Käufer die Rechnung nicht begleicht.",
+    "topic": "Außenhandel",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Zahlungsausfallrisiko"
+    ]
+  },
+  {
+    "id": "rf_34",
+    "question_text": "Die Erhebung neuer, bisher unbekannter Daten am Markt nennt man Primärforschung?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Primärforschung (Field Research) umfasst Methoden wie Befragung, Beobachtung oder Experiment, um neue Daten zu gewinnen.",
+    "topic": "Marktforschung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_35",
+    "question_text": "Berechne die Wirtschaftlichkeit: Ertrag = 150.000 €, Aufwand = 120.000 €?",
+    "type": "calculation",
+    "correct_answer": "1.25",
+    "explanation": "Wirtschaftlichkeit = Ertrag / Aufwand = 150.000 / 120.000 = 1,25. Ein Wert über 1 bedeutet, das Unternehmen arbeitet wirtschaftlich.",
+    "topic": "Rechenbeispiele",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_36",
+    "question_text": "Was gehört zur Konditionenpolitik?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Gewährung von Rabatten",
+      "Festlegung von Zahlungszielen",
+      "Verpackungsdesign",
+      "Garantiebestimmungen"
+    ],
+    "correct_answer": [
+      "Gewährung von Rabatten",
+      "Festlegung von Zahlungszielen",
+      "Garantiebestimmungen"
+    ],
+    "explanation": "Die Konditionenpolitik regelt alle Bedingungen rund um den Preis, wie Rabatte, Skonti, Liefer- und Zahlungsbedingungen sowie Garantien.",
+    "topic": "Preispolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_37",
+    "question_text": "Ein Unternehmen nimmt eine völlig neue Produktgruppe in sein Sortiment auf. Diesen Vorgang nennt man ___?",
+    "type": "single_choice",
+    "correct_answer": "Diversifikation",
+    "explanation": "Bei der Diversifikation erweitert ein Unternehmen sein Angebot um Produkte, die in keinem direkten Zusammenhang zum bisherigen Sortiment stehen.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Diversifikation"
+    ]
+  },
+  {
+    "id": "rf_38",
+    "question_text": "Die Incoterm-Klausel 'FOB' steht für 'Free On Board' und wird hauptsächlich im See- und Binnenschiffsverkehr verwendet?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "FOB ist eine klassische Klausel für den Schiffsverkehr, bei der die Gefahr auf den Käufer übergeht, sobald die Ware an Bord des Schiffes ist.",
+    "topic": "Außenhandel",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_39",
+    "question_text": "Welches Organ ist bei einer AG für die Geschäftsführung zuständig?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Die Hauptversammlung",
+      "Der Aufsichtsrat",
+      "Der Vorstand",
+      "Der Geschäftsführer"
+    ],
+    "correct_answer": "Der Vorstand",
+    "explanation": "Die Leitung (Geschäftsführung) einer AG obliegt dem Vorstand. Der Aufsichtsrat bestellt und kontrolliert den Vorstand.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_40",
+    "question_text": "Die AIDAS-Formel beschreibt die Phasen der Werbewirkung. Wofür steht das 'D'?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Decision (Entscheidung)",
+      "Desire (Wunsch)",
+      "Distribution (Verteilung)",
+      "Development (Entwicklung)"
+    ],
+    "correct_answer": "Desire (Wunsch)",
+    "explanation": "AIDAS steht für Attention, Interest, Desire, Action, Satisfaction. Das 'D' steht für Desire, den Kaufwunsch.",
+    "topic": "Marketing",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_41",
+    "question_text": "Ein Unternehmen kauft Rohstoffe in großen Mengen auf Lager, um von Mengenrabatten zu profitieren. Dies ist ein Beispiel für ___?",
+    "type": "single_choice",
+    "correct_answer": "Vorratsbeschaffung",
+    "explanation": "Bei der Vorratsbeschaffung werden größere Mengen auf einmal beschafft und gelagert, um günstige Einkaufspreise zu erzielen.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Vorratsbeschaffung"
+    ]
+  },
+  {
+    "id": "rf_42",
+    "question_text": "Was ist der Hauptnachteil der unbeschränkten Haftung?",
+    "type": "single_choice",
+    "correct_answer": "Der Unternehmer haftet mit seinem gesamten Privatvermögen.",
+    "explanation": "Bei der unbeschränkten Haftung ist das private Vermögen des Unternehmers nicht vor dem Zugriff der Gläubiger geschützt.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "possible_answers": [
+      "Der Unternehmer haftet mit seinem gesamten Privatvermögen."
+    ]
+  },
+  {
+    "id": "rf_43",
+    "question_text": "Welche dieser Aussagen beschreibt solidarische Haftung?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Jeder haftet nur für seinen eigenen Anteil.",
+      "Ein Gläubiger kann sich aussuchen, von welchem Gesellschafter er die gesamte Schuld fordert.",
+      "Die Haftung ist auf das Gesellschaftsvermögen beschränkt.",
+      "Nur der Geschäftsführer haftet."
+    ],
+    "correct_answer": "Ein Gläubiger kann sich aussuchen, von welchem Gesellschafter er die gesamte Schuld fordert.",
+    "explanation": "Solidarische Haftung (Gesamtschuldnerische Haftung) bedeutet, dass jeder Gesellschafter für die gesamten Schulden der Gesellschaft haftet.",
+    "topic": "Rechtsformen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_44",
+    "question_text": "Die Eintragung ins Firmenbuch ist für Kapitalgesellschaften verpflichtend?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Alle Kapitalgesellschaften (wie GmbH und AG) müssen zwingend ins Firmenbuch eingetragen werden, um rechtlich zu entstehen.",
+    "topic": "Unternehmensgrundlagen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "rf_45",
+    "question_text": "Wie hoch ist die Mindestkörperschaftsteuer für eine GmbH pro Jahr in Österreich?",
+    "type": "single_choice",
+    "possible_answers": [
+      "0 €",
+      "500 €",
+      "1.750 €",
+      "3.500 €"
+    ],
+    "correct_answer": "500 €",
+    "explanation": "Für eine GmbH beträgt die Mindest-KöSt 500 € pro Jahr (für Neugründungen in den ersten Jahren reduziert). 3.500 € gilt für eine AG.",
+    "topic": "Steuern",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ]
+  },
+  {
+    "id": "ma_0091",
+    "question_text": "Was ist das Hauptziel des Marketings?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Nur die Produktion von Gütern",
+      "Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen",
+      "Die Verwaltung der Finanzen",
+      "Die Einhaltung rechtlicher Vorschriften"
+    ],
+    "correct_answer": "Die Bedürfnisse der Zielgruppen zu erfüllen und das Unternehmen erfolgreich zu machen",
+    "explanation": "Marketing stellt den Kunden in den Mittelpunkt, um dessen Bedürfnisse zu erfüllen und dadurch den Unternehmenserfolg zu sichern.",
+    "topic": "Marketing Grundlagen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "7adf8d70d6afc6bf00e7f45f2a2587e0465ac463",
+    "is_duplicate": true
+  },
+  {
+    "id": "ma_0092",
+    "question_text": "Was versteht man unter Marktsegmentierung?",
+    "type": "single_choice",
+    "correct_answer": "Die Aufteilung eines Gesamtmarktes in homogene Teilmärkte (Segmente).",
+    "explanation": "Die Aufteilung erfolgt nach Kriterien wie Demografie, Geografie oder Verhalten, um Zielgruppen genauer ansprechen zu können.",
+    "topic": "Marktforschung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "85946c31660ba67f96a416c0375619080db2dcf4",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Nur Kommanditisten haften",
+      "Die Aufteilung eines Gesamtmarktes in homogene Teilmärkte (Segmente).",
+      "Nur Gesellschaft haftet"
+    ]
+  },
+  {
+    "id": "ma_0093",
+    "question_text": "Die 4 Ps des Marketing-Mix umfassen Produkt-, Preis-, Distributions- und ___?",
+    "type": "single_choice",
+    "correct_answer": "Kommunikationspolitik",
+    "explanation": "Im Englischen: Product, Price, Place, Promotion.",
+    "topic": "Marketinginstrumente",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "7f82a6f317525a2bcfe539e6e71267a7dcec9652",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Kommunikationspolitik"
+    ]
+  },
+  {
+    "id": "ma_0094",
+    "question_text": "Die Analyse von bereits vorhandenen, unternehmensinternen Verkaufsstatistiken ist ein Beispiel für Primärforschung?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Das ist ein Beispiel für Sekundärforschung (Desk Research), da auf bereits bestehende Daten zurückgegriffen wird.",
+    "topic": "Marktforschung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "0a6bcfbc054ec106f09467901c319ec6231bec40",
+    "is_duplicate": true
+  },
+  {
+    "id": "ma_0095",
+    "question_text": "Ordnen Sie die Methoden der richtigen Marktforschungsart zu?",
+    "type": "matching",
+    "options_left": [
+      "Befragung von Kunden",
+      "Analyse von Branchenberichten",
+      "Ein Experiment im Supermarkt"
+    ],
+    "options_right": [
+      "Primärforschung",
+      "Sekundärforschung"
+    ],
+    "correct_matches": [
+      [
+        "Befragung von Kunden",
+        "Primärforschung"
+      ],
+      [
+        "Analyse von Branchenberichten",
+        "Primärforschung"
+      ],
+      [
+        "Ein Experiment im Supermarkt",
+        "Primärforschung"
+      ]
+    ],
+    "explanation": "Primärforschung erhebt neue Daten, Sekundärforschung wertet bestehende Daten aus.",
+    "topic": "Marktforschung",
+    "correct_answer": [
+      [
+        "Befragung von Kunden",
+        "Primärforschung"
+      ],
+      [
+        "Analyse von Branchenberichten",
+        "Primärforschung"
+      ],
+      [
+        "Ein Experiment im Supermarkt",
+        "Primärforschung"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "3805a0122ea9bed96e04eba4953f07fc8baeba6a",
+    "is_duplicate": true
+  },
+  {
+    "id": "pr_0096",
+    "question_text": "Wofür steht die Abkürzung USP?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Unique Sales Price",
+      "Unique Selling Proposition",
+      "Universal Service Provider",
+      "Under Sale Pressure"
+    ],
+    "correct_answer": "Unique Selling Proposition",
+    "explanation": "USP bezeichnet das einzigartige Verkaufsversprechen oder Alleinstellungsmerkmal eines Produkts.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "53cfa1db36b2a2c05d3a3fade6fb1e32173480e3",
+    "is_duplicate": true
+  },
+  {
+    "id": "pr_0097",
+    "question_text": "Die Entwicklung eines komplett neuen Produkts für das Sortiment nennt man ___?",
+    "type": "single_choice",
+    "correct_answer": "Produktinnovation",
+    "explanation": "Eine Produktinnovation ist die Einführung eines neuen oder wesentlich verbesserten Produkts.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "e701d52efc7ba14c8379e34fa2bbc67f1a410225",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Produkt, Preis, Platzierung, Publicity",
+      "Produktinnovation",
+      "Produkt, Preis, People, Prozesse"
+    ]
+  },
+  {
+    "id": "pr_0098",
+    "question_text": "Welche Phase des Produktlebenszyklus ist durch den höchsten Umsatz gekennzeichnet?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Einführungsphase",
+      "Wachstumsphase",
+      "Reifephase",
+      "Rückgangsphase"
+    ],
+    "correct_answer": "Reifephase",
+    "explanation": "In der Reifephase erreicht der Umsatz seinen Höhepunkt, bevor er in der Sättigungsphase zu sinken beginnt.",
+    "topic": "Produktpolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "0bcc80c5f4b694d3f519a441aca8d72b01015a43",
+    "is_duplicate": true
+  },
+  {
+    "id": "pr_0099",
+    "question_text": "Eine versteckte Preiserhöhung liegt vor, wenn bei gleichem Preis die Inhaltsmenge reduziert wird?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Dieses Phänomen wird auch als 'Shrinkflation' bezeichnet.",
+    "topic": "Preispolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "e3d17fe89ae4776fea9f7472aa9710e09785b139",
+    "is_duplicate": true
+  },
+  {
+    "id": "ko_0100",
+    "question_text": "Was ist das Hauptziel der Kommunikationspolitik?",
+    "type": "single_choice",
+    "correct_answer": "Die gezielte Beeinflussung von Wissen, Einstellungen und Verhalten der Zielgruppen zur Erreichung der Marketingziele.",
+    "explanation": "Instrumente sind z.B. Werbung, PR, Verkaufsförderung und Sponsoring.",
+    "topic": "Kommunikationspolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "d8f4f1bd8f662de4e7626ed2712bc7c33a6f8fc1",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Die gezielte Beeinflussung von Wissen, Einstellungen und Verhalten der Zielgruppen zur Erreichung der Marketingziele."
+    ]
+  },
+  {
+    "id": "ma_0101",
+    "question_text": "Welches der folgenden Instrumente gehört NICHT zur Kommunikationspolitik?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Werbung",
+      "Public Relations",
+      "Franchising",
+      "Sponsoring"
+    ],
+    "correct_answer": "Franchising",
+    "explanation": "Franchising ist eine Methode der Distributionspolitik, also des Vertriebs.",
+    "topic": "Marketinginstrumente",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "5d64720ccd85011ac5ee7004b94056eb60f42cba",
+    "is_duplicate": true
+  },
+  {
+    "id": "ma_0102",
+    "question_text": "Die Materialwirtschaft befasst sich in einem Produktionsbetrieb mit der Beschaffung von ___?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Rohstoffen",
+      "Hilfsstoffen",
+      "Betriebsstoffen",
+      "Fertigen Handelswaren"
+    ],
+    "correct_answer": [
+      "Rohstoffen",
+      "Hilfsstoffen",
+      "Betriebsstoffen"
+    ],
+    "explanation": "Die Materialwirtschaft sichert die Versorgung der Produktion mit allen nötigen Materialien. Handelswaren fallen in die Warenwirtschaft eines Handelsbetriebs.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "36d3e054ac5815dfe5f24655bd50e7bc17725493",
+    "is_duplicate": true
+  },
+  {
+    "id": "ma_0103",
+    "question_text": "Ein Zielkonflikt in der Warenwirtschaft besteht zwischen niedrigen ___ und hoher Lieferbereitschaft?",
+    "type": "single_choice",
+    "correct_answer": "Lagerkosten",
+    "explanation": "Hohe Lagerbestände sichern die Lieferbereitschaft, verursachen aber hohe Kosten. Niedrige Bestände senken die Kosten, erhöhen aber das Risiko von Lieferengpässen.",
+    "topic": "Materialwirtschaft",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f98810f0a3fb690ec240daaad65f494b16f0daf4",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Lagerkosten"
+    ]
+  },
+  {
+    "id": "ko_0104",
+    "question_text": "Die Formel der AIDAS-Werbewirkung lautet: Attention, Interest, ___, Action, Satisfaction?",
+    "type": "single_choice",
+    "correct_answer": "Desire",
+    "explanation": "Nachdem Interesse geweckt wurde, soll der Wunsch (Desire) nach dem Produkt entstehen, der zur Handlung (Action) führt.",
+    "topic": "Kommunikationspolitik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "336a0885fabddeaaf1bc0f7a86ae99ebbb9bdca9",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Desire"
+    ]
+  },
+  {
+    "id": "ma_0105",
+    "question_text": "Ein Unternehmen, das sich in der Öffentlichkeit als besonders umweltfreundlich darstellt, obwohl es das kaum ist, betreibt ___?",
+    "type": "single_choice",
+    "correct_answer": "Greenwashing",
+    "explanation": "Greenwashing ist der Versuch, durch Marketing- und PR-Maßnahmen ein 'grünes' Image zu erlangen, ohne dass es dafür eine ausreichende Grundlage gibt.",
+    "topic": "Marketingethik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f71b0ac24769f611c52212ae553094f8d2b0d4b8",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Greenwashing"
+    ]
+  },
+  {
+    "id": "vo_0106",
+    "question_text": "Welche Vollmacht ist die umfangreichste im unternehmerischen Kontext?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Handlungsvollmacht",
+      "Einzelvollmacht",
+      "Prokura",
+      "Artvollmacht"
+    ],
+    "correct_answer": "Prokura",
+    "explanation": "Die Prokura ist die umfangreichste, gesetzlich definierte Vollmacht, die ein Unternehmer erteilen kann.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "26ee53b67121e6531f597233fa71861837467069",
+    "is_duplicate": true
+  },
+  {
+    "id": "vo_0107",
+    "question_text": "Ein Prokurist unterschreibt mit dem Zusatz 'i.V.' (in Vertretung)?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Ein Prokurist unterschreibt mit 'ppa.' (per procura autoritate). Der Zusatz 'i.V.' wird bei Handlungsvollmachten verwendet.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "40ebabbaaf9d839d8789b4be97c27e3934306ce2",
+    "is_duplicate": true
+  },
+  {
+    "id": "be_0108",
+    "question_text": "Was ist das Hauptmerkmal eines echten Arbeitsvertrages?",
+    "type": "single_choice",
+    "correct_answer": "Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber.",
+    "explanation": "Merkmale sind Weisungsgebundenheit, Einbindung in die betriebliche Organisation und das Fehlen eines eigenen unternehmerischen Risikos.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "a242dfdb5afcff9e0e2e4aed50b27a95dff70a2d",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Output / Input",
+      "Erlös / variable Kosten",
+      "Die persönliche und wirtschaftliche Abhängigkeit des Arbeitnehmers vom Arbeitgeber."
+    ]
+  },
+  {
+    "id": "be_0109",
+    "question_text": "Ordnen Sie die Merkmale dem korrekten Vertragstyp zu?",
+    "type": "matching",
+    "options_left": [
+      "Schuldet einen bestimmten Erfolg/Werk",
+      "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+      "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden"
+    ],
+    "options_right": [
+      "Echter Arbeitsvertrag",
+      "Werkvertrag",
+      "Freier Dienstvertrag"
+    ],
+    "correct_matches": [
+      [
+        "Schuldet einen bestimmten Erfolg/Werk",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ]
+    ],
+    "explanation": "Der Werkvertrag zielt auf ein Ergebnis, der Arbeitsvertrag auf die Arbeitsleistung in Abhängigkeit und der freie Dienstvertrag auf die Dienstleistung ohne Abhängigkeit.",
+    "topic": "Beschäftigungsverhältnisse",
+    "correct_answer": [
+      [
+        "Schuldet einen bestimmten Erfolg/Werk",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Schuldet persönliche Arbeitskraft, ist weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ],
+      [
+        "Stellt Arbeitskraft zur Verfügung, ist aber nicht weisungsgebunden",
+        "Echter Arbeitsvertrag"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "58360a1ef896c135d6e1a609aa129f30d6ea43d8",
+    "is_duplicate": true
+  },
+  {
+    "id": "be_0110",
+    "question_text": "Wer meldet einen Arbeitnehmer im echten Arbeitsverhältnis zur Sozialversicherung an?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Der Arbeitnehmer selbst",
+      "Das Finanzamt",
+      "Der Arbeitgeber",
+      "Die Gewerkschaft"
+    ],
+    "correct_answer": "Der Arbeitgeber",
+    "explanation": "Der Arbeitgeber ist gesetzlich verpflichtet, den Arbeitnehmer bei der zuständigen Gebietskrankenkasse (ÖGK) anzumelden und die Beiträge abzuführen.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "2a21aa2d9db0364b0fd8fa96f03299c45dbe30f8",
+    "is_duplicate": true
+  },
+  {
+    "id": "vo_0111",
+    "question_text": "Die ___ kann nur von einem im Firmenbuch eingetragenen Unternehmer erteilt werden?",
+    "type": "single_choice",
+    "correct_answer": "Prokura",
+    "explanation": "Die Erteilung der Prokura ist an die Kaufmannseigenschaft bzw. die Eintragung im Firmenbuch gebunden.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "793ee94c9191b57d9b14421fd4ecb43f31ccd89b",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Prokura",
+      "Nur interne Vollmacht",
+      "Nicht im Firmenbuch einzutragen"
+    ]
+  },
+  {
+    "id": "be_0112",
+    "question_text": "Ein Werkvertragsnehmer trägt in der Regel das wirtschaftliche Risiko selbst?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Im Gegensatz zum Arbeitnehmer arbeitet der Werkvertragsnehmer auf eigene Rechnung und Gefahr.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "cda690edc19a00ce2ce92d562a8f249c63dfafe4",
+    "is_duplicate": true
+  },
+  {
+    "id": "vo_0113",
+    "question_text": "Welche Art der Handlungsvollmacht ermächtigt zu allen Geschäften, die ein bestimmter Geschäftsbereich mit sich bringt?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Generalvollmacht",
+      "Einzelvollmacht",
+      "Artvollmacht",
+      "Spezialvollmacht"
+    ],
+    "correct_answer": "Artvollmacht",
+    "explanation": "Die Artvollmacht bezieht sich auf eine bestimmte Art von Geschäften (z.B. Kassierer, Einkäufer).",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "18e75325fa8a55ee70221990eacecef3cbb40a0a",
+    "is_duplicate": true
+  },
+  {
+    "id": "be_0114",
+    "question_text": "Ein freier Dienstnehmer hat Anspruch auf bezahlten Urlaub und Sonderzahlungen (Urlaubs-/Weihnachtsgeld)?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Diese Ansprüche sind typische Merkmale eines echten Arbeitsverhältnisses. Freie Dienstnehmer haben darauf keinen gesetzlichen Anspruch.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "9916d90347e0c8783bf2af43ed195e4139ac5ccf",
+    "is_duplicate": true
+  },
+  {
+    "id": "vo_0115",
+    "question_text": "Wann erlischt eine Prokura?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Bei Widerruf durch den Unternehmer",
+      "Durch den Tod des Prokuristen",
+      "Bei Konkurs des Unternehmens",
+      "Durch den Verkauf einer einzelnen Filiale"
+    ],
+    "correct_answer": [
+      "Bei Widerruf durch den Unternehmer",
+      "Durch den Tod des Prokuristen",
+      "Bei Konkurs des Unternehmens"
+    ],
+    "explanation": "Die Prokura erlischt durch Widerruf, Tod des Prokuristen, Insolvenz des Unternehmens oder Kündigung des zugrundeliegenden Dienstverhältnisses.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "454db6d6717a25d6c63658f74493ab97c6c24e23",
+    "is_duplicate": true
+  },
+  {
+    "id": "be_0116",
+    "question_text": "Was ist ein wesentliches Merkmal eines freien Dienstvertrags?",
+    "type": "single_choice",
+    "correct_answer": "Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen.",
+    "explanation": "Fehlende persönliche Abhängigkeit, keine fixen Arbeitszeiten oder Arbeitsorte sind kennzeichnend für einen freien Dienstvertrag.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "c2387c0692bf128b61860ed7a1edfd97ca99345d",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Der Dienstnehmer ist nicht in die Organisation des Auftraggebers eingegliedert und kann sich meist vertreten lassen."
+    ]
+  },
+  {
+    "id": "vo_0117",
+    "question_text": "Die Prokura berechtigt den Prokuristen zu allen ___ und ___ Geschäften und Rechtshandlungen, die der Betrieb irgendeines Unternehmens mit sich bringt?",
+    "type": "single_choice",
+    "correct_answer": "gerichtlichen und außergerichtlichen",
+    "explanation": "Der Umfang der Prokura ist gesetzlich festgelegt und sehr weitreichend.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "941af44a889ebd2de1610992711fa5f6ff49811c",
+    "is_duplicate": true,
+    "possible_answers": [
+      "gerichtlichen und außergerichtlichen"
+    ]
+  },
+  {
+    "id": "be_0118",
+    "question_text": "Wer ist für die Abfuhr der Sozialversicherungsbeiträge und der Lohnsteuer bei einem Werkvertrag zuständig?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Der Auftraggeber",
+      "Der Werkvertragsnehmer selbst",
+      "Die ÖGK",
+      "Das Finanzamt"
+    ],
+    "correct_answer": "Der Werkvertragsnehmer selbst",
+    "explanation": "Als Selbstständiger ist der Werkvertragsnehmer für seine Versteuerung (Einkommensteuer) und Sozialversicherung (SVS) selbst verantwortlich.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f3e29383cb2451633e48496c98000fc28ed01f8a",
+    "is_duplicate": true
+  },
+  {
+    "id": "vo_0119",
+    "question_text": "Eine Filialprokura beschränkt die Vertretungsmacht auf eine bestimmte Niederlassung?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Die Filialprokura ist eine im Firmenbuch eingetragene Beschränkung der Prokura auf den Betrieb einer einzelnen Filiale.",
+    "topic": "Vollmachten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "a8aa8406e6ec7dbc80b64b4b423c043baa00108a",
+    "is_duplicate": true
+  },
+  {
+    "id": "be_0120",
+    "question_text": "Welcher Vertragstyp liegt vor, wenn ein Grafiker beauftragt wird, ein Logo für ein Unternehmen zu erstellen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Echter Arbeitsvertrag",
+      "Freier Dienstvertrag",
+      "Werkvertrag",
+      "Leihvertrag"
+    ],
+    "correct_answer": "Werkvertrag",
+    "explanation": "Hier wird ein bestimmter Erfolg, nämlich die Erstellung des Logos, geschuldet. Daher handelt es sich um einen Werkvertrag.",
+    "topic": "Beschäftigungsverhältnisse",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "2d662db8094fe6323654ddba2660e16d155edd3d",
+    "is_duplicate": true
+  },
+  {
+    "id": "le_0121",
+    "question_text": "Welche beiden Hauptfaktoren werden für die betriebliche Leistungserstellung benötigt?",
+    "type": "multiple_choice",
+    "possible_answers": [
+      "Menschliche Arbeitsleistung",
+      "Betriebsvermögen",
+      "Staatliche Subventionen",
+      "Werbekampagnen"
+    ],
+    "correct_answer": [
+      "Menschliche Arbeitsleistung",
+      "Betriebsvermögen"
+    ],
+    "explanation": "Die Leistungserstellung basiert auf dem kombinierten Einsatz von menschlicher Arbeit und dem Betriebsvermögen (Maschinen, Anlagen, etc.).",
+    "topic": "Leistungserstellung",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "5902c99defc4dfb6f3f0c04e0db66b92f282e54b",
+    "is_duplicate": true
+  },
+  {
+    "id": "ke_0122",
+    "question_text": "Die Kennzahl, die das Verhältnis von Ertrag zu Aufwand misst, nennt sich ___?",
+    "type": "single_choice",
+    "correct_answer": "Wirtschaftlichkeit",
+    "explanation": "Wirtschaftlichkeit = Ertrag / Aufwand. Ein Wert > 1 bedeutet, dass das Unternehmen wirtschaftlich arbeitet.",
+    "topic": "Kennzahlen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "8ba7add32d4dd75e1bee1bc845babe59f2c87de4",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Output / Input",
+      "Wirtschaftlichkeit",
+      "Erlös / variable Kosten"
+    ]
+  },
+  {
+    "id": "ke_0123",
+    "question_text": "Was misst die Kennzahl 'Produktivität'?",
+    "type": "single_choice",
+    "correct_answer": "Das Mengenverhältnis zwischen Output (Ausbringungsmenge) und Input (Einsatzmenge).",
+    "explanation": "Die Produktivität misst die reine Mengeneffizienz, z.B. Stück pro Stunde, unabhängig von Preisen oder Kosten.",
+    "topic": "Kennzahlen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "4a394cd7740c22fdb8cff1643b721f6cfa19f338",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Das Mengenverhältnis zwischen Output (Ausbringungsmenge) und Input (Einsatzmenge)."
+    ]
+  },
+  {
+    "id": "ko_0124",
+    "question_text": "Ordnen Sie die Kostenarten den richtigen Beispielen zu?",
+    "type": "matching",
+    "options_left": [
+      "Kosten für Rohstoffe",
+      "Miete für die Produktionshalle",
+      "Gehälter der Verwaltung"
+    ],
+    "options_right": [
+      "Variable Kosten",
+      "Fixkosten",
+      "Gemeinkosten"
+    ],
+    "correct_matches": [
+      [
+        "Kosten für Rohstoffe",
+        "Variable Kosten"
+      ],
+      [
+        "Miete für die Produktionshalle",
+        "Variable Kosten"
+      ],
+      [
+        "Gehälter der Verwaltung",
+        "Gemeinkosten"
+      ]
+    ],
+    "explanation": "Variable Kosten ändern sich mit der Produktionsmenge. Fixkosten bleiben gleich. Gemeinkosten können nicht direkt einem Produkt zugeordnet werden.",
+    "topic": "Kostenarten",
+    "correct_answer": [
+      [
+        "Kosten für Rohstoffe",
+        "Variable Kosten"
+      ],
+      [
+        "Miete für die Produktionshalle",
+        "Variable Kosten"
+      ],
+      [
+        "Gehälter der Verwaltung",
+        "Gemeinkosten"
+      ]
+    ],
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "898e80307cbcf4c682112493a5a0977c5827d3d2",
+    "is_duplicate": true
+  },
+  {
+    "id": "ku_0125",
+    "question_text": "Die Kennzahl, die angibt, wie viele der gelieferten Bestellungen pünktlich waren, ist die ___?",
+    "type": "single_choice",
+    "correct_answer": "Termintreue",
+    "explanation": "Die Termintreue ist ein wichtiger Indikator für die Lieferqualität und die Kundenzufriedenheit.",
+    "topic": "Kundenzufriedenheit",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "16ad2fdd5e4aa0859586dd7a44bbb9c49fea4baa",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Termintreue"
+    ]
+  },
+  {
+    "id": "na_0126",
+    "question_text": "Nachhaltigkeit in der Leistungserstellung bedeutet, Ressourcen so einzusetzen, dass auch zukünftige Generationen ihre Bedürfnisse befriedigen können?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Dies ist die Kerndefinition der Nachhaltigkeit nach dem Brundtland-Bericht.",
+    "topic": "Nachhaltigkeit",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "be3e0c2e0d4c40bf4d2d60aebdfe012ee8c1b32d",
+    "is_duplicate": true
+  },
+  {
+    "id": "un_0127",
+    "question_text": "Was versteht man unter Unternehmensethik?",
+    "type": "single_choice",
+    "correct_answer": "Die Auseinandersetzung mit moralischen Wertvorstellungen und Verhaltensregeln, die ein Unternehmen vertreten und einhalten sollte.",
+    "explanation": "Unternehmensethik befasst sich mit der gesellschaftlichen Verantwortung und dem moralischen Handeln von Unternehmen.",
+    "topic": "Unternehmensethik",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "f95c3ba44053e9bd2d41fdd3b21e9981505de87f",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Die Auseinandersetzung mit moralischen Wertvorstellungen und Verhaltensregeln, die ein Unternehmen vertreten und einhalten sollte."
+    ]
+  },
+  {
+    "id": "re_0128",
+    "question_text": "Berechnen Sie die Rentabilität des Eigenkapitals: Gewinn = 20.000 €, Eigenkapital = 200.000 €?",
+    "type": "calculation",
+    "correct_answer": "10",
+    "explanation": "Rentabilität = (Gewinn / Eigenkapital) * 100 = (20.000 / 200.000) * 100 = 10%.",
+    "topic": "Rechenbeispiele",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "c6ae906a73f4c18dd4412a5af3b7a37270781d0b",
+    "is_duplicate": true
+  },
+  {
+    "id": "qu_0129",
+    "question_text": "Welche der folgenden Maßnahmen dient direkt der Steigerung der Produktqualität?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Verkürzung der Lieferzeit",
+      "Reduzierung der Fehlerquote in der Produktion",
+      "Erhöhung des Werbebudgets",
+      "Anbieten von mehr Rabatten"
+    ],
+    "correct_answer": "Reduzierung der Fehlerquote in der Produktion",
+    "explanation": "Die Produktqualität wird direkt durch die Anzahl der fehlerfreien Produkte im Verhältnis zur Gesamtmenge gemessen.",
+    "topic": "Qualität",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "382911d181049930039a5f8b988c3d06522d408d",
+    "is_duplicate": true
+  },
+  {
+    "id": "ko_0130",
+    "question_text": "Die Kosten für den Transport von Waren vom Lieferanten zum Betrieb zählen zu den ___?",
+    "type": "single_choice",
+    "correct_answer": "Beschaffungskosten",
+    "explanation": "Transportkosten im Rahmen der Beschaffung sind Teil der Beschaffungskosten.",
+    "topic": "Kostenarten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "a27d75b7caece3044e81ec14b1eddf1e7578ab92",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Beschaffungskosten"
+    ]
+  },
+  {
+    "id": "ku_0131",
+    "question_text": "Ein Unternehmen, das sehr flexibel auf Sonderwünsche von Kunden eingeht, hat eine hohe Flexibilität?",
+    "type": "true_false",
+    "correct_answer": "true",
+    "explanation": "Die Flexibilität misst, inwieweit ein Unternehmen in der Lage ist, individuelle Kundenwünsche zu erfüllen.",
+    "topic": "Kundenzufriedenheit",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "8edabd96363f7849d39d45fd92f31ee0b5293f4b",
+    "is_duplicate": true
+  },
+  {
+    "id": "pr_0132",
+    "question_text": "Arbeitsintensive Leistungserstellung bedeutet, dass der Anteil der ___ an den Gesamtkosten sehr hoch ist?",
+    "type": "single_choice",
+    "correct_answer": "Personalkosten",
+    "explanation": "Bei arbeitsintensiven Prozessen dominieren die Lohn- und Gehaltskosten, z.B. bei Dienstleistungen.",
+    "topic": "Produktionskosten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "c2bb39956381bb3a5da176fcbfc0997e0b53ee94",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Personalkosten"
+    ]
+  },
+  {
+    "id": "ke_0133",
+    "question_text": "Welche der folgenden Kennzahlen ist am besten geeignet, um den finanziellen Erfolg eines Unternehmens im Verhältnis zum eingesetzten Kapital zu messen?",
+    "type": "single_choice",
+    "possible_answers": [
+      "Produktivität",
+      "Wirtschaftlichkeit",
+      "Rentabilität",
+      "Termintreue"
+    ],
+    "correct_answer": "Rentabilität",
+    "explanation": "Die Rentabilität (z.B. Eigenkapitalrentabilität) setzt den Gewinn ins Verhältnis zum Kapital und misst so den finanziellen Erfolg der Investition.",
+    "topic": "Kennzahlen",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "6017b557eaf044748210cef50850e4fff8b7bfe0",
+    "is_duplicate": true
+  },
+  {
+    "id": "ko_0134",
+    "question_text": "Die Kosten für die Miete eines Lagers sind typischerweise variable Kosten?",
+    "type": "true_false",
+    "correct_answer": "false",
+    "explanation": "Mietkosten sind Fixkosten, da sie unabhängig von der eingelagerten Menge oder der Produktionsmenge anfallen.",
+    "topic": "Kostenarten",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "e06629f2ac905441852dd13e818112886efdf060",
+    "is_duplicate": true
+  },
+  {
+    "id": "be_0135",
+    "question_text": "Was ist das Ziel der Beschaffungsmarktforschung?",
+    "type": "single_choice",
+    "correct_answer": "Informationen über Beschaffungsmärkte und Lieferanten zu sammeln und zu analysieren.",
+    "explanation": "Sie dient dazu, die besten Lieferanten, Materialien und Konditionen für die Beschaffung zu finden.",
+    "topic": "Beschaffungsmarketing",
+    "origin": "internal_pool",
+    "ui": {
+      "question_background": "#FFF8E1",
+      "badge_color": "#B45309",
+      "accent": "#F59E0B"
+    },
+    "tags": [
+      "internal_pool"
+    ],
+    "duplicate_group": "78940b44060f9bca3bf42d172aeae730b33428e0",
+    "is_duplicate": true,
+    "possible_answers": [
+      "Informationen über Beschaffungsmärkte und Lieferanten zu sammeln und zu analysieren."
+    ]
+  }
+]

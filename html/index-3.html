@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>BWL – Interaktive Canvas (Einmal‑Antwort + Erklärungen + Nächste‑Frage)</title>
+
+  <style>
+
+    :root{ --bg:#f6f7fb; --panel:#ffffff; --ink:#0b1324; --muted:#475569; --line:#cbd5e1; --accent:#0ea5e9; --accent2:#8b5cf6; }
+
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif}
+
+    .app{display:grid;grid-template-columns:340px 1fr;grid-template-rows:auto 1fr;gap:12px;height:100%;padding:14px;box-sizing:border-box}
+
+    header{grid-column:1/-1;display:flex;gap:12px;align-items:center}
+
+    h1{font-size:18px;margin:0 8px 0 0}
+
+    select,button,label.toggle{background:#eef2ff;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+
+    button{cursor:pointer}
+
+    .legend{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+
+    .legend span{display:inline-flex;align-items:center;gap:6px}
+
+    .dot{width:10px;height:10px;border-radius:999px;display:inline-block}
+
+    aside{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;overflow:auto}
+
+    aside h2{font-size:16px;margin:2px 0 6px}
+
+    aside .muted{color:var(--muted);font-size:13px}
+
+    aside details{background:#f8fafc;border:1px solid var(--line);padding:8px 10px;border-radius:10px}
+
+    .quiz{margin-top:8px}
+
+    .qblock{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;background:#fff}
+
+    .quiz h3{font-size:15px;margin:0 0 8px}
+
+    .quiz .answers{margin:6px 0}
+
+    .quiz .answers button{display:block;width:100%;text-align:left;margin:6px 0;border:1px solid var(--line);border-radius:10px;background:#ffffff}
+
+    .quiz .explain{background:#f1f5f9;border:1px dashed #cbd5e1;border-radius:10px;padding:8px 10px;margin-top:8px}
+
+    .qnav{display:flex;gap:8px;align-items:center;margin-top:8px}
+
+    .qnav .info{color:var(--muted);font-size:12px;margin-left:auto}
+
+    .sr-live{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+
+    canvas{width:100%;height:100%;background:#ffffff;border:1px solid var(--line);border-radius:16px}
+
+    .controls{display:flex;gap:8px;flex-wrap:wrap}
+
+    .footer{grid-column:1/-1;color:var(--muted);font-size:12px;margin-top:6px}
+
+    .kbd{background:#eef2ff;border:1px solid var(--line);border-radius:6px;padding:2px 6px;font-size:12px}
+
+    a{color:#0369a1;text-decoration:none}
+
+    input[type="text"], textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px}
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="app">
+
+  <header>
+
+    <h1>BWL – Interaktive Canvas</h1>
+
+    <div class="controls">
+
+      <select id="chapter">
+
+        <option value="rechtsformen">Kapitel 1: Rechtsformen</option>
+
+        <option value="international">Kapitel 2: Internationale Geschäftstätigkeit</option>
+
+        <option value="leistung">Kapitel 3: Leistungserstellung</option>
+
+        <option value="marketing">Kapitel 4: Marketing (4P)</option>
+
+        <option value="material">Kapitel 5: Material- & Warenwirtschaft</option>
+
+      </select>
+
+      <button id="reset">Ansicht zentrieren</button>
+
+      <button id="export">PNG exportieren</button>
+
+      <label class="toggle"><input type="checkbox" id="quizMode"/> Quiz‑Modus (5 Fragen/Kapitel)</label>
+
+    </div>
+
+    <div class="legend">
+
+      <span><i class="dot" style="background:var(--accent)"></i>Kernknoten</span>
+
+      <span><i class="dot" style="background:var(--accent2)"></i>Unterknoten</span>
+
+      <span>Quiz: 1 Versuch pro Frage, Erklärung + „Nächste“</span>
+
+    </div>
+
+  </header>
+
+  <aside id="panel">
+
+    <h2>Willkommen</h2>
+
+    <div class="muted">Ovale Knoten. Helles Theme. Quiz: pro Kapitel 5 Fragen. **Einmal‑Antwort**, dann gesperrt. Erklärung erscheint, danach „Nächste Frage“.</div>
+
+    <div class="tip">Ziehen = verschieben · Rad/Pinch = zoomen · <span class="kbd">R</span> = Reset</div>
+
+  </aside>
+
+  <canvas id="board" width="1400" height="800" aria-label="Interaktive BWL-Grafik"></canvas>
+
+  <div class="footer">Barrierefrei: Feedback nie nur über Farbe (WCAG 1.4.1). PNG‑Export integriert.</div>
+
+</div>
+
+<div class="sr-live" id="live" aria-live="polite"></div>
+
+
+
+<script>
+
+// ==== Canvas setup ====
+
+const DPR = Math.max(1, Math.min(window.devicePixelRatio||1, 2));
+
+const CAN = document.getElementById('board');
+
+const CTX = CAN.getContext('2d');
+
+function resizeCanvas(){ const rect = CAN.getBoundingClientRect(); CAN.width = Math.round(rect.width * DPR); CAN.height = Math.round((window.innerHeight - rect.top - 24) * DPR); draw(); }
+
+window.addEventListener('resize', resizeCanvas);
+
+let view = {x:0, y:0, z:1}; let isPanning=false, startPan={x:0,y:0}, startView={x:0,y:0};
+
+CAN.addEventListener('pointerdown', e=>{isPanning=true; CAN.setPointerCapture(e.pointerId); startPan={x:e.clientX,y:e.clientY}; startView={...view};});
+
+CAN.addEventListener('pointermove', e=>{if(!isPanning) return; const dx=(e.clientX-startPan.x)*DPR, dy=(e.clientY-startPan.y)*DPR; view.x=startView.x+dx; view.y=startView.y+dy; draw();});
+
+CAN.addEventListener('pointerup', ()=>{isPanning=false});
+
+CAN.addEventListener('wheel', e=>{e.preventDefault(); const s=Math.exp(-e.deltaY*0.001); const mx=e.offsetX*DPR, my=e.offsetY*DPR; const zx=(mx-view.x)/view.z; const zy=(my-view.y)/view.z; view.z*=s; view.x=mx - zx*view.z; view.y=my - zy*view.z; draw();},{passive:false});
+
+window.addEventListener('keydown', e=>{if(e.key==='r'||e.key==='R'){resetView()}});
+
+function resetView(){view={x:CAN.width/2, y:CAN.height/2, z:1}; draw();}
+
+function screenToWorld(pt){return {x:(pt.x*DPR - view.x)/view.z, y:(pt.y*DPR - view.y)/view.z}}
+
+
+
+// ==== Data model ====
+
+class Node { constructor(id,label,x,y,color,info,quizList){Object.assign(this,{id,label,x,y,color,info,quizList}); this.rx=90; this.ry=44;} }
+
+class Edge { constructor(a,b){this.a=a; this.b=b;} }
+
+class Scene { constructor(title,nodes=[],edges=[]) {Object.assign(this,{title,nodes,edges});} }
+
+const Qmc = (q,opts,correct,expl)=>({type:'mc',q,a:opts,correct,expl});
+
+const Qgap = (q,answer,expl)=>({type:'gap',q,answer,expl}); // answer: array of acceptable strings or regex string
+
+const Qopen = (q,answer,expl)=>({type:'open',q,answer,expl});
+
+
+
+const chapters = {
+
+  rechtsformen: new Scene('Rechtsformen',[ 
+
+    new Node('center','Unternehmensformen',0,0,'#0ea5e9',{desc:'Gliederung nach Haftung, Kapital, Leitung.'},[
+
+      Qmc('Welche Form haftet beschränkt auf Gesellschaftsvermögen?',['EPU','GmbH','OG'],1,'Bei GmbH haftet grundsätzlich nur das Gesellschaftsvermögen.'),
+
+      Qgap('Die GmbH hat seit 2024 ein Mindeststammkapital von ____ €',['10000','10.000'],'Gesetzlich festgelegt seit 1.1.2024: 10.000 €.'),
+
+      Qmc('Wer haftet in der KG unbeschränkt?',['Kommanditist','Komplementär','Beide'],1,'Komplementär haftet persönlich und unbeschränkt.'),
+
+      Qopen('Nenne die Haftungsart der OG (ein Wort reicht).',['unbeschränkt','solidarisch','persönlich'],'In der OG haften alle Gesellschafter persönlich, unbeschränkt und solidarisch.'),
+
+      Qmc('Mindestgrundkapital der AG?',['10.000 €','70.000 €','150.000 €'],1,'AG benötigt mindestens 70.000 € Grundkapital.')
+
+    ]),
+
+    new Node('epu','Einzelunternehmen (EPU)',-360,-140,'#8b5cf6',{desc:'1 Eigentümer:in. Haftung unbeschränkt. Kein Mindestkapital.'}),
+
+    new Node('og','Offene Gesellschaft (OG)',360,-140,'#8b5cf6',{desc:'≥ 2 Gesellschafter:innen. Haftung persönlich, unbeschränkt, solidarisch. Vertrag + Firmenbuch.'}),
+
+    new Node('kg','Kommanditgesellschaft (KG)',-360,160,'#8b5cf6',{desc:'Komplementär haftet unbeschränkt; Kommanditist haftet in Höhe der Einlage.'}),
+
+    new Node('gmbh','GmbH',0,220,'#8b5cf6',{desc:'Juristische Person. Haftung auf Gesellschaftsvermögen beschränkt. Mindeststammkapital 10.000 € (ab 2024), mind. 5.000 € bar.'}),
+
+    new Node('ag','AG',360,160,'#8b5cf6',{desc:'Kapital in Aktien. Mindestgrundkapital 70.000 €. Haftung über Gesellschaftsvermögen.'})
+
+  ], [ ['center','epu'],['center','og'],['center','kg'],['center','gmbh'],['center','ag'] ].map(x=>new Edge(...x)) ),
+
+
+
+  international: new Scene('Internationale Geschäftstätigkeit',[
+
+    new Node('center','Außenhandel',0,0,'#0ea5e9',{desc:'Export + Import. Incoterms regeln Risiko/Kosten.'},[
+
+      Qmc('Was regeln Incoterms primär?',['Zahlungstermine','Risiko- und Kostenübergang','Gewährleistung'],1,'Incoterms definieren Gefahr‑ und Kostenübergang.'),
+
+      Qgap('DDP bedeutet: geliefert ____ ____',['verzollt'],'DDP = Delivered Duty Paid → geliefert verzollt.'),
+
+      Qmc('Bei CPT zahlt den Transport …',['der Käufer','der Verkäufer bis Bestimmungsort','niemand'],1,'CPT: Verkäufer trägt Transportkosten, Risiko geht früh über.'),
+
+      Qopen('Nenne zwei Incoterms (Text).',['exw','fca','fob','cif','cip','dap','ddp','dpu','cpt'],'Beispiele: EXW, FCA, FOB, CIF, CIP, DAP, DDP, DPU, CPT.'),
+
+      Qmc('EU‑Einfuhrumsatzsteuer in AT wird fällig ab …',['0 € Warenwert','22 €','150 €'],0,'Grundsatz: EUSt ab erstem Euro (Sonderregeln möglich).')
+
+    ]),
+
+    new Node('export','Export',-360,-120,'#8b5cf6',{desc:'Verkauf ins Ausland. Lieferbedingungen, Transport, Zoll.'}),
+
+    new Node('import','Import',360,-120,'#8b5cf6',{desc:'Einkauf aus Ausland. EUSt, Zoll, Qualität.'}),
+
+    new Node('incoterms','Incoterms 2020',0,220,'#8b5cf6',{desc:'EXW, FCA, FOB, CIF, DDP usw. Regeln Risiko‑/Kostenübergang.'})
+
+  ], [ ['center','export'],['center','import'],['center','incoterms'] ].map(x=>new Edge(...x)) ),
+
+
+
+  leistung: new Scene('Leistungserstellung',[
+
+    new Node('center','Wertschöpfungskette',0,0,'#0ea5e9',{desc:'Planung → Beschaffung → Produktion/DL → Qualität → Verkauf.'},[
+
+      Qmc('Make-or-Buy betrifft …',['Eigenfertigung vs. Fremdbezug','Preisstrategie','Rechtsformwahl'],0,'Make-or-Buy = selbst herstellen oder zukaufen.'),
+
+      Qgap('OEE setzt sich zusammen aus Verfügbarkeit × ____ × Qualität',['leistung'],'OEE = Verfügbarkeit × Leistung × Qualität.'),
+
+      Qmc('Variable Kosten sind …',['Miete','Verpackung','Fixgehälter'],1,'Variable Kosten ändern sich mit der Menge.'),
+
+      Qopen('Nenne zwei typische KPI in der Qualitätssicherung.',['ausschuss','oee','reklamation','first pass yield','fp y','termintreue'],'Beispiele: Ausschussquote, OEE, Reklamationsquote, First‑Pass‑Yield, Termintreue.'),
+
+      Qmc('Durchlaufzeit senkt man durch …',['Engpassmanagement','Mehr Bürokratie','Zufällige Reihenfolge'],0,'Engpässe identifizieren, Losgrößen/Fluss optimieren.')
+
+    ]),
+
+    new Node('plan','Planung',-360,-130,'#8b5cf6',{desc:'Programm, Mengen, Kapazitäten; Terminierung.'}),
+
+    new Node('proc','Beschaffung',-120,220,'#8b5cf6',{desc:'Lieferantenauswahl, Preis/Qualität/Termine.'}),
+
+    new Node('prod','Produktion/DL',120,220,'#8b5cf6',{desc:'Fertigung/Erbringung; Layout, Losgrößen, Lean.'}),
+
+    new Node('qc','Qualität/Kontrolle',360,-130,'#8b5cf6',{desc:'Prüfpläne, KPI: Ausschuss, OEE, Reklamationen.'})
+
+  ], [ ['center','plan'],['plan','proc'],['proc','prod'],['prod','qc'] ].map(x=>new Edge(...x)) ),
+
+
+
+  marketing: new Scene('Marketing (4P)',[
+
+    new Node('center','Marketing‑Mix',0,0,'#0ea5e9',{desc:'Product, Price, Place, Promotion.'},[
+
+      Qmc('Rabatte gehören zu …',['Product','Price','Place'],1,'Rabatte sind Teil der Preis‑/Konditionenpolitik.'),
+
+      Qopen('Nenne zwei Promotion‑Instrumente.',['werbung','social','pr','public relations','sales promotion','events','messen'],'Beispiele: Werbung, PR, Social Media, Sales Promotion, Events/Messen.'),
+
+      Qmc('Place betrifft …',['Logistik & Kanäle','Produktfeatures','Preisuntergrenzen'],0,'Place = Absatzkanäle und Logistik.'),
+
+      Qgap('Die vier P sind Product, Price, Place und ____',['promotion'],'Klassischer Marketing‑Mix: 4P.'),
+
+      Qmc('Skimming ist eine …',['Preisstrategie','Logistikmethode','PR‑Taktik'],0,'Skimming: hoher Startpreis, später Senkung.')
+
+    ]),
+
+    new Node('product','Product',-360,-120,'#8b5cf6',{desc:'Funktionen, Qualität, Marke, Service.'}),
+
+    new Node('price','Price',360,-120,'#8b5cf6',{desc:'Preisstrategie, Rabatte, Zahlungsbedingungen.'}),
+
+    new Node('place','Place',-360,160,'#8b5cf6',{desc:'Kanäle: Direkt/Indirekt, Online/Offline, Logistik.'}),
+
+    new Node('promotion','Promotion',360,160,'#8b5cf6',{desc:'Werbung, PR, Social, Promotion.'})
+
+  ], [ ['center','product'],['center','price'],['center','place'],['center','promotion'] ].map(x=>new Edge(...x)) ),
+
+
+
+  material: new Scene('Material- & Warenwirtschaft',[
+
+    new Node('center','Bestandssteuerung',0,0,'#0ea5e9',{desc:'Meldebestand = Tagesverbrauch×Lieferzeit + Sicherheitsbestand.'},[
+
+      Qgap('Formel: MB = ____ × Lieferzeit + Sicherheitsbestand',['tagesverbrauch','tv'],'Meldebestand = Tagesverbrauch × Lieferzeit + Sicherheitsbestand.'),
+
+      Qmc('Bei TV=40, LZ=6, SB=100 ist MB …',['240','340','400'],1,'Rechnung: 40×6 + 100 = 340.'),
+
+      Qmc('Lagerumschlag = …',['Abgänge ÷ Durchschnittsbestand','Durchschnitt × 360','Ende − Anfang'],0,'Kennzahl zur Umschlagshäufigkeit.'),
+
+      Qopen('Nenne zwei Einlagerungsprinzipien.',['fifo','fifa','fifo','fefo','lifo'],'Beispiele: FiFo, FeFo, (teils) LiFo in Kalkulation.'),
+
+      Qgap('Abkürzung FiFo steht für ____ in – ____ out',['first','first'],'First in – First out (älteste Ware zuerst).')
+
+    ]),
+
+    new Node('bedarf','Bedarfsermittlung',-360,-120,'#8b5cf6',{desc:'Primär-/Sekundär-/Tertiärbedarf; determin./stochast.'}),
+
+    new Node('melde','Meldebestand',0,220,'#8b5cf6',{desc:'Bestellpunkt, Engpassprävention.'}),
+
+    new Node('lager','Lagerung',360,-120,'#8b5cf6',{desc:'Lagerarten, ABC/XYZ, FiFo/FeFo.'})
+
+  ], [ ['center','bedarf'],['center','melde'],['center','lager'] ].map(x=>new Edge(...x)) )
+
+};
+
+
+
+// ==== Layout & sizing ====
+
+function layoutScene(scene){ const others = scene.nodes.filter(n=>n.id!=='center'); const R = 320; const step = (Math.PI*2)/Math.max(1,others.length); others.forEach((n,i)=>{n.x=Math.cos(i*step)*R; n.y=Math.sin(i*step)*R;}); }
+
+Object.values(chapters).forEach(layoutScene);
+
+function computeNodeSize(n){ CTX.save(); CTX.font = `16px Inter, system-ui, sans-serif`; const words=(n.label+"").split(/\s+/); const lines=[]; let line=""; const maxWidth=240; words.forEach(w=>{ const test=line? line+" "+w : w; if(CTX.measureText(test).width>maxWidth && line){ lines.push(line); line=w; } else { line=test; }}); if(line) lines.push(line); const maxLineWidth=Math.max(...lines.map(l=>CTX.measureText(l).width), 80); const lineHeight=20; const paddingX=22, paddingY=16; n.rx=Math.round(maxLineWidth/2+paddingX); n.ry=Math.round((lines.length*lineHeight)/2+paddingY); n._lines=lines; n._lineHeight=lineHeight; CTX.restore(); }
+
+function computeAllSizes(){ Object.values(chapters).forEach(sc=>sc.nodes.forEach(computeNodeSize)); }
+
+
+
+// ==== Render ====
+
+function draw(){ CTX.setTransform(1,0,0,1,0,0); CTX.clearRect(0,0,CAN.width,CAN.height); CTX.fillStyle = '#ffffff'; CTX.fillRect(0,0,CAN.width,CAN.height); CTX.save(); CTX.translate(view.x, view.y); CTX.scale(view.z, view.z); const sc=currentScene(); CTX.lineWidth=2; CTX.strokeStyle='#94a3b8'; sc.edges.forEach(e=>{ const A=byId(sc,e.a), B=byId(sc,e.b); if(!A||!B) return; CTX.beginPath(); CTX.moveTo(A.x,A.y); CTX.lineTo(B.x,B.y); CTX.stroke(); }); sc.nodes.forEach(n=>drawNode(n)); CTX.restore(); }
+
+function drawNode(n){ CTX.save(); CTX.shadowColor='rgba(15,23,42,.15)'; CTX.shadowBlur=18; CTX.shadowOffsetY=6; CTX.fillStyle = n.color || '#8b5cf6'; CTX.beginPath(); CTX.ellipse(n.x,n.y,n.rx,n.ry,0,0,Math.PI*2); CTX.fill(); CTX.restore(); CTX.fillStyle='#ffffff'; CTX.font='16px Inter, system-ui, sans-serif'; CTX.textAlign='center'; CTX.textBaseline='middle'; const lh=n._lineHeight||20; const startY=n.y - ((n._lines?.length||1)-1)*lh/2; (n._lines||[n.label]).forEach((l,i)=> CTX.fillText(l, n.x, startY+i*lh)); }
+
+function byId(sc,id){ return sc.nodes.find(n=>n.id===id); }
+
+function hitNode(sc, wx, wy){ for(let i=sc.nodes.length-1;i>=0;i--){ const n=sc.nodes[i]; const dx=wx-n.x, dy=wy-n.y; const val=(dx*dx)/(n.rx*n.rx)+(dy*dy)/(n.ry*n.ry); if(val<=1) return n; } return null; }
+
+
+
+// ==== Interaction & Quiz Engine ====
+
+CAN.addEventListener('click', e=>{ const w=screenToWorld({x:e.offsetX,y:e.offsetY}); const n=hitNode(currentScene(), w.x, w.y); if(n) openPanel(n); else openScenePanel(); });
+
+function currentScene(){ return chapters[document.getElementById('chapter').value]; }
+
+const PANEL=document.getElementById('panel');
+
+function openScenePanel(){ const sc=currentScene(); PANEL.innerHTML = `<h2>${sc.title}</h2><div class="muted">Klicke Knoten für Details. Im Quiz‑Modus: zentralen Knoten wählen → 5 Fragen (ein Versuch je Frage).</div>`; }
+
+
+
+let qIndex = 0; // pointer in current list
+
+function openPanel(n){
+
+  const quizMode=document.getElementById('quizMode').checked; const info = n.info?.desc || ''; const list = quizMode? (n.quizList||null) : null;
+
+  if(quizMode && list){ qIndex = 0; PANEL.innerHTML = `<h2>${n.label}</h2>${info? `<details open><summary>Erklärung</summary><div>${info}</div></details>`:''}${renderCurrentQuestion(list, qIndex, n.id)}`; bindQuestion(list, n.id); }
+
+  else { PANEL.innerHTML = `<h2>${n.label}</h2>${info? `<details open><summary>Erklärung</summary><div>${info}</div></details>`:''}`; }
+
+}
+
+
+
+function renderCurrentQuestion(list, idx, nodeId){ const q=list[idx]; const total=list.length; const head = `<div class="quiz"><div class="qblock" data-node="${nodeId}" data-idx="${idx}"><h3>${idx+1}/${total}. ${q.q}</h3>`; const tail = `</div></div>`; let body='';
+
+  if(q.type==='mc'){ body += `<div class="answers">${q.a.map((t,i)=>`<button class="opt" data-i="${i}">${String.fromCharCode(65+i)}. ${t}</button>`).join('')}</div>`; }
+
+  if(q.type==='gap'){ body += `<div class="answers"><div>${q.q.replace('____','<input type="text" class="gapInput" placeholder="Antwort" />')}</div><button class="check">Prüfen</button></div>`; }
+
+  if(q.type==='open'){ body += `<div class="answers"><textarea class="openInput" rows="2" placeholder="Antwort eingeben"></textarea><button class="check">Prüfen</button></div>`; }
+
+  body += `<div class="explain" hidden></div><div class="qnav"><button class="next" disabled>Nächste</button><span class="info">Ein Versuch je Frage</span></div>`;
+
+  return head+body+tail;
+
+}
+
+
+
+function normalize(s){ return (s||'').toString().trim().toLowerCase().replace(/[.,\s]/g,''); }
+
+function matchesAnswer(val, answer){
+
+  if(Array.isArray(answer)) return answer.some(a=>normalize(val)===normalize(a));
+
+  if(typeof answer==='string' && answer.startsWith('re:')){ const r=new RegExp(answer.slice(3),'i'); return r.test(val); }
+
+  return normalize(val)===normalize(answer);
+
+}
+
+
+
+function bindQuestion(list, nodeId){
+
+  const block = PANEL.querySelector('.qblock'); const idx = +block.dataset.idx; const q=list[idx]; const explain = block.querySelector('.explain'); const nextBtn = block.querySelector('.next'); const live=document.getElementById('live');
+
+  function lockAll(){ block.querySelectorAll('button,optgroup,option,input,textarea').forEach(el=>{ el.disabled=true; }); nextBtn.disabled=false; }
+
+  function showSolution(correct){
+
+    const sol = (q.type==='mc')? `${String.fromCharCode(65+q.correct)}. ${q.a[q.correct]}` : (Array.isArray(q.answer)? q.answer[0] : q.answer);
+
+    explain.innerHTML = `<strong>Korrekte Antwort:</strong> ${sol}${q.expl? `<br/><em>${q.expl}</em>`:''}`; explain.hidden=false; live.textContent = correct? 'Richtig. Lösung eingeblendet.' : 'Falsch. Lösung eingeblendet.';
+
+  }
+
+  if(q.type==='mc'){
+
+    block.querySelectorAll('.opt').forEach(btn=>{
+
+      btn.addEventListener('click',()=>{
+
+        const i=+btn.dataset.i; const correct = i===q.correct; // EIN Versuch: sofort sperren
+
+        showSolution(correct); lockAll();
+
+      },{once:true}); // once → danach gesperrt
+
+    });
+
+  } else if(q.type==='gap'){
+
+    block.querySelector('.check').addEventListener('click',()=>{
+
+      const val = block.querySelector('.gapInput').value; const correct = matchesAnswer(val, q.answer);
+
+      showSolution(correct); lockAll();
+
+    },{once:true});
+
+  } else if(q.type==='open'){
+
+    block.querySelector('.check').addEventListener('click',()=>{
+
+      const val = block.querySelector('.openInput').value; const correct = matchesAnswer(val, q.answer);
+
+      showSolution(correct); lockAll();
+
+    },{once:true});
+
+  }
+
+  nextBtn.addEventListener('click',()=>{
+
+    const next = idx+1; if(next<list.length){ qIndex = next; PANEL.innerHTML = `<h2>${byId(currentScene(),'center').label}</h2>` + renderCurrentQuestion(list, next, nodeId); bindQuestion(list, nodeId); }
+
+    else { PANEL.innerHTML = `<h2>Quiz beendet</h2><div class="muted">Du hast alle ${list.length} Fragen beantwortet.</div>`; }
+
+  });
+
+}
+
+
+
+// ==== Controls ====
+
+const SEL=document.getElementById('chapter');
+
+SEL.addEventListener('change', ()=>{ openScenePanel(); draw(); });
+
+document.getElementById('reset').addEventListener('click', ()=>resetView());
+
+document.getElementById('export').addEventListener('click', ()=>{ const a=document.createElement('a'); a.download=`${SEL.options[SEL.selectedIndex].text} – Canvas.png`; a.href=CAN.toDataURL('image/png'); a.click(); });
+
+
+
+// ==== Init ====
+
+computeAllSizes(); resizeCanvas(); resetView(); openScenePanel();
+
+</script>
+
+</body>
+
+</html>

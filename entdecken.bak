@@ -1,0 +1,31 @@
+@echo off
+REM entdecken.bat – entpackt lernapp_bundle.zip auf dem Desktop und startet index.html
+
+set ZIP=%USERPROFILE%\Desktop\lernapp_bundle.zip
+set DEST=%USERPROFILE%\Desktop\
+
+echo Suche ZIP-Datei: %ZIP%
+if not exist "%ZIP%" (
+    echo Fehler: Die Datei lernapp_bundle.zip wurde auf dem Desktop nicht gefunden.
+    pause
+    exit /b
+)
+
+echo Entpacke nach: %DEST%
+powershell -Command "Expand-Archive -Path '%ZIP%' -DestinationPath '%DEST%' -Force"
+
+echo.
+echo Fertig! Der Ordner 'lernapp' wurde auf dem Desktop entpackt.
+echo.
+
+REM index.html direkt öffnen
+set INDEX=%DEST%lernapp\index.html
+if exist "%INDEX%" (
+    echo Starte index.html im Standardbrowser...
+    start "" "%INDEX%"
+) else (
+    echo Konnte index.html nicht finden.
+)
+
+echo.
+pause

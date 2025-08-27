@@ -1,0 +1,8 @@
+{
+  "included_pools": [
+    "pool1.json",
+    "pool2.json",
+    "pool3.json",
+    "pool4.json"
+  ]
+}

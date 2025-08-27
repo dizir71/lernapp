@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>BWL Quiz – Multi Import sicher</title>
+  <style>
+    body { font-family: Arial; background: #f4f7fb;}
+    .container { max-width:600px; margin:auto; background:#fff; padding:2em; border-radius:12px; box-shadow:0 0 10px #bbb;}
+    #fileList, .error {margin-top:0.8em;}
+    .error {color: red;}
+    input[type=file] {margin-bottom:0.5em;}
+    button { margin-top:1em;}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>BWL Quiz – Fragenpools importieren</h2>
+  <input type="file" id="jsonInput" accept=".json" multiple>
+  <button id="moreBtn" style="display:none;">Weitere Dateien hinzufügen</button>
+  <div id="fileList"></div>
+  <button id="startBtn" style="display:none;">Quiz starten</button>
+  <div id="quiz"></div>
+  <button id="nextBtn" style="display:none;">Nächste Frage</button>
+  <button id="restartBtn" style="display:none;">Quiz neu starten</button>
+</div>
+<script>
+let files = [];
+let loadedFiles = [];
+let questions = [];
+let current = 0, score = 0;
+
+function resetAll() {
+    files = [];
+    loadedFiles = [];
+    questions = [];
+    current = 0; score = 0;
+    document.getElementById('fileList').innerHTML = "";
+    document.getElementById('quiz').innerHTML = "";
+    document.getElementById('startBtn').style.display = 'none';
+    document.getElementById('nextBtn').style.display = 'none';
+    document.getElementById('restartBtn').style.display = 'none';
+}
+
+document.getElementById('jsonInput').addEventListener('change', function(evt) {
+  addFiles(evt.target.files);
+  evt.target.value = ''; // allow re-select same files
+});
+
+document.getElementById('moreBtn').onclick = function() {
+  document.getElementById('jsonInput').click();
+};
+
+function addFiles(fileList) {
+  let errorFiles = [];
+  let validFiles = [];
+  let toCheck = Array.from(fileList);
+
+  let filesChecked = 0;
+
+  toCheck.forEach(file => {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            let parsed = JSON.parse(e.target.result);
+            // Prüfung: Muss ein Array sein, alle Entries müssen id/question_text/type/correct_answer haben
+            if (Array.isArray(parsed) && parsed.every(
+                 q => typeof q.id==="string" && typeof q.question_text==="string" && q.type && q.correct_answer!==undefined)
+            ) {
+                validFiles.push({file, questions: parsed});
+            } else {
+                errorFiles.push(file.name + " (Struktur falsch oder kein Fragenarray)");
+            }
+        } catch (err) {
+            errorFiles.push(file.name + " (kein valides JSON)");
+        }
+        filesChecked++;
+        // Wenn alle Dateien geprüft wurden
+        if (filesChecked === toCheck.length) {
+            showFileList(validFiles, errorFiles);
+            handleValidFiles(validFiles); // Nur jetzt nehmen!
+        }
+    };
+    reader.readAsText(file);
+  });
+}
+
+function showFileList(valid, error) {
+    let out = '';
+    if (valid.length > 0) {
+        out += "<b>Importierte Dateien:</b><br>" 
+            + valid.map(f=>f.file.name).join(', ') + "<br>";
+    }
+    if (error.length > 0) {
+        out += '<div class="error"><b>Abgewiesen:</b><br>' + error.join('<br>') + '</div>';
+    }
+    document.getElementById('fileList').innerHTML = out;
+    document.getElementById('moreBtn').style.display = '';
+    document.getElementById('startBtn').style.display = valid.length>0 ? '' : 'none';
+    loadedFiles = valid;
+}
+
+function handleValidFiles(validFiles) {
+    // Noch nicht mergen. Erst bei Quizstart mergen.
+}
+
+document.getElementById('startBtn').onclick = function() {
+    questions = [];
+    loadedFiles.forEach(f => questions = questions.concat(f.questions));
+    if (questions.length === 0) {
+        document.getElementById('quiz').innerHTML = "<div class='error'>Keine gültigen Quizfragen gefunden.</div>";
+        return;
+    }
+    current = 0; score = 0;
+    document.getElementById('quiz').innerHTML = "";
+    document.getElementById('restartBtn').style.display = 'none';
+    showQuestion();
+};
+
+function showQuestion() {
+    if(current >= questions.length) {
+        document.getElementById('quiz').innerHTML = `<div class="result">Quiz beendet!<br>Punkte: ${score} / ${questions.length}</div>`;
+        document.getElementById('restartBtn').style.display = '';
+        document.getElementById('nextBtn').style.display = 'none';
+        return;
+    }
+    const q = questions[current];
+    let html = `<div class="question">${q.question_text}</div><div class="answers">`;
+    if(q.possible_answers) {
+        q.possible_answers.forEach(ans => {
+            html += `<button onclick="answer('${ans.replace(/'/g,"&apos;")}')">${ans}</button>`;
+        });
+    } else if(q.type === 'true_false') {
+        html += `<button onclick="answer('true')">Richtig</button><button onclick="answer('false')">Falsch</button>`;
+    } else {
+        html += `<input id="textAnswer" type="text" /><button onclick="answer(document.getElementById('textAnswer').value)">Antwort prüfen</button>`;
+    }
+    html += "</div>";
+    document.getElementById('quiz').innerHTML = html;
+    document.getElementById('nextBtn').style.display = 'none';
+}
+
+window.answer = function(ans) {
+    const q = questions[current];
+    let isCorrect;
+    if(Array.isArray(q.correct_answer)) {
+        isCorrect = q.correct_answer.includes(ans);
+    } else {
+        isCorrect = String(q.correct_answer).trim().toLowerCase() === String(ans).trim().toLowerCase();
+    }
+    let msg = isCorrect ?
+        "<span style='color:green'>Richtig!</span>" :
+        "<span style='color:red'>Falsch!<br>Richtige Antwort: "+q.correct_answer+"</span>";
+    if(isCorrect) score++;
+    if(q.explanation) msg += `<div class="explanation">${q.explanation}</div>`;
+    document.getElementById('quiz').innerHTML += `<div>${msg}</div>`;
+    document.getElementById('nextBtn').style.display = '';
+};
+document.getElementById('nextBtn').onclick = function() {
+    current++;
+    showQuestion();
+};
+document.getElementById('restartBtn').onclick = function() {
+    resetAll();
+};
+</script>
+</body>
+</html>
+
