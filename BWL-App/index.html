@@ -10,9 +10,12 @@
 header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
 .badge{padding:4px 8px;border-radius:999px;font-size:12px;background:var(--accent);color:#fff}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
-.opt{padding:10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer;background:#F3F4F6}
-.opt.correct{border-color:#22C55E;background:#DCFCE7}
-.opt.wrong{border-color:#EF4444;background:#FEE2E2}
+.opt{padding:10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer;background:#F3F4F6; text-align: left;}
+.opt:not(:disabled):hover{background-color:#E5E7EB}
+.opt.selected{border-color:var(--accent); background-color: #DBEAFE; border-width: 2px;}
+.opt.correct{border-color:#22C55E;background:#DCFCE7; border-width: 2px;}
+.opt.wrong{border-color:#EF4444;background:#FEE2E2; border-width: 2px;}
+.opt.missed{border-color:#F59E0B; background:#FEF3C7;}
 button{padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:#EEF2FF;color:#111827;cursor:pointer}
 button.primary{background:#2563EB;color:#fff;border:none}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center} .pill{padding:4px 8px;border:1px solid var(--line);background:var(--pill);border-radius:999px;font-size:12px}
@@ -34,6 +37,7 @@ button.primary{background:#2563EB;color:#fff;border:none}
 
 <ul id="list"></ul>
 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script src="config.js"></script>
 <script src="app.js"></script>
 <script>if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
