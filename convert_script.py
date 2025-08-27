@@ -4,75 +4,64 @@ import subprocess
 import importlib.util
 
 def check_and_install_dependencies():
-    """Checks for the PyMuPDF library and installs it if missing."""
-    package_name = "PyMuPDF"
-    module_name = "fitz"
+    """Checks for the python-docx library and installs it if missing."""
+    package_name = "python-docx"
+    module_name = "docx"
     
     spec = importlib.util.find_spec(module_name)
     if spec is None:
         print(f"'{package_name}' is not installed. Attempting to install...")
         try:
-            # Use check_call to ensure pip command succeeds
             subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
             print(f"'{package_name}' installed successfully.")
         except subprocess.CalledProcessError as e:
             print(f"Error: Failed to install '{package_name}'.")
             print(f"Please try to install it manually by running: pip install {package_name}")
-            print(f"Details: {e}")
             sys.exit(1)
-    else:
-        print(f"'{package_name}' is already installed.")
 
-def convert_pdf_to_text(pdf_path, output_dir):
-    """
-    Converts a single PDF file to a formatted text file.
-    Each page's text is extracted and separated by a page break marker.
-    """
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-
+def convert_docx_to_text(docx_path):
+    """Converts a single DOCX file to a plain text file in the same directory."""
     try:
-        # Import fitz here, after the check has run
-        import fitz
-        
-        doc = fitz.open(pdf_path)
-        base_name = os.path.basename(pdf_path)
-        file_name_without_ext = os.path.splitext(base_name)[0]
-        output_filepath = os.path.join(output_dir, f"{file_name_without_ext}.txt")
-        
-        print(f"Processing '{pdf_path}'...")
+        import docx # Import here after check
 
+        doc = docx.Document(docx_path)
+        full_text = [para.text for para in doc.paragraphs]
+        
+        # Save the .txt file in the same directory as the .docx file
+        base_name_without_ext = os.path.splitext(docx_path)[0]
+        output_filepath = f"{base_name_without_ext}.txt"
+        
         with open(output_filepath, "w", encoding="utf-8") as out_file:
-            for page_num, page in enumerate(doc):
-                out_file.write(f"--- Page {page_num + 1} ---\n\n")
-                out_file.write(page.get_text("text"))
-                out_file.write("\n\n")
+            out_file.write('\n'.join(full_text))
 
-        print(f"Successfully converted to '{output_filepath}'")
+        print(f"Successfully converted '{docx_path}'")
 
     except Exception as e:
-        print(f"An error occurred while processing '{pdf_path}': {e}")
+        # Special handling for docx files that might be corrupted or in the wrong format
+        if "File is not a zip file" in str(e):
+             print(f"Skipping '{docx_path}': It may be a .doc file saved with a .docx extension, which is not supported.")
+        else:
+             print(f"An error occurred while processing '{docx_path}': {e}")
+
+def process_all_directories():
+    """Walks through all subdirectories and converts .docx files, skipping .doc files."""
+    print("\nStarting search for Word documents...")
+    # Walk through the current directory '.'
+    for root, dirs, files in os.walk('.'):
+        # To be safe, let's not search in any directory that might contain junk
+        if "junk" in dirs:
+            dirs.remove("junk")
+        if ".git" in dirs:
+            dirs.remove(".git")
+
+        for filename in files:
+            file_path = os.path.join(root, filename)
+            if filename.lower().endswith(".docx"):
+                convert_docx_to_text(file_path)
+            elif filename.lower().endswith(".doc"):
+                print(f"Skipping unsupported .doc file: '{file_path}'")
 
 if __name__ == "__main__":
-    # First, run the dependency check
     check_and_install_dependencies()
-
-    # Then, proceed with the script's main logic
-    if len(sys.argv) != 3:
-        print("\nUsage: python convert_script.py <path_to_pdf_or_folder> <output_directory>")
-        sys.exit(1)
-    
-    input_path = sys.argv[1]
-    output_folder = sys.argv[2]
-
-    if os.path.isdir(input_path):
-        print(f"\nProcessing all PDF files in directory: {input_path}")
-        for filename in os.listdir(input_path):
-            if filename.lower().endswith(".pdf"):
-                pdf_file_path = os.path.join(input_path, filename)
-                convert_pdf_to_text(pdf_file_path, output_folder)
-    elif os.path.isfile(input_path) and input_path.lower().endswith(".pdf"):
-        convert_pdf_to_text(input_path, output_folder)
-    else:
-        print(f"\nError: The provided path '{input_path}' is not a valid PDF file or directory.")
-        sys.exit(1)
+    process_all_directories()
+    print("\nConversion process finished.")
