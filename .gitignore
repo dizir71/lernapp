@@ -1,0 +1,7 @@
+venv/
+**/__pycache__/
+*.py
+*.ipynb
+*.whl
+*.egg-info/
+.python-version

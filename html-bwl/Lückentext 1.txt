@@ -1,0 +1,124 @@
+Lückentext – Unternehmer, Firma und Firmenbuch
+Unternehmer
+Ein **Unternehmer** im Sinne des Unternehmensgesetzbuches (UGB) ist, wer ____________ betreibt.  
+Dazu gehören sowohl ____________ Personen als auch ____________ Personen.  
+
+Unternehmer betreiben ein Unternehmen als:  
+- ____________ Personen → lebende, physische Personen, z. B. ____________  
+- ____________ Personen → Organisationen, die auf Basis eines ____________ gegründet werden  
+
+Weitere Unternehmer sind z. B. ____________, ____________ Tätigkeiten (z. B. Arzt) und ____________ Selbstständige (z. B. Künstler).  
+
+Firma
+Die **Firma** ist der ins ____________ eingetragene Name des Unternehmers. Unter diesem Namen:  
+- betreibt er ____________,  
+- gibt er seine ____________ ab und  
+- kann er ____________ bzw. ____________ werden.  
+
+Der Firmenname besteht aus ____________ und ____________.  
+
+- Der **Firmenkern** ist ____________ wählbar, z. B. ____________ oder Hinweis auf ____________.  
+- Der **Firmenzusatz** gibt die ____________ an, z. B. ____________.  
+
+Gesetzliche Vorschriften:  
+- ____________eignung → der Name muss lesbar und aussprechbar sein  
+- ____________kraft → neue Firmen müssen sich von anderen am selben Ort unterscheiden  
+- ____________verbot → der Name darf keine falschen Informationen enthalten  
+
+Arten von Firmen:  
+- ____________firma (z. B. Name des Unternehmers)  
+- ____________firma (Hinweis auf Tätigkeit)  
+- ____________firma (erfundene Namen, Marken)  
+- ____________ Firma (Mischung)  
+
+Beim Erwerb eines Unternehmens kann der bisherige Name ____________ werden, aber nur mit ____________.  
+
+Firmenbuch
+Eine Firma darf erst geführt werden, wenn sie im ____________ steht.  
+Das Firmenbuch ist ein ____________es EDV-Verzeichnis, in dem ____________ über ein Unternehmen eingetragen sind.  
+
+Die Einträge werden auf ____________ (Elektronische Verlautbarungs- und Informationsplattform) veröffentlicht.  
+
+
+
+Rechtsformen – Grundsätze
+
+
+Fortführung der Gesellschaftsunternehmen:
+
+Bei der Wahl der Rechtsform sind zu beachten:  
+- Gesellschafter: alleine oder mit ____________  
+- Finanzierung: Gibt es ein ____________? Kann das Kapital ____________?  
+- Haftung: Unterscheidung zwischen ____________ Haftung (mit Privatvermögen) und ____________ Haftung (nur bis zu einem bestimmten Betrag)  
+- Kontrolle: Leitungsbefugnis und ____________recht  
+- Erfolgsverteilung: richtet sich nach ____________, ____________ und ____________  
+- Buchführung: doppelte Buchführung bei ____________, ____________ und ab bestimmtem Umsatz bei ____________  
+- Ertragssteuerliche Belastung: abhängig von ____________  
+
+
+Rechtsformen im Überblick
+
+
+Einzelunternehmen
+- Gesellschafter: ____________  
+- Gründung: erfolgt durch ____________  
+- Firmenbuch: je nach ____________ verpflichtend  
+- Finanzierung: Kapital wird vom ____________ aufgebracht, kein ____________ notwendig  
+- Haftung: Unternehmer ist ____________hafter, haftet mit ____________  
+- Kontrolle: entscheidet ____________  
+- Erfolgsverteilung: trägt Gewinn und Verlust ____________  
+- Ertragsteuerliche Belastung: Gewinn unterliegt der ____________  
+
+**Vorteile:** ____________, ____________, ____________  
+**Nachteile:** ____________, ____________, ____________  
+
+Offene Gesellschaft (OG)
+- Gesellschafter: mindestens ____________  
+- Gründung: durch ____________, keine Form vorgeschrieben  
+- Firmenbuch: ____________  
+- Haftung: ____________, ____________ und ____________  
+- Kontrolle: alle Gesellschafter sind ____________  
+- Erfolgsverteilung: im ____________, sonst im ____________  
+
+Kommanditgesellschaft (KG)
+- Gesellschafter: mindestens ____________  
+- Komplementär = ____________  
+- Kommanditist = ____________  
+- Haftung: Komplementär ____________, Kommanditist bis ____________  
+- Kontrolle: Komplementär leitet, Kommanditist hat nur ____________recht  
+
+Stille Gesellschaft
+- Beteiligung an einem ____________ Unternehmen  
+- Gründung durch ____________vertrag  
+- Haftung: nur bis zur ____________  
+- Firmenbuch: ____________  
+- Erfolgsverteilung: am ____________ beteiligt  
+
+GesbR
+- Gesellschafter: mindestens ____________  
+- Firmenbuch: ____________  
+- Haftung: ____________  
+- Kontrolle: alle zur ____________ befugt, außergewöhnliche Geschäfte nur ____________  
+
+GmbH
+- Gesellschafter: mindestens ____________  
+- Gründung: durch ____________vertrag (traditionell oder elektronisch)  
+- Mindeststammkapital: ____________, davon mindestens ____________ bar einzuzahlen  
+- Haftung: Gesellschaft mit ____________, Gesellschafter nur mit ____________  
+- Erfolgsverteilung: durch ____________ beschlossen  
+- Steuer: Gewinne mit ____________ %, Ausschüttung mit ____________ %  
+
+AG
+- Mindestgrundkapital: ____________  
+- Finanzierung durch Ausgabe von ____________  
+- Haftung: nur mit ____________  
+-  
+- Erfolgsverteilung: beschlossen in ____________  
+- Steuer: Gewinne mit ____________ %, Dividenden mit ____________ %  
+
+Genossenschaft
+- Gesellschafter: mindestens ____________  
+- Finanzierung: kein ____________  
+- Kontrolle: Organe sind ____________, ____________ und ____________  
+- Erfolgsverteilung: als ____________ an Mitglieder  
+- Steuer: Gewinn mit ____________ %, Ausschüttungen mit ____________ %  
