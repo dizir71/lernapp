@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BWL Lern- & Prüfungsapp - Startseite</title>
 <style>
 :root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#2563EB;}
@@ -15,29 +16,29 @@ p{color:#4B5563;margin-bottom:1em; text-align:left;}
 .btn-pc{background-color:var(--accent);color:#fff;border:1px solid var(--accent);}
 .btn-ios{background-color:var(--card);color:var(--accent);border:1px solid var(--line);}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);}
-.description{margin-bottom: 24px; border-bottom: 1px solid var(--line); padding-bottom: 24px;}
+.description{margin-bottom:24px; border-bottom:1px solid var(--line); padding-bottom:24px;}
 </style>
 </head>
 <body>
 <div class="container">
-    <div class="card">
-        <h1>Willkommen zur BWL Lern- & Prüfungsapp</h1>
-        
-        <div class="description">
-            <p><strong>Anleitung zum Start:</strong></p>
-            <p>Lade alle gewünschten Fragen-Pool-Dateien als .json aus deinem Verzeichnis hoch.<br>
-            <em>Tipp: Im Datei-Dialog kannst du mehrere Dateien gleichzeitig auswählen (halten Sie Strg (Windows) / Cmd (Mac) oder Shift gedrückt).</em></p>
-            <p>Du kannst die Dateien auch direkt per Drag&Drop hierher ziehen.</p>
-            <p>Nach erfolgreichem Import werden alle Fehler bzw. Probleme deutlich angezeigt – du kannst dann per Klick alles automatisch reparieren lassen.</p>
-            <p>Danach startet dein BWL-Quiz mit 10 gemischten Prüfungsfragen. Am Ende bekommst du Note, Ergebnis, Log & E-Mail-Versand.</p>
-        </div>
-
-        <p style="text-align:center;">Bitte wählen Sie die Version für Ihr Gerät aus.</p>
-        <div class="button-group">
-            <a href="./BWL-App/index.html" class="btn btn-pc">PC / Desktop Version</a>
-            <a href="./BWL-iOS/index.html" class="btn btn-ios">iOS (iPhone/iPad) Version</a>
-        </div>
+  <div class="card">
+    <h1>Willkommen zur BWL Lern- & Prüfungsapp</h1>
+    
+    <div class="description">
+      <p><strong>Anleitung zum Start:</strong></p>
+      <p>Lade alle gewünschten Fragen-Pool-Dateien als .json aus deinem Verzeichnis hoch.<br>
+      <em>Tipp: Im Datei-Dialog kannst du mehrere Dateien gleichzeitig auswählen (halten Sie Strg (Windows) / Cmd (Mac) oder Shift gedrückt).</em></p>
+      <p>Du kannst die Dateien auch direkt per Drag&Drop hierher ziehen.</p>
+      <p>Nach erfolgreichem Import werden alle Fehler bzw. Probleme deutlich angezeigt – du kannst dann per Klick alles automatisch reparieren lassen.</p>
+      <p>Danach startet dein BWL-Quiz mit 10 gemischten Prüfungsfragen. Am Ende bekommst du Note, Ergebnis, Log & E-Mail-Versand.</p>
     </div>
+
+    <p style="text-align:center;">Bitte wählen Sie die Version für Ihr Gerät aus.</p>
+    <div class="button-group">
+      <a href="{{ site.baseurl }}/BWL-App/index.html" class="btn btn-pc">PC / Desktop Version</a>
+      <a href="{{ site.baseurl }}/BWL-iOS/index.html" class="btn btn-ios">iOS (iPhone/iPad) Version</a>
+    </div>
+  </div>
 </div>
 </body>
 </html>
