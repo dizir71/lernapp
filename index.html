@@ -1,38 +1,44 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BWL Lernumgebung</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BWL Lern- & Prüfungsapp - Startseite</title>
 <style>
-body{margin:0;font-family:Segoe UI,Arial;background:#F9FAFB;color:#111827;padding:20px}
-h1{margin:0 0 12px} .card{background:#fff;border:1px solid #ccc;border-radius:12px;padding:16px;margin:16px 0}
-a.btn{display:inline-block;padding:12px 16px;margin-top:10px;border-radius:8px;text-decoration:none;background:#2563EB;color:#fff}
+:root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#2563EB;}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--fg);font-size:16px;padding:16px;display:flex;justify-content:center;align-items:center;min-height:100vh;}
+.container{text-align:center;max-width:600px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;margin:20px 0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);}
+h1{font-size:2em;color:var(--fg);margin-bottom:16px;}
+p{color:#4B5563;margin-bottom:1em; text-align:left;}
+.button-group{display:flex;flex-direction:column;gap:16px; margin-top:32px;}
+.btn{display:block;padding:16px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:1.1em;transition:transform .2s ease, box-shadow .2s ease;}
+.btn-pc{background-color:var(--accent);color:#fff;border:1px solid var(--accent);}
+.btn-ios{background-color:var(--card);color:var(--accent);border:1px solid var(--line);}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);}
+.description{margin-bottom: 24px; border-bottom: 1px solid var(--line); padding-bottom: 24px;}
 </style>
 </head>
 <body>
-  <h1>BWL Lernumgebung</h1>
-  <p>Bitte wähle deine Plattform:</p>
-<div class="card">
-  <h2>Für PC (Windows)</h2>
-  <p>Schritt 1: Entpacke das ZIP.<br>
-     Schritt 2: Doppelklicke auf <b>start_install.bat</b> im Ordner.<br>
-     → Die App wird automatisch installiert und beim nächsten Start verfügbar.</p>
-  <a class="btn" href="BWL-App/index.html">PC-Version direkt starten (ohne Installation)</a>
-</div>
-</div>
+<div class="container">
+    <div class="card">
+        <h1>Willkommen zur BWL Lern- & Prüfungsapp</h1>
+        
+        <div class="description">
+            <p><strong>Anleitung zum Start:</strong></p>
+            <p>Lade alle gewünschten Fragen-Pool-Dateien als .json aus deinem Verzeichnis hoch.<br>
+            <em>Tipp: Im Datei-Dialog kannst du mehrere Dateien gleichzeitig auswählen (halten Sie Strg (Windows) / Cmd (Mac) oder Shift gedrückt).</em></p>
+            <p>Du kannst die Dateien auch direkt per Drag&Drop hierher ziehen.</p>
+            <p>Nach erfolgreichem Import werden alle Fehler bzw. Probleme deutlich angezeigt – du kannst dann per Klick alles automatisch reparieren lassen.</p>
+            <p>Danach startet dein BWL-Quiz mit 10 gemischten Prüfungsfragen. Am Ende bekommst du Note, Ergebnis, Log & E-Mail-Versand.</p>
+        </div>
 
-<div class="card">
-  <h2>Für iPhone / iPad</h2>
-  <p>PWA. Öffne Safari → „Zum Home-Bildschirm“ hinzufügen.</p>
-  <a class="btn" href="BWL-iOS/index.html">iOS-Version starten</a>
+        <p style="text-align:center;">Bitte wählen Sie die Version für Ihr Gerät aus.</p>
+        <div class="button-group">
+            <a href="./BWL-App/index.html" class="btn btn-pc">PC / Desktop Version</a>
+            <a href="./BWL-iOS/index.html" class="btn btn-ios">iOS (iPhone/iPad) Version</a>
+        </div>
+    </div>
 </div>
-
-<div class="card">
-  <h2>Online-Version (immer aktuell)</h2>
-  <p>Direkt aus GitHub Pages laden – keine Installation nötig.</p>
-  <a class="btn" href="https://dizir71.github.io/lernapp/" target="_blank">GitHub Online-Version öffnen</a>
-</div>
-  </div>
 </body>
 </html>
+
