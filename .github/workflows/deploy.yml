@@ -1,0 +1,45 @@
+name: Build & Deploy Lernapp
+
+on:
+  push:
+    branches: [ feat/complete-lernapp-features ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    env:
+      PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Write token into config.js (safe)
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          files = ["BWL-App/config.js","BWL-iOS/config.js"]
+          for f in files:
+              p = pathlib.Path(f)
+              s = p.read_text(encoding="utf-8")
+              # ersetze nur den token-Wert
+              s = re.sub(r'(token\s*:\s*")[^"]*(")', r'\1' + "${PAT_TOKEN}" + r'\2', s)
+              p.write_text(s, encoding="utf-8")
+          PY
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+
+      - name: Bundle install
+        run: bundle install
+
+      - name: Jekyll build
+        run: bundle exec jekyll build -d _site
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          publish_branch: gh-pages
