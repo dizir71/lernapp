@@ -1,5 +1,5 @@
-title: Lernapp BWL-App
-description: "Demo mit bulma-clean-theme"
+title: Lernapp
+description: Lernapp BWL
 url: "https://dizir71.github.io"
-baseurl: "/lernapp/BWL-App"
+baseurl: "/lernapp"
 theme: bulma-clean-theme
