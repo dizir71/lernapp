@@ -13,23 +13,17 @@ header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
 .opt{padding:10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer;background:#F3F4F6; text-align: left;}
 .opt:not(:disabled):hover{background-color:#E5E7EB}
 .opt.selected{border-color:var(--accent); background-color: #DBEAFE; border-width: 2px;}
-.opt.correct {
+.opt.missed{border-color:#F59E0B; background:#FEF3C7;}
+.correct {
   border-color: #22C55E !important;
   background-color: #DCFCE7 !important;
   border-width: 2px;
 }
-
-.opt.wrong {
+.wrong {
   border-color: #EF4444 !important;
   background-color: #FEE2E2 !important;
   border-width: 2px;
 }
-
-.opt.missed {
-  border-color: #F59E0B;
-  background: #FEF3C7;
-}
-
 .inline-input {
   border: none;
   border-bottom: 1px solid var(--line);
