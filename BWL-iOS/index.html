@@ -1,62 +1,50 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BWL Lern- & Prüfungsapp (iOS)</title>
-<link rel="manifest" href="manifest.json">
+
+<!-- Manifest -->
+<link rel="manifest" href="{{ site.baseurl }}/BWL-iOS/manifest.json">
+
 <style>
-:root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#2563EB;--pill:#E5E7EB}
-*{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--fg);font-size:16px;padding:16px}
+:root{--bg:#F9FAFB;--fg:#111827;--card:#FFFFFF;--line:#D1D5DB;--accent:#10B981;--pill:#E5E7EB}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,system-ui,Segoe UI,Roboto;background:var(--bg);color:var(--fg);font-size:16px;padding:16px}
 header{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
 .badge{padding:4px 8px;border-radius:999px;font-size:12px;background:var(--accent);color:#fff}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
-.opt{padding:10px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer;background:#F3F4F6; text-align: left;}
-.opt:not(:disabled):hover{background-color:#E5E7EB}
-.opt.selected{border-color:var(--accent); background-color: #DBEAFE; border-width: 2px;}
-.opt.missed{border-color:#F59E0B; background:#FEF3C7;}
-.correct {
-  border-color: #22C55E !important;
-  background-color: #DCFCE7 !important;
-  border-width: 2px;
-}
-.wrong {
-  border-color: #EF4444 !important;
-  background-color: #FEE2E2 !important;
-  border-width: 2px;
-}
-.inline-input {
-  border: none;
-  border-bottom: 1px solid var(--line);
-  background: transparent;
-  padding: 2px 4px;
-  text-align: center;
-  width: 150px;
-}
-button{padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:#EEF2FF;color:#111827;cursor:pointer}
-button.primary{background:#2563EB;color:#fff;border:none}
-.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center} .pill{padding:4px 8px;border:1px solid var(--line);background:var(--pill);border-radius:999px;font-size:12px}
+button{padding:12px 16px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;font-size:1em}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.pill{padding:4px 8px;border:1px solid var(--line);background:var(--pill);border-radius:999px;font-size:12px}
 </style>
 </head>
 <body>
 <header class="row">
-  <h1 style="margin:0">BWL Lern- & Prüfungsapp</h1>
-  <span class="pill">iOS</span>
+  <h1 style="margin:0">BWL Lern- & Prüfungsapp (iOS)</h1>
+  <span class="pill">Mobile</span>
 </header>
 
 <div class="row" style="margin-bottom:8px">
-  <label class="pill"><input id="showExternal" type="checkbox" checked> Externe Lehrerfragen</label>
   <button id="btnLearn" class="primary">Lernen</button>
   <button id="btnTest">Prüfen</button>
   <button id="btn-refresh">🔄 Daten aktualisieren</button>
-  <button id="btnInstallLocal" style="display:none;">Install local</button>
 </div>
 
 <ul id="list"></ul>
 
+<!-- externe Library -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="config.js"></script>
-<script src="../shared.js"></script>
-<script src="app.js"></script>
-<script>if('serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
+
+<!-- interne Scripts mit baseurl -->
+<script src="{{ site.baseurl }}/BWL-iOS/config.js"></script>
+<script src="{{ site.baseurl }}/shared.js"></script>
+<script src="{{ site.baseurl }}/BWL-iOS/app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('{{ site.baseurl }}/BWL-iOS/sw.js').catch(()=>{});
+}
+</script>
 </body>
 </html>
